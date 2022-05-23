@@ -9,6 +9,7 @@ const EventsGuidelines = (props) => {
     theatre: "alert-warning",
     "fine-arts": "alert-info",
   };
+  var srno = 0;
   return (
     <>
       <NavBar curPage="/eventsguidelines" />
@@ -62,10 +63,10 @@ const EventsGuidelines = (props) => {
                   </thead>
                   <tbody>
                     {guidelines[eventType].map((eventName) => {
-                      var i = 1;
+                      srno = srno + 1;
                       return (
                         <tr>
-                          <th scope="row">{i}</th>
+                          <th scope="row">{srno}</th>
                           <td>{eventName.name}</td>
                           <td>{eventName.p}</td>
                           <td>{eventName.a}</td>

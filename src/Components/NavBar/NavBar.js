@@ -15,50 +15,54 @@ const NavBar = (props) => {
   );
 
   return (
-    <Nav>
-      <Logo className="text-align-text align-items-center justify-content-center">
-        <a href="/">
-          <img src="/assets/logos/bmsce_logo.jpeg" alt="BMSCE" />
-        </a>
-      </Logo>
-      <NavMenu>
-        <NavButton href="/" name="Home" curPage={props.curPage} />
-        <NavButton
-          href="/eventschedlue"
-          name="Event Schedule"
-          curPage={props.curPage}
-        />
-        <NavButton
-          href="/eventsguidelines"
-          name="Event Guidelines"
-          curPage={props.curPage}
-        />
-        <NavButton
-          href="/rulesregulations"
-          name="Rules & Regulations"
-          curPage={props.curPage}
-        />
-        <NavButton
-          href="/chiefpatrons"
-          name="Chief Patrons"
-          curPage={props.curPage}
-        />
-        <NavButton
-          href="/organisingcommittee"
-          name="Organizing Committee"
-          curPage={props.curPage}
-        />
-        <NavButton
-          href="/contactus"
-          name="Contact Us"
-          curPage={props.curPage}
-        />
-      </NavMenu>
-      <MobiNav>
-        {open ? closeIcon : openIcon}
-        {open && <MobileNavigation props={props} />}
-      </MobiNav>
-    </Nav>
+    <>
+      <Nav>
+        <Logo className="text-align-text align-items-center justify-content-center">
+          <a href="/">
+            <img src="/assets/logos/bmsce_logo.jpeg" alt="BMSCE" />
+          </a>
+        </Logo>
+        <NavMenu>
+          <NavButton href="/" name="Home" curPage={props.curPage} />
+          <NavButton
+            href="/eventschedlue"
+            name="Event Schedule"
+            curPage={props.curPage}
+          />
+          <NavButton
+            href="/eventsguidelines"
+            name="Event Guidelines"
+            curPage={props.curPage}
+          />
+          <NavButton
+            href="/rulesregulations"
+            name="Rules & Regulations"
+            curPage={props.curPage}
+          />
+          <NavButton
+            href="/chiefpatrons"
+            name="Chief Patrons"
+            curPage={props.curPage}
+          />
+          <NavButton
+            href="/organisingcommittee"
+            name="Organizing Committee"
+            curPage={props.curPage}
+          />
+          <NavButton
+            href="/contactus"
+            name="Contact Us"
+            curPage={props.curPage}
+          />
+          <NavButton href="/login" name="Login" curPage={props.curPage} />
+        </NavMenu>
+        <MobiNav>
+          {open ? closeIcon : openIcon}
+          {open && <MobileNavigation props={props} />}
+        </MobiNav>
+      </Nav>
+      <hr />
+    </>
   );
 };
 const MobiNav = styled.div`
@@ -68,7 +72,7 @@ const MobiNav = styled.div`
 `;
 const Nav = styled.nav`
   @media (min-width: 992px) {
-    padding: 0 8% 0;
+    padding: 0 3% 0;
     position: relative;
     top: 0;
     left: 0;

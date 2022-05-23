@@ -10,6 +10,8 @@ import RulesRegulations from "./Components/RulesRegulations/RulesRegulations";
 import ChiefPatrons from "./Components/ChiefPatrons/ChiefPatrons";
 import OrganizingCommittee from "./Components/OrganizingCommittee/OrganizingCommittee";
 import ContactUs from "./Components/ContactUs/ContactUs";
+import CommonFooter from "./Components/Footer/Footer";
+
 function App() {
   return (
     <div className="App">
@@ -23,6 +25,7 @@ function App() {
           <Route path="/eventsguidelines" element={<EventsGuidelines />} />
           {/*Rules and Regulations*/}
           <Route path="/rulesregulations" element={<RulesRegulations />} />
+          {/*Data not yet available*/}
           {/*Chief Patrons*/}
           <Route path="/chiefpatrons" element={<ChiefPatrons />} />
           {/*Organizing Committee*/}
@@ -36,6 +39,7 @@ function App() {
           <Route path="*" element={"Not Found"} />
         </Routes>
       </Router>
+      <CommonFooter />
     </div>
   );
 }
