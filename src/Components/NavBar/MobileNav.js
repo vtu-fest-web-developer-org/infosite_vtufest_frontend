@@ -1,16 +1,37 @@
 import styled from "styled-components";
 import NavButton from "./Button";
 
-const MobileNavigation = (props) => {
+const MobileNavigation = (prop) => {
+  const props = prop.props;
   return (
     <MobileNav>
-      <NavButton href="/home" name="Home" />
-      <NavButton href="/eventschedlue" name="Event Schedule" />
-      <NavButton href="/eventsguidelines" name="Event Guidelines" />
-      <NavButton href="/rulesregulations" name="Rules & Regulations" />
-      <NavButton href="/chiefpatrons" name="Chief Patrons" />
-      <NavButton href="/organisingcommittee" name="Organizing Committee" />
-      <NavButton href="/contactus" name="Contact Us" />
+      <NavButton href="/" name="Home" curPage={props.curPage} />
+      <NavButton
+        href="/eventschedlue"
+        name="Event Schedule"
+        curPage={props.curPage}
+      />
+      <NavButton
+        href="/eventsguidelines"
+        name="Event Guidelines"
+        curPage={props.curPage}
+      />
+      <NavButton
+        href="/rulesregulations"
+        name="Rules & Regulations"
+        curPage={props.curPage}
+      />
+      <NavButton
+        href="/chiefpatrons"
+        name="Chief Patrons"
+        curPage={props.curPage}
+      />
+      <NavButton
+        href="/organisingcommittee"
+        name="Organizing Committee"
+        curPage={props.curPage}
+      />
+      <NavButton href="/contactus" name="Contact Us" curPage={props.curPage} />
     </MobileNav>
   );
 };

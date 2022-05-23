@@ -9,7 +9,7 @@ const NavButton = (props) => {
 
   return (
     <>
-      {props.curPage == props.href ? (
+      {props.curPage === props.href ? (
         <HighlightedButton onClick={(e) => changePage(props.href)}>
           <span>{props.name}</span>
         </HighlightedButton>

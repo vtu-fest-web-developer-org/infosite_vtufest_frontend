@@ -17,7 +17,7 @@ const NavBar = (props) => {
   return (
     <Nav>
       <Logo className="text-align-text align-items-center justify-content-center">
-        <a href="/home">
+        <a href="/">
           <img src="/assets/logos/bmsce_logo.jpeg" alt="BMSCE" />
         </a>
       </Logo>
@@ -56,7 +56,7 @@ const NavBar = (props) => {
       </NavMenu>
       <MobiNav>
         {open ? closeIcon : openIcon}
-        {open && <MobileNavigation />}
+        {open && <MobileNavigation props={props} />}
       </MobiNav>
     </Nav>
   );
