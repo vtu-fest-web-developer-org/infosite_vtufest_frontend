@@ -71,6 +71,7 @@ const MobiNav = styled.div`
   }
 `;
 const Nav = styled.nav`
+  overflow-x: hidden !important;
   @media (min-width: 1280px) {
     padding: 0 3% 0;
     position: relative;

@@ -18,5 +18,5 @@
   color: #eff2fb
 }
 .ofxh{
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
