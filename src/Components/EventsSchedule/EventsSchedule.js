@@ -1,5 +1,5 @@
+import { useEffect, useState } from "react";
 import NavBar from "../NavBar/NavBar";
-import schedule from "./schedule";
 
 const EventsSchedule = (props) => {
   const colorDict = {
@@ -9,6 +9,16 @@ const EventsSchedule = (props) => {
     theatre: "alert-warning",
     "fine-arts": "alert-info",
   };
+  const [schedule, setSchedule] = useState({});
+  useEffect(() => {
+    fetch("http://infositeapi.herokuapp.com/infositeapi/schedule")
+      .then((response) => {
+        return response.json();
+      })
+      .then((json) => {
+        setSchedule(json);
+      });
+  }, []);
   var srno = 0;
   return (
     <>
@@ -17,7 +27,7 @@ const EventsSchedule = (props) => {
         <div className="col-12">
           {window.innerHeight > window.innerWidth ? (
             <div
-              class="alert alert-warning alert-dismissible fade show"
+              className="alert alert-warning alert-dismissible fade show"
               role="alert"
             >
               <svg
@@ -25,7 +35,7 @@ const EventsSchedule = (props) => {
                 width="24"
                 height="24"
                 fill="currentColor"
-                class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2"
+                className="bi bi-exclamation-triangle-fill flex-shrink-0 me-2"
                 viewBox="0 0 16 16"
                 role="img"
                 aria-label="Warning:"
@@ -35,7 +45,7 @@ const EventsSchedule = (props) => {
               *For better viewing experience use Landscape Mode.
               <button
                 type="button"
-                class="btn-close"
+                className="btn-close"
                 data-bs-dismiss="alert"
                 aria-label="Close"
               ></button>
@@ -46,10 +56,10 @@ const EventsSchedule = (props) => {
           {Object.keys(schedule).map((eventType, eventslist) => {
             return (
               <>
-                <div class={"alert " + colorDict[eventType]} role="alert">
+                <div className={"alert " + colorDict[eventType]} role="alert">
                   {eventType.toUpperCase()}
                 </div>
-                <table class="table table-hover table-corner">
+                <table className="table table-hover table-corner">
                   <thead>
                     <tr>
                       <th scope="col">Sr. No</th>

@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import NavBar from "../NavBar/NavBar";
-import rules from "./rules";
 
 const RulesRegulations = (props) => {
   const colorDict = {
@@ -10,6 +9,16 @@ const RulesRegulations = (props) => {
     theatre: "alert-warning",
     "fine-arts": "alert-info",
   };
+  const [rules, setRules] = useState({});
+  useEffect(() => {
+    fetch("http://infositeapi.herokuapp.com/infositeapi/rules")
+      .then((response) => {
+        return response.json();
+      })
+      .then((json) => {
+        setRules(json);
+      });
+  }, []);
 
   return (
     <div className="ofxh">
@@ -23,7 +32,7 @@ const RulesRegulations = (props) => {
                   <div className={"alert " + colorDict[eventType]} role="alert">
                     {eventType.toUpperCase()}
                   </div>
-                  <div class="row">
+                  <div className="row">
                     <div className="col-12">
                       <div className="row justify-content-center mb-3">
                         {rules[eventType].map((eventName) => {
@@ -32,7 +41,7 @@ const RulesRegulations = (props) => {
                           return (
                             <div className="col-xl-4 col-lg-6 mb-3">
                               <div className="card ">
-                                <div class="card-header">
+                                <div className="card-header">
                                   <strong>
                                     <h5 className="fw-bold">{evName[0]}</h5>
                                     <span>
@@ -40,8 +49,8 @@ const RulesRegulations = (props) => {
                                     </span>
                                   </strong>
                                 </div>
-                                <div class="card-body">
-                                  <p class="card-text text-start">
+                                <div className="card-body">
+                                  <p className="card-text text-start">
                                     {eventName["rules"].map((rule) => {
                                       j = j + 1;
                                       return (
