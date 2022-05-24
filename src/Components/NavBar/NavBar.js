@@ -39,11 +39,11 @@ const NavBar = (props) => {
             name="Rules & Regulations"
             curPage={props.curPage}
           />
-          <NavButton
+          {/*<NavButton
             href="/chiefpatrons"
             name="Chief Patrons"
             curPage={props.curPage}
-          />
+  />*/}
           <NavButton
             href="/organisingcommittee"
             name="Organizing Committee"
@@ -66,12 +66,12 @@ const NavBar = (props) => {
   );
 };
 const MobiNav = styled.div`
-  @media (min-width: 992px) {
+  @media (min-width: 1281px) {
     display: none;
   }
 `;
 const Nav = styled.nav`
-  @media (min-width: 992px) {
+  @media (min-width: 1280px) {
     padding: 0 3% 0;
     position: relative;
     top: 0;
@@ -84,7 +84,7 @@ const Nav = styled.nav`
     align-items: center;
     z-index: 3;
   }
-  @media (max-width: 992px) {
+  @media (max-width: 1280px) {
     padding: 0 5% 0;
     position: relative;
     flex-flow: row nowrap;
@@ -101,7 +101,7 @@ const Nav = styled.nav`
 `;
 
 const Logo = styled.div`
-  @media (min-width: 992px) {
+  @media (min-width: 1280px) {
     padding: 0;
     width: 350px;
     margin-top: 4px;
@@ -115,7 +115,7 @@ const Logo = styled.div`
       width: 320px;
     }
   }
-  @media (max-width: 992px) {
+  @media (max-width: 1280px) {
     padding: 0;
     width: 250px;
     margin-top: 4px;
@@ -132,7 +132,7 @@ const Logo = styled.div`
 `;
 
 const NavMenu = styled.div`
-  @media (min-width: 992px) {
+  @media (min-width: 1280px) {
     align-items: center;
     display: flex;
     flex-flow: row nowrap;
@@ -169,7 +169,7 @@ const NavMenu = styled.div`
       }
     }
   }
-  @media (max-width: 992px) {
+  @media (max-width: 1280px) {
     display: none;
   }
 `;

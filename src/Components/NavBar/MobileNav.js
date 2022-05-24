@@ -21,11 +21,11 @@ const MobileNavigation = (prop) => {
         name="Rules & Regulations"
         curPage={props.curPage}
       />
-      <NavButton
+      {/*<NavButton
         href="/chiefpatrons"
         name="Chief Patrons"
         curPage={props.curPage}
-      />
+  />*/}
       <NavButton
         href="/organisingcommittee"
         name="Organizing Committee"
@@ -37,10 +37,10 @@ const MobileNavigation = (prop) => {
 };
 
 const MobileNav = styled.nav`
-  @media (min-width: 992px) {
+  @media (min-width: 1281px) {
     display: none;
   }
-  @media (max-width: 992px) {
+  @media (max-width: 1281px) {
     background-color: #ffffff;
     align-items: right;
     display: flex;

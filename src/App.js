@@ -10,6 +10,7 @@ import RulesRegulations from "./Components/RulesRegulations/RulesRegulations";
 import ChiefPatrons from "./Components/ChiefPatrons/ChiefPatrons";
 import OrganizingCommittee from "./Components/OrganizingCommittee/OrganizingCommittee";
 import ContactUs from "./Components/ContactUs/ContactUs";
+import NotFound from "./Components/NotFound/NotFound";
 import CommonFooter from "./Components/Footer/Footer";
 
 function App() {
@@ -36,7 +37,7 @@ function App() {
           {/*Contact Us*/}
           <Route path="/contactus" element={<ContactUs />} />
           {/*Not Found*/}
-          <Route path="*" element={"Not Found"} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
       <CommonFooter />
