@@ -11,7 +11,7 @@ const RulesRegulations = (props) => {
   };
   const [rules, setRules] = useState({});
   useEffect(() => {
-    fetch("http://infositeapi.herokuapp.com/infositeapi/rules")
+    fetch("https://infositeapi.herokuapp.com/infositeapi/rules")
       .then((response) => {
         return response.json();
       })

@@ -11,7 +11,7 @@ const EventsSchedule = (props) => {
   };
   const [schedule, setSchedule] = useState({});
   useEffect(() => {
-    fetch("http://infositeapi.herokuapp.com/infositeapi/schedule")
+    fetch("https://infositeapi.herokuapp.com/infositeapi/schedule")
       .then((response) => {
         return response.json();
       })

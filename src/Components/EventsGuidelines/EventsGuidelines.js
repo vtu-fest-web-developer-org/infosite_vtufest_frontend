@@ -11,7 +11,7 @@ const EventsGuidelines = (props) => {
   };
   const [guidelines, setGuidelines] = useState({});
   useEffect(() => {
-    fetch("http://infositeapi.herokuapp.com/infositeapi/guidelines")
+    fetch("https://infositeapi.herokuapp.com/infositeapi/guidelines")
       .then((response) => {
         return response.json();
       })
