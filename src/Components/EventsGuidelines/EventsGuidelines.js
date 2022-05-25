@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import NavBar from "../NavBar/NavBar";
+import PageTitle from "../PageTitle/PageTitle";
 
 const EventsGuidelines = (props) => {
   const colorDict = {
@@ -26,6 +27,7 @@ const EventsGuidelines = (props) => {
 
       {window.innerHeight > window.innerWidth ? (
         <div className="container">
+          <PageTitle title="Event Guidelines" />
           <div className="row">
             <div className="col-12">
               <div
@@ -100,6 +102,7 @@ const EventsGuidelines = (props) => {
         </div>
       ) : (
         <div className="container">
+          <PageTitle title="Event Guidelines" />
           <div className="row">
             <div className="col-12">
               {Object.keys(guidelines).map((eventType, eventslist) => {

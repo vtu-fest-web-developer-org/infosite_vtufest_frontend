@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import NavBar from "../NavBar/NavBar";
+import PageTitle from "../PageTitle/PageTitle";
 
 const EventsSchedule = (props) => {
   const colorDict = {
@@ -22,8 +23,9 @@ const EventsSchedule = (props) => {
   var srno = 0;
   return (
     <>
-      <NavBar curPage="/eventschedlue" />
+      <NavBar curPage="/eventschedule" />
       <div className="container">
+        <PageTitle title="Event Schedule" />
         <div className="col-12">
           {window.innerHeight > window.innerWidth ? (
             <div

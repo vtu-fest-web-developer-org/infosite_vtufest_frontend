@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import NavBar from "../NavBar/NavBar";
+import PageTitle from "../PageTitle/PageTitle";
 
 const RulesRegulations = (props) => {
   const colorDict = {
@@ -24,6 +25,7 @@ const RulesRegulations = (props) => {
     <div className="ofxh">
       <NavBar curPage="/rulesregulations" />
       <div className="container">
+        <PageTitle title="Rules & Regulations" />
         <div className="row">
           <div className="col-12">
             {Object.keys(rules).map((eventType, eventslist) => {
