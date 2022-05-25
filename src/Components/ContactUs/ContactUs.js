@@ -1,168 +1,233 @@
 import NavBar from "../NavBar/NavBar";
 import PageTitle from "../PageTitle/PageTitle";
+import styled from "styled-components";
 
 import { useEffect, useRef, useState } from "react";
 const ContactUs = (props) => {
-    const fullNameRef = useRef("");
-    const emailRef = useRef("");
-    const phoneNoRef = useRef("");
-    const messageRef = useRef("");
-    const [windowWidth, setWindowWidth] = useState(window.screen.width);
-    const handleMessageSubmit = (event) => {
-        event.preventDefault();
-        console.log({
-            name: fullNameRef.current.value,
-            email: emailRef.current.value,
-            phone: phoneNoRef.current.value,
-            message: messageRef.current.value,
-        });
-    }
-    const handleWindowChange = () => {
-        setWindowWidth(window.screen.width);
-    }
-    useEffect(() => {
-
-        window.addEventListener("resize", handleWindowChange)
-        return () => {
-            window.removeEventListener("resize", handleWindowChange)
-        }
-    }, []);
-    return (
-        <>
-            <NavBar curPage="/contactus" />
-            <div className="container ">
-                <PageTitle title="Contact Us" />
-                <div className="row gx-5 d-flex justify-content-around .flex-column">
-                    <div className="col-lg-5 col-md-6 shadow p-5 rounded" style={{ backgroundColor: "#b8ecff", backgroundImage: "linear-gradient(315deg, rgba(255,255,255,1) 0%, rgba(112,230,254,1) 100%)" }}>
-                        <form className="d-flex flex-column align-items-start" onSubmit={handleMessageSubmit}>
-                            <div className="w-100 d-flex justify-content-center align-items-center">
-                                <h3 className="fw-bold">Contact Us</h3>
-                                {/* <img src={messageIcon} width="30rem" style={{ margin: "10px" }}></img> */}
-                            </div>
-                            <label htmlFor="contact-us-name" className="form-label fs-5">Full Name</label>
-                            <input type="text" className="form-control mb-3" id="contact-us-name" placeholder="John Doe" ref={fullNameRef}></input>
-
-                            <label htmlFor="contact-us-email" className="form-label fs-5">
-                                Email
-                            </label>
-                            <input
-                                type="text"
-                                className="form-control mb-3"
-                                id="contact-us-email"
-                                placeholder="name@example.com"
-                                ref={emailRef}
-                            ></input>
-
-                            <label htmlFor="contact-us-phone" className="form-label fs-5">
-                                Phone Number
-                            </label>
-                            <input
-                                type="text"
-                                className="form-control mb-3"
-                                id="contact-us-phone"
-                                placeholder="+918888888888"
-                                ref={phoneNoRef}
-                            ></input>
-
-                            <label htmlFor="contact-us-message" className="form-label fs-5">
-                                Message
-                            </label>
-                            <textarea
-                                type="text"
-                                className="form-control mb-3"
-                                id="contact-us-message"
-                                placeholder="Type your message here..."
-                                ref={messageRef}
-                                style={{ height: "7rem" }}
-                            ></textarea>
-                            <div className="w-100">
-                                <button
-                                    type="submit"
-                                    className="btn btn-outline-primary btn-lg align-items-center"
-                                >
-                                    Send
-                                    {/* <img src={sendIcon} style={{ margin: "0px 10px 0px 10px" }}></img> */}
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                    <div className="col-lg-5 col-md-6 shadow p-3 bg-body rounded card">
-                        {windowWidth < 576 ? (
-                            <>
-                                <div className="card-body d-flex flex-column align-items-center">
-                                    <h5 className="card-title mb-3 fw-bold">
-                                        BMS College of Engineering
-                                    </h5>
-                                    <div className="container mb-5">
-                                        <table>
-                                            <tr>
-                                                <td className="text-start">Email: </td>
-                                                <td className="text-start px-3">admin@bmsce.ac.in</td>
-                                            </tr>
-                                            <tr>
-                                                <td className="text-start">Phone: </td>
-                                                <td className="text-start px-3">080 2662 2130</td>
-                                            </tr>
-                                            <tr>
-                                                <td className="text-start">Address: </td>
-                                                <td className="text-start px-3">
-                                                    Bull Temple Rd, Basavanagudi, Bengaluru, Karnataka
-                                                    560019
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <div className="overflow-hidden rounded">
-                                        <iframe
-                                            title="bmsce"
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.4814120554875!2d77.56333711451869!3d12.941017419050835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae158b11e34d2f%3A0x5f4adbdbab8bd80f!2sBMS%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1653465729053!5m2!1sen!2sin"
-                                            height="200"
-                                            allowfullscreen=""
-                                            loading="lazy"
-                                            referrerpolicy="no-referrer-when-downgrade"
-                                        ></iframe>
-                                    </div>
-                                </div>
-                            </>
-                        ) : (
-                            <>
-                                <iframe
-                                    title="bmsce"
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.4814120554875!2d77.56333711451869!3d12.941017419050835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae158b11e34d2f%3A0x5f4adbdbab8bd80f!2sBMS%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1653465729053!5m2!1sen!2sin"
-                                    height="400"
-                                    allowfullscreen=""
-                                    loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"
-                                ></iframe>
-                                <div className="card-body d-flex flex-column align-items-start">
-                                    <h5 className="card-title mb-3 fw-bold">
-                                        BMS College of Engineering
-                                    </h5>
-                                    <table>
-                                        <tr>
-                                            <td className="text-start">Email: </td>
-                                            <td className="text-start px-5">admin@bmsce.ac.in</td>
-                                        </tr>
-                                        <tr>
-                                            <td className="text-start">Phone: </td>
-                                            <td className="text-start px-5">080 2662 2130</td>
-                                        </tr>
-                                        <tr>
-                                            <td className="text-start">Address: </td>
-                                            <td className="text-start px-5">
-                                                Bull Temple Rd, Basavanagudi, Bengaluru, Karnataka
-                                                560019
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </>
-                        )}
-                    </div>
+  const fullNameRef = useRef("");
+  const emailRef = useRef("");
+  const phoneNoRef = useRef("");
+  const messageRef = useRef("");
+  const handleMessageSubmit = (event) => {
+    event.preventDefault();
+    console.log({
+      name: fullNameRef.current.value,
+      email: emailRef.current.value,
+      phone: phoneNoRef.current.value,
+      message: messageRef.current.value,
+    });
+  };
+  return (
+    <>
+      <NavBar curPage="/contactus" />
+      <div className="container ">
+        <PageTitle title="Contact Us" />
+        <div className="row mt-5">
+          <div className="col-lg-6 mt-2 mb-3">
+            <div className="row">
+              <div className="col-lg-1"></div>
+              <div className="col-lg-10">
+                <div class="card ">
+                  <div class="card-body">
+                    <h5 class="card-title fs-2 fw-bold mb-3 lightblue">
+                      Feel free to contact us!
+                    </h5>
+                    <form class="row g-3 text-start">
+                      <div class="col-12">
+                        <label for="name" class="form-label">
+                          Full name
+                        </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="Full Name"
+                          required
+                        />
+                      </div>
+                      <div class="col-12">
+                        <label for="email" class="form-label">
+                          Email
+                        </label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          placeholder="name@example.com"
+                          required
+                        />
+                      </div>
+                      <div class="col-12">
+                        <label for="tel" class="form-label">
+                          Phone Number
+                        </label>
+                        <input
+                          type="tel"
+                          class="form-control"
+                          id="tel"
+                          placeholder="9999999999"
+                          required
+                        />
+                      </div>
+                      <div class="col-6">
+                        <label for="validationCustom03" class="form-label">
+                          City
+                        </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="validationCustom03"
+                          placeholder="Bengaluru"
+                          required
+                        />
+                      </div>
+                      <div class="col-6">
+                        <label for="validationCustom04" class="form-label">
+                          State
+                        </label>
+                        <select
+                          class="form-select"
+                          id="validationCustom04"
+                          required
+                        >
+                          <option selected disabled value="">
+                            Choose...
+                          </option>
+                          <option>...</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please select a valid state.
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <label for="message" class="form-label">
+                          Message
+                        </label>
+                        <textarea
+                          type="message"
+                          class="form-control"
+                          id="message"
+                          placeholder="Mention your query!"
+                          required
+                        />
+                      </div>
+                      <div class="col-12 mt-5">
+                        <LoginButton onClick={handleMessageSubmit}>
+                          <span>Submit</span>
+                        </LoginButton>
+                      </div>
+                    </form>
+                  </div>
                 </div>
+              </div>
             </div>
-        </>
-    );
+          </div>
+          <div className="col-lg-6 mt-2 mb-3">
+            <div className="row">
+              <div className="col-lg-1"></div>
+              <div className="col-lg-10">
+                <div class="card text-start">
+                  <div class="card-body">
+                    <h5 class="card-title fs-2 fw-bold mb-3 lightblue">
+                      B.M.S. College of Engineering
+                    </h5>
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <div className="row">
+                          <div className="col-4 col-sm-2">
+                            <p>Email:</p>
+                          </div>
+                          <div className="col-8 col-sm-10">
+                            <p className="text-decoration-none">
+                              <a
+                                href="mailto:info@bmsce.ac.in"
+                                className="text-decoration-none"
+                                target={"_blank"}
+                              >
+                                info@bmsce.ac.in
+                              </a>
+                            </p>
+                          </div>
+                        </div>
+                        <div className="row">
+                          <div className="col-4 col-sm-2">
+                            <p>Phone:</p>
+                          </div>
+                          <div className="col-8 col-sm-10">
+                            <p className="text-decoration-none">
+                              <a
+                                href="tel:+91-80-26614357"
+                                className="text-decoration-none"
+                                target={"_blank"}
+                              >
+                                +91-80-26614357
+                              </a>
+                            </p>
+                          </div>
+                        </div>
+                        <div className="row">
+                          <div className="col-4 col-sm-2">
+                            <p>Address:</p>
+                          </div>
+                          <div className="col-7">
+                            <p className="text-decoration-none">
+                              P.O. Box No.: 1908, Bull Temple Road, Bangalore -
+                              560 019
+                              <br /> Karnataka, India.
+                            </p>
+                          </div>
+                        </div>
+                        <div className="row">
+                          <div className="col-12">
+                            <iframe
+                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.4814120554875!2d77.56333711451869!3d12.941017419050835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae158b11e34d2f%3A0x5f4adbdbab8bd80f!2sBMS%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1653465729053!5m2!1sen!2sin"
+                              allowfullscreen=""
+                              width="100%"
+                              height="350px"
+                              loading="lazy"
+                              referrerpolicy="no-referrer-when-downgrade"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 };
-
+const LoginButton = styled.button`
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  margin: 0 3px;
+  padding: 0 8px;
+  border: solid;
+  border-width: 1px;
+  border-color: #3469ff;
+  background-color: #3469ff;
+  border-radius: 10px;
+  span {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    line-height: 1.08;
+    padding: 10px 5px;
+    white-space: nowrap;
+    position: relative;
+  }
+  &:hover {
+    background-color: #eff2fb;
+    border-color: #3469ff;
+    span {
+      color: #1c2c9b;
+    }
+  }
+`;
 export default ContactUs;
