@@ -6,11 +6,14 @@ const NavButton = (props) => {
   const changePage = (location) => {
     navigate(location);
   };
+  const newTab = (location) => {
+    window.open(location, "_blank");
+  };
 
   return (
     <>
-      {props.href === "/login" ? (
-        <LoginButton onClick={(e) => changePage(props.href)}>
+      {props.href === "https://app.vtufestbmsce.in" ? (
+        <LoginButton onClick={(e) => newTab(props.href)}>
           <span>{props.name}</span>
         </LoginButton>
       ) : props.curPage === props.href ? (

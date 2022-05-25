@@ -54,7 +54,11 @@ const NavBar = (props) => {
             name="Contact Us"
             curPage={props.curPage}
           />
-          <NavButton href="/login" name="Login" curPage={props.curPage} />
+          <NavButton
+            href="https://app.vtufestbmsce.in"
+            name="Login"
+            curPage={props.curPage}
+          />
         </NavMenu>
         <MobiNav>
           {open ? closeIcon : openIcon}

@@ -62,7 +62,12 @@ const OrganizingCommittee = (props) => {
                             {person.role ? <span>{person.role}</span> : <br />}
                             <br />
                             {person.link ? (
-                              <a href="#" class="text-decoration-none">
+                              <a
+                                href={person.link}
+                                class="text-decoration-none"
+                                rel="noreferrer"
+                                target={"_blank"}
+                              >
                                 <FiLink2 />
                               </a>
                             ) : (
