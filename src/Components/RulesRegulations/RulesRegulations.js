@@ -1,15 +1,9 @@
 import React, { useEffect, useState } from "react";
 import NavBar from "../NavBar/NavBar";
 import PageTitle from "../PageTitle/PageTitle";
+import colorDict from "../ColorDict/ColorDict";
 
 const RulesRegulations = (props) => {
-  const colorDict = {
-    music: "alert-success",
-    dance: "alert-danger",
-    literary: "alert-dark",
-    theatre: "alert-warning",
-    "fine-arts": "alert-info",
-  };
   const [rules, setRules] = useState({});
   useEffect(() => {
     fetch("https://infositeapi.herokuapp.com/infositeapi/rules")

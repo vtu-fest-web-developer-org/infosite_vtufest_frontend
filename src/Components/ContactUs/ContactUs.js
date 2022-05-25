@@ -251,6 +251,7 @@ const ContactUs = (props) => {
                         <div className="row">
                           <div className="col-12">
                             <iframe
+                              className="maps"
                               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.4814120554875!2d77.56333711451869!3d12.941017419050835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae158b11e34d2f%3A0x5f4adbdbab8bd80f!2sBMS%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1653465729053!5m2!1sen!2sin"
                               allowfullscreen=""
                               title="BMS College of Engineering"

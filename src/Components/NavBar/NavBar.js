@@ -19,7 +19,7 @@ const NavBar = (props) => {
       <Nav>
         <Logo className="text-align-text align-items-center justify-content-center">
           <a href="/">
-            <img src="/assets/logos/bmsce_logo.jpeg" alt="BMSCE" />
+            <img src="/assets/logos/bmsce_logo.png" alt="BMSCE" />
           </a>
         </Logo>
         <NavMenu>
@@ -83,7 +83,7 @@ const Nav = styled.nav`
     left: 0;
     right: 0;
     height: 150px;
-    background-color: #ffffff;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -97,7 +97,7 @@ const Nav = styled.nav`
     left: 0;
     right: 0;
     height: 100px;
-    background-color: #ffffff;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;

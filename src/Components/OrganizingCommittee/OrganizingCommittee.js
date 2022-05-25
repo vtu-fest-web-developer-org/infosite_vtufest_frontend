@@ -2,15 +2,9 @@ import { useEffect, useState } from "react";
 import { FiLink2 } from "react-icons/fi";
 import NavBar from "../NavBar/NavBar";
 import PageTitle from "../PageTitle/PageTitle";
+import colorDict from "../ColorDict/ColorDict";
 
 const OrganizingCommittee = (props) => {
-  const colorDict = {
-    developers: "alert-success",
-    "design team": "alert-danger",
-    literary: "alert-dark",
-    theatre: "alert-warning",
-    "fine-arts": "alert-info",
-  };
   const [oc, setOc] = useState({});
   useEffect(() => {
     fetch("https://infositeapi.herokuapp.com/infositeapi/oc")
