@@ -21,7 +21,7 @@ function App() {
           {/*Home*/}
           <Route exact path="/" element={<Home />} />
           {/*Event Schedule*/}
-          <Route path="/eventschedlue" element={<EventsSchedule />} />
+          <Route path="/eventschedule" element={<EventsSchedule />} />
           {/*Event Guidelines*/}
           <Route path="/eventsguidelines" element={<EventsGuidelines />} />
           {/*Rules and Regulations*/}

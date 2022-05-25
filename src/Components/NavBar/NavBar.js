@@ -25,7 +25,7 @@ const NavBar = (props) => {
         <NavMenu>
           <NavButton href="/" name="Home" curPage={props.curPage} />
           <NavButton
-            href="/eventschedlue"
+            href="/eventschedule"
             name="Event Schedule"
             curPage={props.curPage}
           />
