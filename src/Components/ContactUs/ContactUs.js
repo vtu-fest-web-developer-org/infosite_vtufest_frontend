@@ -2,20 +2,32 @@ import NavBar from "../NavBar/NavBar";
 import PageTitle from "../PageTitle/PageTitle";
 import styled from "styled-components";
 
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 const ContactUs = (props) => {
-  const fullNameRef = useRef("");
-  const emailRef = useRef("");
-  const phoneNoRef = useRef("");
-  const messageRef = useRef("");
-  const handleMessageSubmit = (event) => {
-    event.preventDefault();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [city, setCity] = useState("");
+  const [state, setState] = useState("");
+  const [message, setMessage] = useState("");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
     console.log({
-      name: fullNameRef.current.value,
-      email: emailRef.current.value,
-      phone: phoneNoRef.current.value,
-      message: messageRef.current.value,
+      name,
+      email,
+      phone,
+      city,
+      state,
+      message,
     });
+
+    setName("");
+    setEmail("");
+    setPhone("");
+    setCity("");
+    setState("");
+    setMessage("");
   };
   return (
     <>
@@ -27,12 +39,12 @@ const ContactUs = (props) => {
             <div className="row">
               <div className="col-lg-1"></div>
               <div className="col-lg-10">
-                <div class="card ">
+                <div class="card text-start">
                   <div class="card-body">
                     <h5 class="card-title fs-2 fw-bold mb-3 lightblue">
                       Feel free to contact us!
                     </h5>
-                    <form class="row g-3 text-start">
+                    <form class="row g-3 needs-validation">
                       <div class="col-12">
                         <label for="name" class="form-label">
                           Full name
@@ -41,6 +53,8 @@ const ContactUs = (props) => {
                           type="text"
                           class="form-control"
                           id="name"
+                          value={name}
+                          onChange={(e) => setName(e.target.value)}
                           placeholder="Full Name"
                           required
                         />
@@ -53,6 +67,8 @@ const ContactUs = (props) => {
                           type="email"
                           class="form-control"
                           id="email"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
                           placeholder="name@example.com"
                           required
                         />
@@ -65,6 +81,8 @@ const ContactUs = (props) => {
                           type="tel"
                           class="form-control"
                           id="tel"
+                          value={phone}
+                          onChange={(e) => setPhone(e.target.value)}
                           placeholder="9999999999"
                           required
                         />
@@ -76,7 +94,9 @@ const ContactUs = (props) => {
                         <input
                           type="text"
                           class="form-control"
-                          id="validationCustom03"
+                          id="city"
+                          value={city}
+                          onChange={(e) => setCity(e.target.value)}
                           placeholder="Bengaluru"
                           required
                         />
@@ -87,13 +107,60 @@ const ContactUs = (props) => {
                         </label>
                         <select
                           class="form-select"
-                          id="validationCustom04"
+                          id="state"
+                          value={state}
+                          onChange={(e) => setState(e.target.value)}
                           required
                         >
                           <option selected disabled value="">
                             Choose...
                           </option>
-                          <option>...</option>
+                          <option value="Andhra Pradesh">Andhra Pradesh</option>
+                          <option value="Andaman and Nicobar Islands">
+                            Andaman and Nicobar Islands
+                          </option>
+                          <option value="Arunachal Pradesh">
+                            Arunachal Pradesh
+                          </option>
+                          <option value="Assam">Assam</option>
+                          <option value="Bihar">Bihar</option>
+                          <option value="Chandigarh">Chandigarh</option>
+                          <option value="Chhattisgarh">Chhattisgarh</option>
+                          <option value="Dadar and Nagar Haveli">
+                            Dadar and Nagar Haveli
+                          </option>
+                          <option value="Daman and Diu">Daman and Diu</option>
+                          <option value="Delhi">Delhi</option>
+                          <option value="Lakshadweep">Lakshadweep</option>
+                          <option value="Puducherry">Puducherry</option>
+                          <option value="Goa">Goa</option>
+                          <option value="Gujarat">Gujarat</option>
+                          <option value="Haryana">Haryana</option>
+                          <option value="Himachal Pradesh">
+                            Himachal Pradesh
+                          </option>
+                          <option value="Jammu and Kashmir">
+                            Jammu and Kashmir
+                          </option>
+                          <option value="Jharkhand">Jharkhand</option>
+                          <option value="Karnataka">Karnataka</option>
+                          <option value="Kerala">Kerala</option>
+                          <option value="Madhya Pradesh">Madhya Pradesh</option>
+                          <option value="Maharashtra">Maharashtra</option>
+                          <option value="Manipur">Manipur</option>
+                          <option value="Meghalaya">Meghalaya</option>
+                          <option value="Mizoram">Mizoram</option>
+                          <option value="Nagaland">Nagaland</option>
+                          <option value="Odisha">Odisha</option>
+                          <option value="Punjab">Punjab</option>
+                          <option value="Rajasthan">Rajasthan</option>
+                          <option value="Sikkim">Sikkim</option>
+                          <option value="Tamil Nadu">Tamil Nadu</option>
+                          <option value="Telangana">Telangana</option>
+                          <option value="Tripura">Tripura</option>
+                          <option value="Uttar Pradesh">Uttar Pradesh</option>
+                          <option value="Uttarakhand">Uttarakhand</option>
+                          <option value="West Bengal">West Bengal</option>
                         </select>
                         <div class="invalid-feedback">
                           Please select a valid state.
@@ -107,12 +174,14 @@ const ContactUs = (props) => {
                           type="message"
                           class="form-control"
                           id="message"
+                          value={message}
+                          onChange={(e) => setMessage(e.target.value)}
                           placeholder="Mention your query!"
                           required
                         />
                       </div>
                       <div class="col-12 mt-5">
-                        <LoginButton onClick={handleMessageSubmit}>
+                        <LoginButton onClick={handleSubmit}>
                           <span>Submit</span>
                         </LoginButton>
                       </div>
@@ -143,6 +212,7 @@ const ContactUs = (props) => {
                                 href="mailto:info@bmsce.ac.in"
                                 className="text-decoration-none"
                                 target={"_blank"}
+                                rel="noreferrer"
                               >
                                 info@bmsce.ac.in
                               </a>
@@ -159,6 +229,7 @@ const ContactUs = (props) => {
                                 href="tel:+91-80-26614357"
                                 className="text-decoration-none"
                                 target={"_blank"}
+                                rel="noreferrer"
                               >
                                 +91-80-26614357
                               </a>
@@ -182,6 +253,7 @@ const ContactUs = (props) => {
                             <iframe
                               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.4814120554875!2d77.56333711451869!3d12.941017419050835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae158b11e34d2f%3A0x5f4adbdbab8bd80f!2sBMS%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1653465729053!5m2!1sen!2sin"
                               allowfullscreen=""
+                              title="BMS College of Engineering"
                               width="100%"
                               height="350px"
                               loading="lazy"
