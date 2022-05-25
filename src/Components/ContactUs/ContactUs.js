@@ -7,7 +7,7 @@ const ContactUs = (props) => {
     const emailRef = useRef("");
     const phoneNoRef = useRef("");
     const messageRef = useRef("");
-    const [windowWidth, setWindowWidth] = useState("");
+    const [windowWidth, setWindowWidth] = useState(window.screen.width);
     const handleMessageSubmit = (event) => {
         event.preventDefault();
         console.log({
@@ -21,6 +21,7 @@ const ContactUs = (props) => {
         setWindowWidth(window.screen.width);
     }
     useEffect(() => {
+
         window.addEventListener("resize", handleWindowChange)
         return () => {
             window.removeEventListener("resize", handleWindowChange)
