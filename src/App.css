@@ -1,12 +1,12 @@
 .App {
   text-align: center;
-  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-  font-family: 'Lato', sans-serif;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap') ;
+  font-family: 'Lato', sans-serif !important;
+  -ms-overflow-style: none !important;  /* IE and Edge */
+  scrollbar-width: none !important;  /* Firefox */
 }
 .App::-webkit-scrollbar {
-  display: none;
+  display: none !important;
 }
 .darkblue{
   color : #1c2c9b
@@ -19,4 +19,8 @@
 }
 .ofxh{
   overflow-x: hidden !important;
+}
+.table-row{
+  padding-left: 50px;
+  padding-right: 50px;
 }

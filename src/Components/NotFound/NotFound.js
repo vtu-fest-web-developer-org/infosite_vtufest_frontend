@@ -8,14 +8,15 @@ const NotFound = (props) => {
         <div className="col-12">
           <div
             id="carouselExampleSlidesOnly"
-            class="carousel slide"
+            className="carousel slide"
             data-bs-ride="carousel"
           >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
+            <div className="carousel-inner">
+              <div className="carousel-item active">
                 <img
                   src="./assets/photos/404_notfound.svg"
-                  class="d-block w-100"
+                  className="d-block w-100"
+                  alt="404 Not Found"
                 />
               </div>
             </div>

@@ -1,10 +1,13 @@
 body {
-  margin: 0;
-  
+  -ms-overflow-style: none !important;  /* IE and Edge */
+  scrollbar-width: none !important;  /* Firefox */
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-
+body::-webkit-scrollbar {
+  display: none !important;
+}
+#root {
+  overflow-x: hidden;
 }
