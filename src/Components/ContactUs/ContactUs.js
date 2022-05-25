@@ -1,6 +1,6 @@
 import NavBar from "../NavBar/NavBar";
-// import messageIcon from "../../Icons/message-right.svg";
-// import sendIcon from "../../Icons/send-fill.svg";
+import PageTitle from "../PageTitle/PageTitle";
+
 import { useEffect, useRef, useState } from "react";
 const ContactUs = (props) => {
     const fullNameRef = useRef("");
@@ -31,6 +31,7 @@ const ContactUs = (props) => {
         <>
             <NavBar curPage="/contactus" />
             <div className="container ">
+      <PageTitle title="Contact Us" />
                 <div className="row gx-5 d-flex justify-content-around .flex-column">
                     <div className="col-lg-5 col-md-6 shadow p-5 rounded" style={{ backgroundColor: "#b8ecff", backgroundImage: "linear-gradient(315deg, rgba(255,255,255,1) 0%, rgba(112,230,254,1) 100%)" }}>
                         <form className="d-flex flex-column align-items-start" onSubmit={handleMessageSubmit}>
@@ -111,6 +112,5 @@ const ContactUs = (props) => {
             </div>
         </>
     );
-};
 
 export default ContactUs;
