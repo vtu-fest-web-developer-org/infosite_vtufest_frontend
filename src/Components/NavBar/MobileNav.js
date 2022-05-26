@@ -32,6 +32,11 @@ const MobileNavigation = (prop) => {
         curPage={props.curPage}
       />
       <NavButton href="/contactus" name="Contact Us" curPage={props.curPage} />
+      <NavButton
+        href="https://app.vtufestbmsce.in"
+        name="Login"
+        curPage={props.curPage}
+      />
     </MobileNav>
   );
 };
@@ -41,8 +46,11 @@ const MobileNav = styled.nav`
     display: none;
   }
   @media (max-width: 1281px) {
-    background-color: #ffffff;
-    align-items: right;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    align-items: center;
     display: flex;
     flex-flow: column nowrap;
     position: fixed;
@@ -53,8 +61,9 @@ const MobileNav = styled.nav`
     height: 100vh;
     width: 100vw;
     button {
-      display: flex;
-      margin-left: 15%;
+      display: absolute;
+      margin-bottom: 2%;
+      width: 250px;
     }
   }
 `;
