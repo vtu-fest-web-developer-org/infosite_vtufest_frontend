@@ -1,28 +1,18 @@
 import NavBar from "../NavBar/NavBar";
+import Slider from "./Slider";
+import CountUp from "react-countup";
 
 const Home = (props) => {
   return (
     <>
       <NavBar curPage="/" />
-      <div className="container">
+      <Slider />
+      <div className="row mt-5">
         <div className="col-12">
-          <div
-            id="carouselExampleControls"
-            class="carousel slide"
-            data-ride="carousel"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="..." alt="First slide" />
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="..." alt="Second slide" />
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="..." alt="Third slide" />
-              </div>
-            </div>
-          </div>
+          <h3>
+            <CountUp start={20} end={props.views} />
+            Views
+          </h3>
         </div>
       </div>
     </>

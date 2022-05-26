@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import NavBar from "../NavBar/NavBar";
 import PageTitle from "../PageTitle/PageTitle";
 import colorDict from "../ColorDict/ColorDict";
+import LoaderSpinner from "../LoaderSpinner/LoaderSpinner";
 
 const RulesRegulations = (props) => {
   const [rules, setRules] = useState({});
@@ -11,7 +12,6 @@ const RulesRegulations = (props) => {
         return response.json();
       })
       .then((json) => {
-        console.log("api fetched");
         setRules(json);
       });
   }, []);
@@ -77,7 +77,7 @@ const RulesRegulations = (props) => {
             </div>
           </div>
         ) : (
-          <p>hi</p>
+          <LoaderSpinner />
         )}
       </div>
     </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./App.css";
@@ -14,12 +14,22 @@ import NotFound from "./Components/NotFound/NotFound";
 import CommonFooter from "./Components/Footer/Footer";
 
 function App() {
+  const [views, setViews] = useState(0);
+  useEffect(() => {
+    fetch("https://infositeapi.herokuapp.com/infositeapi/views")
+      .then((response) => {
+        return response.json();
+      })
+      .then((json) => {
+        setViews(json.viewsCount);
+      });
+  }, []);
   return (
     <div className="App">
       <Router>
         <Routes>
           {/*Home*/}
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/" element={<Home views={views} />} />
           {/*Event Schedule*/}
           <Route path="/eventschedule" element={<EventsSchedule />} />
           {/*Event Guidelines*/}
