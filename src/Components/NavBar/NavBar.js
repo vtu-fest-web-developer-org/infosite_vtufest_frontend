@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MdMenuOpen } from "react-icons/md";
+import { CgMenu } from "react-icons/cg";
 import { IoClose } from "react-icons/io5";
 import MobileNavigation from "./MobileNav";
 import NavButton from "./Button";
@@ -11,7 +11,7 @@ const NavBar = (props) => {
     <IoClose size="40px" color="#3469ff" onClick={() => setOpen(!open)} />
   );
   const openIcon = (
-    <MdMenuOpen size="40px" color="#3469ff" onClick={() => setOpen(!open)} />
+    <CgMenu size="40px" color="#3469ff" onClick={() => setOpen(!open)} />
   );
 
   return (
