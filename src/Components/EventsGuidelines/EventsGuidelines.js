@@ -25,7 +25,7 @@ const EventsGuidelines = (props) => {
           <div className="row">
             <div className="col-12">
               <div
-                className="alert alert-warning alert-dismissible fade show"
+                className="alert alert-warnin alert-dismissible fade show"
                 role="alert"
               >
                 <svg

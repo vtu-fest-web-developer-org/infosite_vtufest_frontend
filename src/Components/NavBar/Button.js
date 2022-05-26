@@ -61,10 +61,13 @@ const HighlightedButton = styled.button`
   margin: 0 3px;
   padding: 0 3px;
   border: none;
-  background-color: #eff2fb;
+  background: rgba(52, 105, 255, 0.9);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
   span {
-    color: #1c2c9b;
+    color: #ffffff;
     font-size: 17px;
     font-weight: 500;
     letter-spacing: 0.1px;
@@ -81,7 +84,10 @@ const NormalButton = styled.button`
   margin: 0 3px;
   padding: 0 3px;
   border: none;
-  background-color: #ffffff;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
   span {
     color: #3469ff;
@@ -94,9 +100,13 @@ const NormalButton = styled.button`
     position: relative;
   }
   &:hover {
-    background-color: #eff2fb;
+    background: rgba(52, 105, 255, 0.9);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
     span {
-      color: #1c2c9b;
+      color: #ffffff;
     }
   }
 `;

@@ -1,6 +1,12 @@
+html{
+  scroll-behavior: smooth;
+
+}
 body {
-  -ms-overflow-style: none !important;  /* IE and Edge */
-  scrollbar-width: none !important;  /* Firefox */
+  -ms-overflow-style: none !important;
+  /* IE and Edge */
+  scrollbar-width: none !important;
+  /* Firefox */
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -8,11 +14,14 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
   height: 100%;
 }
+
 body::-webkit-scrollbar {
   display: none !important;
 }
+
 #root {
   overflow-x: hidden;
 }
