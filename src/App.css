@@ -6,8 +6,7 @@
   /* IE and Edge */
   scrollbar-width: none !important;
   /* Firefox */
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  
 
 }
 

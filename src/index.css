@@ -1,16 +1,5 @@
-html{
 
-}
-body {
-  -ms-overflow-style: none !important;
-  /* IE and Edge */
-  scrollbar-width: none !important;
-  /* Firefox */
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-body:before {
+html::before{
   content: "";
   display: block;
   position: fixed;
@@ -24,6 +13,19 @@ body:before {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  
+}
+body {
+  -ms-overflow-style: none !important;
+  /* IE and Edge */
+  scrollbar-width: none !important;
+  /* Firefox */
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  
 }
 body::-webkit-scrollbar {
   display: none !important;
