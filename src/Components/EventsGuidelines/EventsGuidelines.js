@@ -3,18 +3,9 @@ import NavBar from "../NavBar/NavBar";
 import PageTitle from "../PageTitle/PageTitle";
 import colorDict from "../ColorDict/ColorDict";
 import LoaderSpinner from "../LoaderSpinner/LoaderSpinner";
+import guidelines from "./guidelines";
 
 const EventsGuidelines = (props) => {
-  const [guidelines, setGuidelines] = useState({});
-  useEffect(() => {
-    fetch("https://infositeapi.herokuapp.com/infositeapi/guidelines")
-      .then((response) => {
-        return response.json();
-      })
-      .then((json) => {
-        setGuidelines(json);
-      });
-  }, []);
   var srno = 0;
   return (
     <>

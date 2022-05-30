@@ -4,18 +4,9 @@ import NavBar from "../NavBar/NavBar";
 import PageTitle from "../PageTitle/PageTitle";
 import colorDict from "../ColorDict/ColorDict";
 import LoaderSpinner from "../LoaderSpinner/LoaderSpinner";
+import oc from "./oc";
 
 const OrganizingCommittee = (props) => {
-  const [oc, setOc] = useState({});
-  useEffect(() => {
-    fetch("https://infositeapi.herokuapp.com/infositeapi/oc")
-      .then((response) => {
-        return response.json();
-      })
-      .then((json) => {
-        setOc(json);
-      });
-  }, []);
   return (
     <>
       <NavBar curPage="/organisingcommittee" />

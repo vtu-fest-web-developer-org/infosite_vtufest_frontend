@@ -3,19 +3,9 @@ import NavBar from "../NavBar/NavBar";
 import PageTitle from "../PageTitle/PageTitle";
 import colorDict from "../ColorDict/ColorDict";
 import LoaderSpinner from "../LoaderSpinner/LoaderSpinner";
+import rules from "./rules";
 
 const RulesRegulations = (props) => {
-  const [rules, setRules] = useState({});
-  useEffect(() => {
-    fetch("https://infositeapi.herokuapp.com/infositeapi/rules")
-      .then((response) => {
-        return response.json();
-      })
-      .then((json) => {
-        setRules(json);
-      });
-  }, []);
-
   return (
     <div className="ofxh">
       <NavBar curPage="/rulesregulations" />

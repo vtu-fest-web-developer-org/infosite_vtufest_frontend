@@ -3,18 +3,9 @@ import NavBar from "../NavBar/NavBar";
 import PageTitle from "../PageTitle/PageTitle";
 import colorDict from "../ColorDict/ColorDict";
 import LoaderSpinner from "../LoaderSpinner/LoaderSpinner";
+import schedule from "./schedule";
 
 const EventsSchedule = (props) => {
-  const [schedule, setSchedule] = useState({});
-  useEffect(() => {
-    fetch("https://infositeapi.herokuapp.com/infositeapi/schedule")
-      .then((response) => {
-        return response.json();
-      })
-      .then((json) => {
-        setSchedule(json);
-      });
-  }, []);
   var srno = 0;
   return (
     <>
