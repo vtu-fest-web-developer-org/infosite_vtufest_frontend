@@ -23,10 +23,9 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgba( 255, 255, 255, 0.8 );
 
-  backdrop-filter: blur(100px);
-  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   
 }
 body::-webkit-scrollbar {

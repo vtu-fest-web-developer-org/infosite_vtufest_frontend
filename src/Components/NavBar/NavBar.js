@@ -30,8 +30,8 @@ const NavBar = (props) => {
             curPage={props.curPage}
           />
           <NavButton
-            href="/eventsguidelines"
-            name="Event Guidelines"
+            href="/eventsummary"
+            name="Event Summary"
             curPage={props.curPage}
           />
           <NavButton

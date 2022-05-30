@@ -9,7 +9,7 @@ const EventsGuidelines = (props) => {
   var srno = 0;
   return (
     <>
-      <NavBar curPage="/eventsguidelines" />
+      <NavBar curPage="/eventsummary" />
 
       {window.innerHeight > window.innerWidth ? (
         <div className="container">
@@ -92,7 +92,7 @@ const EventsGuidelines = (props) => {
         </div>
       ) : (
         <div className="container">
-          <PageTitle title="Event Guidelines" />
+          <PageTitle title="Event Summary" />
           {guidelines.music ? (
             <div className="row">
               <div className="col-12">

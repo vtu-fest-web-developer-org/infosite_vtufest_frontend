@@ -33,7 +33,7 @@ function App() {
           {/*Event Schedule*/}
           <Route path="/eventschedule" element={<EventsSchedule />} />
           {/*Event Guidelines*/}
-          <Route path="/eventsguidelines" element={<EventsGuidelines />} />
+          <Route path="/eventsummary" element={<EventsGuidelines />} />
           {/*Rules and Regulations*/}
           <Route path="/rulesregulations" element={<RulesRegulations />} />
           {/*Data not yet available*/}
