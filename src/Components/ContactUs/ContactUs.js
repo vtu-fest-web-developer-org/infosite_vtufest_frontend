@@ -83,7 +83,7 @@ const ContactUs = (props) => {
                           id="tel"
                           value={phone}
                           onChange={(e) => setPhone(e.target.value)}
-                          placeholder="9999999999"
+                          placeholder="Phone Number"
                           required
                         />
                       </div>
