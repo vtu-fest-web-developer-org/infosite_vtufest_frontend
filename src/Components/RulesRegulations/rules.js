@@ -30,7 +30,7 @@ const rules = {
     {
       name: "Light Vocal (India)",
       rules: [
-        "Participation: Only 1 participant from each institute.",
+        "Participation: Only 1 participant per institute.",
         "Duration: 7 minutes (including set-up and clearance time).",
         "A maximum of 2 accompaniments are allowed, excluding Shruthi box.",
         "Only non-film songs can be presented. [Example: Geet, Ghazal, Bhajan, Bhavageethe, Shabad and Abhangs].",
@@ -55,19 +55,19 @@ const rules = {
     {
       name: "Western Vocal (Solo)",
       rules: [
-        "Participation: Only 1 participant from each institute.",
-"Duration: 7 minutes (including set-up and clearance time).",
-"A maximum of 2 accompaniments are allowed.",
-"The song(s) must only be in English.",
-"Karaoke or Programmed Music is strictly not allowed.",
-"Reporting time will be provided along with the schedule of the event.",
-"Decisions of the organizers and panel of judge(s) will be final and binding.",
+        "Participation: Only 1 participant per institute.",
+  "Duration: 7 minutes (including set-up and clearance time).",
+  "A maximum of 2 accompaniments are allowed.",
+  "The song(s) must only be in English.",
+  "Karaoke or Programmed Music is strictly not allowed.",
+  "Reporting time will be provided along with the schedule of the event.",
+  "Decisions of the organizers and panel of judge(s) will be final and binding.",
       ],
     },
     {
       name: "Group Song (Indian)",
       rules: [
-        "Participation: Only 1 team (upto 6 participants) from each institute.",
+        "Participation: Only 1 team (upto 6 participants) per institute.",
   "Duration: 15 minutes (including set-up and clearance time).",
   "A maximum of 3 accompanists are allowed.",
   "A team has to present two songs, one patriotic and one folk song.",
