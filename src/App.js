@@ -5,7 +5,7 @@ import "./App.css";
 
 import Home from "./Components/Home/Home";
 import EventsSchedule from "./Components/EventsSchedule/EventsSchedule";
-import EventsGuidelines from "./Components/EventsGuidelines/EventsGuidelines";
+import EventsSummary from "./Components/EventsSummary/EventsSummary";
 import RulesRegulations from "./Components/RulesRegulations/RulesRegulations";
 import ChiefPatrons from "./Components/ChiefPatrons/ChiefPatrons";
 import OrganizingCommittee from "./Components/OrganizingCommittee/OrganizingCommittee";
@@ -33,7 +33,7 @@ function App() {
           {/*Event Schedule*/}
           <Route path="/eventschedule" element={<EventsSchedule />} />
           {/*Event Guidelines*/}
-          <Route path="/eventsummary" element={<EventsGuidelines />} />
+          <Route path="/eventsummary" element={<EventsSummary />} />
           {/*Rules and Regulations*/}
           <Route path="/rulesregulations" element={<RulesRegulations />} />
           {/*Data not yet available*/}

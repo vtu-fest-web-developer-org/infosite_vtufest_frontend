@@ -1,11 +1,10 @@
-import { useEffect, useState } from "react";
 import NavBar from "../NavBar/NavBar";
 import PageTitle from "../PageTitle/PageTitle";
 import colorDict from "../ColorDict/ColorDict";
 import LoaderSpinner from "../LoaderSpinner/LoaderSpinner";
-import guidelines from "./guidelines";
+import guidelines from "./summary";
 
-const EventsGuidelines = (props) => {
+const EventsSummary = (props) => {
   var srno = 0;
   return (
     <>
@@ -148,4 +147,4 @@ const EventsGuidelines = (props) => {
   );
 };
 
-export default EventsGuidelines;
+export default EventsSummary;
