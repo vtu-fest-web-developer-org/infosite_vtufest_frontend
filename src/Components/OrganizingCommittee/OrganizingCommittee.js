@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { FiLink2 } from "react-icons/fi";
 import NavBar from "../NavBar/NavBar";
 import PageTitle from "../PageTitle/PageTitle";

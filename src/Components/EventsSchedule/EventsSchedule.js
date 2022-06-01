@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import NavBar from "../NavBar/NavBar";
 import PageTitle from "../PageTitle/PageTitle";
 import colorDict from "../ColorDict/ColorDict";
