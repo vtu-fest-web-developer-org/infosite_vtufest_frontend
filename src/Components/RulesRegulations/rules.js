@@ -56,54 +56,53 @@ const rules = {
       name: "Western Vocal (Solo)",
       rules: [
         "Participation: Only 1 participant per institute.",
-  "Duration: 7 minutes (including set-up and clearance time).",
-  "A maximum of 2 accompaniments are allowed.",
-  "The song(s) must only be in English.",
-  "Karaoke or Programmed Music is strictly not allowed.",
-  "Reporting time will be provided along with the schedule of the event.",
-  "Decisions of the organizers and panel of judge(s) will be final and binding.",
+        "Duration: 7 minutes (including set-up and clearance time).",
+        "A maximum of 2 accompaniments are allowed.",
+        "The song(s) must only be in English.",
+        "Karaoke or Programmed Music is strictly not allowed.",
+        "Reporting time will be provided along with the schedule of the event.",
+        "Decisions of the organizers and panel of judge(s) will be final and binding.",
       ],
     },
     {
       name: "Group Song (Indian)",
       rules: [
         "Participation: Only 1 team (upto 6 participants) per institute.",
-  "Duration: 15 minutes (including set-up and clearance time).",
-  "A maximum of 3 accompanists are allowed.",
-  "A team has to present two songs, one patriotic and one folk song.",
-  "Only Indian languages will be used for group songs. The lyrics of the song(s) transliterated in English must be submitted at the reporting time.",
-  "Film songs are strictly not allowed.",
-  "Reporting time will be provided along with the schedule of the event.",
-  "Decisions of the organizers and panel of judge(s) will be final and binding.",
+        "Duration: 15 minutes (including set-up and clearance time).",
+        "A maximum of 3 accompanists are allowed.",
+        "A team has to present two songs, one patriotic and one folk song.",
+        "Only Indian languages will be used for group songs. The lyrics of the song(s) transliterated in English must be submitted at the reporting time.",
+        "Film songs are strictly not allowed.",
+        "Reporting time will be provided along with the schedule of the event.",
+        "Decisions of the organizers and panel of judge(s) will be final and binding.",
       ],
     },
     {
       name: "Group Song (Western)",
       rules: [
-        "Participation: Only 1 team (upto 6 participants) per institute."
-"Duration: 15 minutes (including set-up and clearance time)."
-"A maximum of 3 accompanists are allowed."
-"The song(s) must only be in English."
-"The instrument setting shall be Grand Piano for keyboard and Clean Tone for Electric Guitars. These settings have to be strictly followed."
-"Drums are not permitted as percussion instruments."
-"Karaoke or Programmed Music is strictly not allowed."
-"Reporting time will be provided along with the schedule of the event." 
-"Decisions of the organizers and panel of judge(s) will be final and binding.",
+        "Participation: Only 1 team (upto 6 participants) per institute.",
+        "Duration: 15 minutes (including set-up and clearance time).",
+        "A maximum of 3 accompanists are allowed.",
+        "The song(s) must only be in English.",
+        "The instrument setting shall be Grand Piano for keyboard and Clean Tone for Electric Guitars. These settings have to be strictly followed.",
+        "Drums are not permitted as percussion instruments.",
+        "Karaoke or Programmed Music is strictly not allowed.",
+        "Reporting time will be provided along with the schedule of the event.",
+        "Decisions of the organizers and panel of judge(s) will be final and binding.",
       ],
     },
     {
       name: "Flok Orchestra",
       rules: [
         "Participation: Only 1 team (upto 12 participants) per institute.",
-  "Duration: 15 minutes (including set-up and clearance time).",
-  "A maximum of 3 accompanists are allowed. They should be dressed differently from the participants for ease of identification.", 
-  "The accompanists shall sit or stand separately from the participants and shall not lead the team.",
-  "The team should present only folk tunes, preferably the ones recognized as folk tunes of Karnataka.",
-  "Vocal singing is not allowed, however teams may use vocal punctuations as a chorus.",
-  "Use of musical instruments backed up by electrical power, amplifiers, etc., are not allowed.",
-  "Reporting time will be provided along with the schedule of the event.", 
-  "Decisions of the organizers and panel of judge(s) will be final and binding."  
-,
+        "Duration: 15 minutes (including set-up and clearance time).",
+        "A maximum of 3 accompanists are allowed. They should be dressed differently from the participants for ease of identification.",
+        "The accompanists shall sit or stand separately from the participants and shall not lead the team.",
+        "The team should present only folk tunes, preferably the ones recognized as folk tunes of Karnataka.",
+        "Vocal singing is not allowed, however teams may use vocal punctuations as a chorus.",
+        "Use of musical instruments backed up by electrical power, amplifiers, etc., are not allowed.",
+        "Reporting time will be provided along with the schedule of the event.",
+        "Decisions of the organizers and panel of judge(s) will be final and binding.",
       ],
     },
   ],
