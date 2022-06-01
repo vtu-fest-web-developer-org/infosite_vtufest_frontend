@@ -112,8 +112,7 @@ const EventsSummary = (props) => {
                             <th scope="col">No. Of Participants - P</th>
                             <th scope="col">No. Of Accompanists - A</th>
                             <th scope="col">P + A</th>
-                            <th scope="col">Minimum Time (mins)</th>
-                            <th scope="col">Maximum Time (mins)</th>
+                            <th scope="col">Time (mins)</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -126,8 +125,7 @@ const EventsSummary = (props) => {
                                 <td>{eventName.p}</td>
                                 <td>{eventName.a}</td>
                                 <td>{eventName.p + eventName.a}</td>
-                                <td>{eventName.minTime}</td>
-                                <td>{eventName.maxTime}</td>
+                                <td>{eventName.time}</td>
                               </tr>
                             );
                           })}
