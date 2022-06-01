@@ -180,19 +180,21 @@ const rules = {
   ],
   theatre: [
     {
-      name: "One Act Play",
+      name: "Mimicry",
       rules: [
         "Only one entry shall be accepted from each Institution.",
-        "Maximum 9 participants allowed per team.",
-        "Maximum number of accompanists allowed is three.",
-        "The duration of the play should not exceed 30minutes.",
-        "Time will be counted as soon as the signal is given to start the play or to start the introduction, whichever is earlier. For stage setting and removal of set and properties, up to 10 minutes will be given after taking charge of the stage.",
-        "The participating team shall bring their own set/ stage paraphernalia, make up materials, etc., light and general paraphernalia such as ordinary furniture which may be provided on advance information.",
-        "Participants may speak in Hindi, English or kannada. In case the Language is regional one, the synopsis of the play with translation in English or Hindi must be submitted to the In-charge of the competition on the day of registration.",
-        "Judgment will most likely be based on the qualities of the play like theme, work on acting, stage craft, design and general impression, etc.",
+        "Each participant shall be given 5 minutes.",
+        [
+          "Participants may mimic sound of machines and speeches of well known persons etc. including film personalities.",
+          "Marking will be based on:",
+          [
+            "Skill imitating",
+            "Variety of sound and voices imitate.",
+            "Presentation.",
+          ],
+        ],
         "The participating team must report to the In-Charge of the competition at least two hours before the presentation of the play.",
-        "Decision of the panel of judges will be final and binding upon all.",
-        "Accompanists will either speak from the background or will play upon musical instruments for background music. They shall be required to appear on the stage.",
+        "Decision of the panel of judges will be final.",
       ],
     },
     {
@@ -221,22 +223,21 @@ const rules = {
         "Decision of the panel of judges will be final and binding upon all.",
       ],
     },
+
     {
-      name: "Mimicry",
+      name: "One Act Play",
       rules: [
         "Only one entry shall be accepted from each Institution.",
-        "Each participant shall be given 5 minutes.",
-        [
-          "Participants may mimic sound of machines and speeches of well known persons etc. including film personalities.",
-          "Marking will be based on:",
-          [
-            "Skill imitating",
-            "Variety of sound and voices imitate.",
-            "Presentation.",
-          ],
-        ],
+        "Maximum 9 participants allowed per team.",
+        "Maximum number of accompanists allowed is three.",
+        "The duration of the play should not exceed 30minutes.",
+        "Time will be counted as soon as the signal is given to start the play or to start the introduction, whichever is earlier. For stage setting and removal of set and properties, up to 10 minutes will be given after taking charge of the stage.",
+        "The participating team shall bring their own set/ stage paraphernalia, make up materials, etc., light and general paraphernalia such as ordinary furniture which may be provided on advance information.",
+        "Participants may speak in Hindi, English or kannada. In case the Language is regional one, the synopsis of the play with translation in English or Hindi must be submitted to the In-charge of the competition on the day of registration.",
+        "Judgment will most likely be based on the qualities of the play like theme, work on acting, stage craft, design and general impression, etc.",
         "The participating team must report to the In-Charge of the competition at least two hours before the presentation of the play.",
-        "Decision of the panel of judges will be final.",
+        "Decision of the panel of judges will be final and binding upon all.",
+        "Accompanists will either speak from the background or will play upon musical instruments for background music. They shall be required to appear on the stage.",
       ],
     },
   ],
