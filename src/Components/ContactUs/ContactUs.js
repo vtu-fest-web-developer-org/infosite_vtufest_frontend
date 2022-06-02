@@ -10,18 +10,32 @@ const ContactUs = (props) => {
   const [city, setCity] = useState("");
   const [state, setState] = useState("");
   const [message, setMessage] = useState("");
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log({
-      name,
-      email,
-      phone,
-      city,
-      state,
-      message,
-    });
-
+    var data = {
+      name: name,
+      email: email,
+      phone: phone,
+      city: city,
+      state: state,
+      message: message,
+    };
+    console.log(data);
+    fetch("https://infositeapi.herokuapp.com/contact", {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => {
+        return res.json;
+      })
+      .then((json) => {
+        console.log(json);
+      });
     setName("");
     setEmail("");
     setPhone("");

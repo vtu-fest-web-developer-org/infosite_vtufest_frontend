@@ -16,7 +16,7 @@ import CommonFooter from "./Components/Footer/Footer";
 function App() {
   const [views, setViews] = useState(0);
   useEffect(() => {
-    fetch("https://infositeapi.herokuapp.com/infositeapi/views")
+    fetch("https://infositeapi.herokuapp.com/views")
       .then((response) => {
         return response.json();
       })
