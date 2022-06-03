@@ -65,13 +65,13 @@ const oc = {
       name: "Dr. Suresh Ramaswwamyreddy",
       designation: "Vice Chairman",
       role: "Vice Principal (Admin), B.M.S. College of Engineering",
-      photo: "https://parjanyamodi.com/assets/images/IMG_0943.jpeg",
+      photo: "/assets/photos/patrons/sureshrr.jpeg",
     },
     {
       name: "Dr. Bheemsha Arya",
       designation: "Vice Chairman",
       role: "Vice Principal (Academic), B.M.S. College of Engineering",
-      photo: "https://parjanyamodi.com/assets/images/IMG_0943.jpeg",
+      photo: "/assets/photos/patrons/bheemsha.jpeg",
     },
     {
       name: "Dr. Ratanraj K J",
