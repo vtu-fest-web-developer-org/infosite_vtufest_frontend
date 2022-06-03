@@ -3,7 +3,7 @@ const oc = {
     {
       name: "Dr. B. S. Ragini Narayan",
       designation:
-        "Donor Trustee and Member Secretary B.M.S. Educational Trust",
+        "Donor Trustee and Member Secretary, B.M.S. Educational Trust",
       photo: "/assets/photos/patrons/ragini_narayan.jpeg",
     },
     {
