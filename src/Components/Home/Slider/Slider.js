@@ -9,7 +9,7 @@ const Slider = (props) => {
           class="carousel slide"
           data-ride="carousel"
         >
-          <div class="carousel-inner">
+          <div class="carousel-inner slider">
             {sliderdata.active.map((item, index) => {
               return (
                 <div class="carousel-item active slider">

@@ -1,4 +1,106 @@
 const oc = {
+  chiefPatrons: [
+    {
+      name: "Dayanand Pai",
+      designation: "Donor Trustee",
+      role: "Full Stack Developer",
+      photo: "https://parjanyamodi.com/assets/images/IMG_0943.jpeg",
+    },
+    {
+      name: "Ragini",
+      designation: "Donor Trustee",
+      role: "Full Stack Developer",
+      photo: "https://parjanyamodi.com/assets/images/IMG_0943.jpeg",
+    },
+    {
+      name: "Ragini",
+      designation: "Donor Trustee",
+      role: "Full Stack Developer",
+      photo: "https://parjanyamodi.com/assets/images/IMG_0943.jpeg",
+    },
+  ],
+  firstPatrons: [
+    {
+      name: "Dayanand Pai",
+      designation: "Donor Trustee",
+      role: "Full Stack Developer",
+      photo: "https://parjanyamodi.com/assets/images/IMG_0943.jpeg",
+    },
+    {
+      name: "Ragini",
+      designation: "Donor Trustee",
+      role: "Full Stack Developer",
+      photo: "https://parjanyamodi.com/assets/images/IMG_0943.jpeg",
+    },
+  ],
+  secondPatrons: [
+    {
+      name: "Dayanand Pai",
+      designation: "Donor Trustee",
+      role: "Full Stack Developer",
+      photo: "https://parjanyamodi.com/assets/images/IMG_0943.jpeg",
+    },
+    {
+      name: "Ragini",
+      designation: "Donor Trustee",
+      role: "Full Stack Developer",
+      photo: "https://parjanyamodi.com/assets/images/IMG_0943.jpeg",
+    },
+    {
+      name: "Dayanand Pai",
+      designation: "Donor Trustee",
+      role: "Full Stack Developer",
+      photo: "https://parjanyamodi.com/assets/images/IMG_0943.jpeg",
+    },
+    {
+      name: "Ragini",
+      designation: "Donor Trustee",
+      role: "Full Stack Developer",
+      photo: "https://parjanyamodi.com/assets/images/IMG_0943.jpeg",
+    },
+  ],
+  thirdPatrons: [
+    {
+      name: "Dayanand Pai",
+      designation: "Donor Trustee",
+      role: "Full Stack Developer",
+      photo: "https://parjanyamodi.com/assets/images/IMG_0943.jpeg",
+    },
+    {
+      name: "Ragini",
+      designation: "Donor Trustee",
+      role: "Full Stack Developer",
+      photo: "https://parjanyamodi.com/assets/images/IMG_0943.jpeg",
+    },
+    {
+      name: "Dayanand Pai",
+      designation: "Donor Trustee",
+      role: "Full Stack Developer",
+      photo: "https://parjanyamodi.com/assets/images/IMG_0943.jpeg",
+    },
+  ],
+  fourthPatrons: [
+    {
+      name: "Dayanand Pai",
+      designation: "Donor Trustee",
+      role: "Full Stack Developer",
+      photo: "https://parjanyamodi.com/assets/images/IMG_0943.jpeg",
+    },
+  ],
+  fifthPatrons: [
+    {
+      name: "Dayanand Pai",
+      designation: "Donor Trustee",
+      role: "Full Stack Developer",
+      photo: "https://parjanyamodi.com/assets/images/IMG_0943.jpeg",
+    },
+    {
+      name: "Dayanand Pai",
+      designation: "Donor Trustee",
+      role: "Full Stack Developer",
+      photo: "https://parjanyamodi.com/assets/images/IMG_0943.jpeg",
+    },
+  ],
   developers: [
     {
       name: "Parjanya Modi",

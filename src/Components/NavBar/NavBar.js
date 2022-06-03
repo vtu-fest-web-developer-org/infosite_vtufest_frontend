@@ -16,12 +16,19 @@ const NavBar = (props) => {
 
   return (
     <>
-      <Nav>
-        <Logo className="text-align-text align-items-center justify-content-center">
+      <LogoNav>
+        <VTULogo className="text-align-text align-items-center justify-content-center">
           <a href="/">
-            <img src="/assets/logos/bmsce_logo.png" alt="BMSCE" />
+            <img src="/assets/logos/VTULogo.png" alt="BMSCE" />
           </a>
-        </Logo>
+        </VTULogo>
+        <BMSLogo className="text-align-text align-items-center justify-content-center">
+          <a href="/">
+            <img src="/assets/logos/BMSCELogo.png" alt="BMSCE" />
+          </a>
+        </BMSLogo>
+      </LogoNav>
+      <Nav>
         <NavMenu>
           <NavButton href="/" name="Home" curPage={props.curPage} />
           <NavButton
@@ -74,7 +81,7 @@ const MobiNav = styled.div`
     display: none;
   }
 `;
-const Nav = styled.nav`
+const LogoNav = styled.nav`
   overflow-x: hidden !important;
   @media (min-width: 1280px) {
     padding: 0 3% 0;
@@ -82,7 +89,6 @@ const Nav = styled.nav`
     top: 0;
     left: 0;
     right: 0;
-    height: 150px;
     background-color: transparent;
     display: flex;
     justify-content: space-between;
@@ -96,7 +102,6 @@ const Nav = styled.nav`
     top: 0;
     left: 0;
     right: 0;
-    height: 100px;
     background-color: transparent;
     display: flex;
     justify-content: space-between;
@@ -104,20 +109,46 @@ const Nav = styled.nav`
     z-index: 3;
   }
 `;
-
-const Logo = styled.div`
+const Nav = styled.nav`
+  overflow-x: hidden !important;
+  @media (min-width: 1280px) {
+    padding: 0 3% 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+  }
+  @media (max-width: 1280px) {
+    padding: 0 5% 0;
+    position: relative;
+    flex-flow: row nowrap;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+  }
+`;
+const VTULogo = styled.div`
   @media (min-width: 1280px) {
     padding: 0;
-    width: 350px;
-    margin-top: 4px;
+    margin-top: 30px;
     margin-bottom: 4px;
-    max-height: 100px;
+    max-height: 130px;
     font-size: 0;
     display: flex;
     flex-flow: row nowrap;
     img {
       display: flex;
-      width: 320px;
+      height: 100%;
     }
   }
   @media (max-width: 1280px) {
@@ -131,23 +162,50 @@ const Logo = styled.div`
     flex-flow: row nowrap;
     img {
       display: flex;
-      width: 100%;
+      height: 100px;
+    }
+  }
+`;
+const BMSLogo = styled.div`
+  @media (min-width: 1280px) {
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 4px;
+    max-height: 130px;
+    font-size: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    img {
+      display: flex;
+      width: 150px;
+    }
+  }
+  @media (max-width: 1280px) {
+    padding: 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    max-height: 100px;
+    font-size: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    img {
+      display: flex;
+      height: 100px;
     }
   }
 `;
 
 const NavMenu = styled.div`
+  background-color: transparent;
   @media (min-width: 1280px) {
     align-items: center;
     display: flex;
     flex-flow: row nowrap;
     height: 100%;
-    justify-content: flex-end;
+    justify-content: center;
     margin: 0px;
     padding: 0px;
     position: relative;
-    margin-right: 0px;
-    margin-left: 25px;
     a {
       display: flex;
       text-decoration: none;
