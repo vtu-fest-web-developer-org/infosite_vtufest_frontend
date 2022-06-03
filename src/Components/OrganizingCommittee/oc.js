@@ -52,7 +52,7 @@ const oc = {
       photo: "/assets/photos/patrons/agbujurke.jpg",
     },
   ],
-  fourthPatrons: [
+  thirdPatrons: [
     {
       name: "Dr. S. Muralidhara",
       designation: "Chairman",
@@ -60,18 +60,18 @@ const oc = {
       photo: "/assets/photos/patrons/muralidhara.jpeg",
     },
   ],
-  thirdPatrons: [
+  fourthPatrons: [
     {
       name: "Dr. Suresh Ramaswwamyreddy",
       designation: "Vice Chairman",
-      role: "Vice Principla (Admin), B.M.S. College of Engineering",
-      photo: "/assets/photos/patrons/sureshrr.jpeg",
+      role: "Vice Principal (Admin), B.M.S. College of Engineering",
+      photo: "https://parjanyamodi.com/assets/images/IMG_0943.jpeg",
     },
     {
       name: "Dr. Bheemsha Arya",
       designation: "Vice Chairman",
-      role: "Vice Principla (Academic), B.M.S. College of Engineering",
-      photo: "/assets/photos/patrons/bheemsha.jpeg",
+      role: "Vice Principal (Academic), B.M.S. College of Engineering",
+      photo: "https://parjanyamodi.com/assets/images/IMG_0943.jpeg",
     },
     {
       name: "Dr. Ratanraj K J",
