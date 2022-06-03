@@ -82,7 +82,7 @@ const MobiNav = styled.div`
   }
 `;
 const LogoNav = styled.nav`
-  overflow-x: hidden !important;
+  overflow: hidden !important;
   @media (min-width: 1280px) {
     padding: 0 3% 0;
     position: relative;
@@ -110,7 +110,8 @@ const LogoNav = styled.nav`
   }
 `;
 const Nav = styled.nav`
-  overflow-x: hidden !important;
+  overflow: hidden !important;
+
   @media (min-width: 1280px) {
     padding: 0 3% 0;
     position: relative;

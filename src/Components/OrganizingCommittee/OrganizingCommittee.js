@@ -289,7 +289,7 @@ const OrganizingCommittee = (props) => {
             })}
           </div>
         </div>
-        <div className="row">
+        {/*<div className="row">
           <div className="col-lg-6">
             <div className={"alert " + colorDict["developers"]} role="alert">
               DEVELOPERS
@@ -388,7 +388,7 @@ const OrganizingCommittee = (props) => {
               })}
             </div>
           </div>
-        </div>
+        </div>*/}
       </div>
     </>
   );
