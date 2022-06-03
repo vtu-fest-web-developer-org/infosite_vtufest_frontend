@@ -6,13 +6,16 @@ const Slider = (props) => {
       <div className="col-10">
         <div
           id="carouselExampleControls"
-          class="carousel slide"
+          class="carousel slide carousel-fade "
           data-ride="carousel"
         >
-          <div class="carousel-inner slider">
+          <div class="carousel-inner slider ">
             {sliderdata.active.map((item, index) => {
               return (
-                <div class="carousel-item active slider">
+                <div
+                  class="carousel-item active slider"
+                  data-bs-interval="4000"
+                >
                   <img
                     class="d-block w-100 slider"
                     src={item.photu}
@@ -23,12 +26,8 @@ const Slider = (props) => {
             })}
             {sliderdata.inactive.map((item, index) => {
               return (
-                <div class="carousel-item slider">
-                  <img
-                    class="d-block w-100 slider"
-                    src={item.photu}
-                    alt="Second slide"
-                  />
+                <div class="carousel-item slider" data-bs-interval="3000">
+                  <img class="d-block w-100 slider" src={item.photu} alt="" />
                 </div>
               );
             })}

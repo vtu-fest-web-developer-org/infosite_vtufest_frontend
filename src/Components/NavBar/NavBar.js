@@ -22,6 +22,11 @@ const NavBar = (props) => {
             <img src="/assets/logos/VTULogo.png" alt="BMSCE" />
           </a>
         </VTULogo>
+        <Pratibhotsav className="text-align-text align-items-center justify-content-center">
+          <a href="/">
+            <img src="/assets/logos/VTULogo.png" alt="BMSCE" />
+          </a>
+        </Pratibhotsav>
         <BMSLogo className="text-align-text align-items-center justify-content-center">
           <a href="/">
             <img src="/assets/logos/BMSCELogo.png" alt="BMSCE" />
@@ -139,6 +144,35 @@ const Nav = styled.nav`
   }
 `;
 const VTULogo = styled.div`
+  @media (min-width: 1280px) {
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 4px;
+    max-height: 130px;
+    font-size: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    img {
+      display: flex;
+      height: 100%;
+    }
+  }
+  @media (max-width: 1280px) {
+    padding: 0;
+    width: 250px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    max-height: 100px;
+    font-size: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    img {
+      display: flex;
+      height: 100px;
+    }
+  }
+`;
+const Pratibhotsav = styled.div`
   @media (min-width: 1280px) {
     padding: 0;
     margin-top: 30px;
