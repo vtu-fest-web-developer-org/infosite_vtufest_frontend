@@ -220,10 +220,7 @@ table {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
-.about-txt{
-  font-size: 18px;
-  font-weight: 500;
-}
+
 .about-title{
   color: #3469ff;
   font-weight: 700;
