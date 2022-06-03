@@ -13,48 +13,39 @@ const OrganizingCommittee = (props) => {
         <PageTitle title="Organising Committee" />
         <div className="row justify-content-center">
           <div className="col-md-6 col-12">
-            <div className={"alert "} role="alert">
+            <div className={"alert alert-warnin"} role="alert">
               CHIEF PATRONS
             </div>
           </div>
           <div className="row justify-content-center">
             {oc.chiefPatrons.map((person) => {
               return (
-                <div className="col-md-3 col-6">
-                  <div class="card text-center mb-3">
+                <div className="col-md-4 col-6">
+                  <div class="card text-center mb-3 h-100">
                     <div class="card-body">
                       <img
                         className="profilephoto"
                         src={person.photo}
                         alt={person.name}
                       />
+                      <br />
+
                       {person.name ? (
-                        <h5 class="card-title">{person.name}</h5>
-                      ) : (
-                        <br />
-                      )}
+                        <>
+                          <br />
+
+                          <h5 class="card-title">{person.name}</h5>
+                        </>
+                      ) : null}
+                      <br />
 
                       {person.designation ? (
                         <span class="card-text">{person.designation}</span>
-                      ) : (
-                        <br />
-                      )}
+                      ) : null}
 
                       <br />
-                      {person.role ? <span>{person.role}</span> : <br />}
+                      {person.role ? <span>{person.role}</span> : null}
                       <br />
-                      {person.link ? (
-                        <a
-                          href={person.link}
-                          class="text-decoration-none"
-                          rel="noreferrer"
-                          target={"_blank"}
-                        >
-                          <FiLink2 />
-                        </a>
-                      ) : (
-                        <br />
-                      )}
                     </div>
                   </div>
                 </div>
@@ -62,226 +53,171 @@ const OrganizingCommittee = (props) => {
             })}
           </div>
         </div>
-        <div className="row justify-content-center">
+        <div className="row justify-content-center mt-4">
           <div className="col-md-6 col-12">
-            <div className={"alert "} role="alert">
+            <div className={"alert alert-dange"} role="alert">
               PATRONS
             </div>
           </div>
-          <div className="row justify-content-center">
+          <div className="row justify-content-center mt-3">
             {oc.firstPatrons.map((person) => {
               return (
                 <div className="col-md-3 col-6">
-                  <div class="card text-center mb-3">
+                  <div class="card text-center mb-3 h-100">
                     <div class="card-body">
                       <img
                         className="profilephoto"
                         src={person.photo}
                         alt={person.name}
                       />
+                      <br />
+
                       {person.name ? (
-                        <h5 class="card-title">{person.name}</h5>
-                      ) : (
-                        <br />
-                      )}
+                        <>
+                          <br />
+
+                          <h5 class="card-title">{person.name}</h5>
+                        </>
+                      ) : null}
 
                       {person.designation ? (
                         <span class="card-text">{person.designation}</span>
-                      ) : (
-                        <br />
-                      )}
+                      ) : null}
 
                       <br />
-                      {person.role ? <span>{person.role}</span> : <br />}
-                      <br />
-                      {person.link ? (
-                        <a
-                          href={person.link}
-                          class="text-decoration-none"
-                          rel="noreferrer"
-                          target={"_blank"}
-                        >
-                          <FiLink2 />
-                        </a>
-                      ) : (
-                        <br />
-                      )}
+                      {person.role ? <span>{person.role}</span> : null}
                     </div>
                   </div>
                 </div>
               );
             })}
           </div>
-          <div className="row justify-content-center">
+          <div className="row justify-content-center mt-3">
             {oc.secondPatrons.map((person) => {
               return (
                 <div className="col-md-3 col-6">
-                  <div class="card text-center mb-3">
+                  <div class="card text-center mb-3 h-100">
                     <div class="card-body">
                       <img
                         className="profilephoto"
                         src={person.photo}
                         alt={person.name}
                       />
+                      <br />
+
                       {person.name ? (
-                        <h5 class="card-title">{person.name}</h5>
-                      ) : (
-                        <br />
-                      )}
+                        <>
+                          <br />
+
+                          <h5 class="card-title">{person.name}</h5>
+                        </>
+                      ) : null}
 
                       {person.designation ? (
                         <span class="card-text">{person.designation}</span>
-                      ) : (
-                        <br />
-                      )}
+                      ) : null}
 
                       <br />
-                      {person.role ? <span>{person.role}</span> : <br />}
-                      <br />
-                      {person.link ? (
-                        <a
-                          href={person.link}
-                          class="text-decoration-none"
-                          rel="noreferrer"
-                          target={"_blank"}
-                        >
-                          <FiLink2 />
-                        </a>
-                      ) : (
-                        <br />
-                      )}
+                      {person.role ? <span>{person.role}</span> : null}
                     </div>
                   </div>
                 </div>
               );
             })}
           </div>
-          <div className="row justify-content-center">
+          <div className="row justify-content-center mt-3">
             {oc.thirdPatrons.map((person) => {
               return (
                 <div className="col-md-3 col-6">
-                  <div class="card text-center mb-3">
+                  <div class="card text-center mb-3 h-100">
                     <div class="card-body">
                       <img
                         className="profilephoto"
                         src={person.photo}
                         alt={person.name}
                       />
+                      <br />
+
                       {person.name ? (
-                        <h5 class="card-title">{person.name}</h5>
-                      ) : (
-                        <br />
-                      )}
+                        <>
+                          <br />
+
+                          <h5 class="card-title">{person.name}</h5>
+                        </>
+                      ) : null}
 
                       {person.designation ? (
                         <span class="card-text">{person.designation}</span>
-                      ) : (
-                        <br />
-                      )}
+                      ) : null}
 
                       <br />
-                      {person.role ? <span>{person.role}</span> : <br />}
-                      <br />
-                      {person.link ? (
-                        <a
-                          href={person.link}
-                          class="text-decoration-none"
-                          rel="noreferrer"
-                          target={"_blank"}
-                        >
-                          <FiLink2 />
-                        </a>
-                      ) : (
-                        <br />
-                      )}
+                      {person.role ? <span>{person.role}</span> : null}
                     </div>
                   </div>
                 </div>
               );
             })}
           </div>
-          <div className="row justify-content-center">
+          <div className="row justify-content-center mt-3">
             {oc.fourthPatrons.map((person) => {
               return (
                 <div className="col-md-3 col-6">
-                  <div class="card text-center mb-3">
+                  <div class="card text-center mb-3 mt-3 h-100">
                     <div class="card-body">
                       <img
                         className="profilephoto"
                         src={person.photo}
                         alt={person.name}
                       />
+                      <br />
+
                       {person.name ? (
-                        <h5 class="card-title">{person.name}</h5>
-                      ) : (
-                        <br />
-                      )}
+                        <>
+                          <br />
+
+                          <h5 class="card-title">{person.name}</h5>
+                        </>
+                      ) : null}
 
                       {person.designation ? (
                         <span class="card-text">{person.designation}</span>
-                      ) : (
-                        <br />
-                      )}
+                      ) : null}
 
                       <br />
-                      {person.role ? <span>{person.role}</span> : <br />}
-                      <br />
-                      {person.link ? (
-                        <a
-                          href={person.link}
-                          class="text-decoration-none"
-                          rel="noreferrer"
-                          target={"_blank"}
-                        >
-                          <FiLink2 />
-                        </a>
-                      ) : (
-                        <br />
-                      )}
+                      {person.role ? <span>{person.role}</span> : null}
                     </div>
                   </div>
                 </div>
               );
             })}
           </div>
-          <div className="row justify-content-center">
+          <div className="row justify-content-center mt-3">
             {oc.fifthPatrons.map((person) => {
               return (
                 <div className="col-md-3 col-6">
-                  <div class="card text-center mb-3">
+                  <div class="card text-center mb-3 mt-3 h-100">
                     <div class="card-body">
                       <img
                         className="profilephoto"
                         src={person.photo}
                         alt={person.name}
                       />
+                      <br />
+
                       {person.name ? (
-                        <h5 class="card-title">{person.name}</h5>
-                      ) : (
-                        <br />
-                      )}
+                        <>
+                          <br />
+
+                          <h5 class="card-title">{person.name}</h5>
+                        </>
+                      ) : null}
 
                       {person.designation ? (
                         <span class="card-text">{person.designation}</span>
-                      ) : (
-                        <br />
-                      )}
+                      ) : null}
 
                       <br />
-                      {person.role ? <span>{person.role}</span> : <br />}
-                      <br />
-                      {person.link ? (
-                        <a
-                          href={person.link}
-                          class="text-decoration-none"
-                          rel="noreferrer"
-                          target={"_blank"}
-                        >
-                          <FiLink2 />
-                        </a>
-                      ) : (
-                        <br />
-                      )}
+                      {person.role ? <span>{person.role}</span> : null}
                     </div>
                   </div>
                 </div>

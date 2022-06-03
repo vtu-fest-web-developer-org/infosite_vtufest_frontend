@@ -49,7 +49,7 @@ const oc = {
     {
       name: "Dr. A. G. Bujurke ",
       designation: "Director of Physical Education, VTU",
-      photo: "https://parjanyamodi.com/assets/images/IMG_0943.jpeg",
+      photo: "/assets/photos/patrons/agbujurke.jpg",
     },
   ],
   thirdPatrons: [
