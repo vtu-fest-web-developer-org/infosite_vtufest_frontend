@@ -17,11 +17,8 @@ export const AutoCounter = ({ count, setCount, redirect, clicked }) => {
     };
   }, [timerRef, setCount]);
   return count > 0 && !clicked ? (
-    <div style={{ color: "white" }}>Time left : {count}</div>
+    <div className="countdown">{count}</div>
   ) : (
-    <div>
-      Time left : {0}
-      {redirect()}
-    </div>
+    <div className="countdown">{redirect()}</div>
   );
 };

@@ -248,3 +248,15 @@ table {
   border-radius: 10px;
   border-color: transparent
 }
+.countdown{
+  font-size: 180px;
+  font-weight: 700;
+  color: red;
+}
+.countdown-btn{
+  font-size : 80px;
+  font-weight: 700;
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+}
