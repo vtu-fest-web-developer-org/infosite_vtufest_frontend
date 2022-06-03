@@ -236,3 +236,7 @@ table {
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
 }
+.txt-justify{
+  text-align: justify;
+  text-justify: inter-word;
+}

@@ -48,14 +48,14 @@ const EventsSchedule = (props) => {
                     {eventType.toUpperCase()}
                   </div>
                   <table className="table table-hover table-corner">
-                    <thead>
+                    <thead class="text-start align-items-start">
                       <tr>
                         <th scope="col">Sr. No</th>
                         <th scope="col">Event Name</th>
                         <th scope="col">Details</th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="text-start align-items-start">
                       {schedule[eventType].map((eventName) => {
                         srno = srno + 1;
                         return (

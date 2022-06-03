@@ -50,30 +50,73 @@ const EventsSummary = (props) => {
                         {eventType.toUpperCase()}
                       </div>
                       <div className="table-responsive">
-                        <table className="table table-hover table-corner">
-                          <thead>
-                            <tr>
-                              <th scope="col">Sr. No</th>
-                              <th scope="col">Event Name</th>
-                              <th scope="col">No. Of Participants - P</th>
-                              <th scope="col">No. Of Accompanists - A</th>
-                              <th scope="col">P + A</th>
-                              <th scope="col">Minimum Time (mins)</th>
-                              <th scope="col">Maximum Time (mins)</th>
+                        <table className="table table-hover table-corner text-start align-items-start">
+                          <thead class="text-start align-items-start">
+                            <tr class="text-start align-items-start">
+                              <th
+                                class="text-start align-items-start"
+                                scope="col"
+                              >
+                                Sr. No
+                              </th>
+                              <th
+                                class="text-start align-items-start"
+                                scope="col"
+                              >
+                                Event Name
+                              </th>
+                              <th
+                                class="text-start align-items-start"
+                                scope="col"
+                              >
+                                No. Of Participants - P
+                              </th>
+                              <th
+                                class="text-start align-items-start"
+                                scope="col"
+                              >
+                                No. Of Accompanists - A
+                              </th>
+                              <th
+                                class="text-start align-items-start"
+                                scope="col"
+                              >
+                                P + A
+                              </th>
+                              <th
+                                class="text-start align-items-start"
+                                scope="col"
+                              >
+                                Time (mins)
+                              </th>
                             </tr>
                           </thead>
-                          <tbody>
+                          <tbody class="text-start align-items-start">
                             {guidelines[eventType].map((eventName) => {
                               srno = srno + 1;
                               return (
-                                <tr>
-                                  <th scope="row">{srno}</th>
-                                  <td>{eventName.name}</td>
-                                  <td>{eventName.p}</td>
-                                  <td>{eventName.a}</td>
-                                  <td>{eventName.p + eventName.a}</td>
-                                  <td>{eventName.minTime}</td>
-                                  <td>{eventName.maxTime}</td>
+                                <tr class="text-start align-items-start">
+                                  <th
+                                    class="text-start align-items-start"
+                                    scope="row"
+                                  >
+                                    {srno}
+                                  </th>
+                                  <td class="text-start align-items-start">
+                                    {eventName.name}
+                                  </td>
+                                  <td class="text-start align-items-start">
+                                    {eventName.p}
+                                  </td>
+                                  <td class="text-start align-items-start">
+                                    {eventName.a}
+                                  </td>
+                                  <td class="text-start align-items-start">
+                                    {eventName.p + eventName.a}
+                                  </td>
+                                  <td class="text-start align-items-start">
+                                    {eventName.time}
+                                  </td>
                                 </tr>
                               );
                             })}
@@ -105,27 +148,72 @@ const EventsSummary = (props) => {
                         {eventType.toUpperCase()}
                       </div>
                       <table className="table table-hover table-corner">
-                        <thead>
-                          <tr>
-                            <th scope="col">Sr. No</th>
-                            <th scope="col">Event Name</th>
-                            <th scope="col">No. Of Participants - P</th>
-                            <th scope="col">No. Of Accompanists - A</th>
-                            <th scope="col">P + A</th>
-                            <th scope="col">Time (mins)</th>
+                        <thead class="text-start align-items-start">
+                          <tr class="text-start align-items-start">
+                            <th
+                              class="text-start align-items-start"
+                              scope="col"
+                            >
+                              Sr. No
+                            </th>
+                            <th
+                              class="text-start align-items-start"
+                              scope="col"
+                            >
+                              Event Name
+                            </th>
+                            <th
+                              class="text-start align-items-start"
+                              scope="col"
+                            >
+                              No. Of Participants - P
+                            </th>
+                            <th
+                              class="text-start align-items-start"
+                              scope="col"
+                            >
+                              No. Of Accompanists - A
+                            </th>
+                            <th
+                              class="text-start align-items-start"
+                              scope="col"
+                            >
+                              P + A
+                            </th>
+                            <th
+                              class="text-start align-items-start"
+                              scope="col"
+                            >
+                              Time (mins)
+                            </th>
                           </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="text-start align-items-start">
                           {guidelines[eventType].map((eventName) => {
                             srno = srno + 1;
                             return (
-                              <tr>
-                                <th scope="row">{srno}</th>
-                                <td>{eventName.name}</td>
-                                <td>{eventName.p}</td>
-                                <td>{eventName.a}</td>
-                                <td>{eventName.p + eventName.a}</td>
-                                <td>{eventName.time}</td>
+                              <tr class="text-start align-items-start">
+                                <th
+                                  class="text-start align-items-start"
+                                  scope="row"
+                                >
+                                  {srno}
+                                </th>
+                                <td class="text-start align-items-start">
+                                  {eventName.name}
+                                </td>
+                                <td class="text-start align-items-start">
+                                  {eventName.p}
+                                </td>
+                                <td class="text-start align-items-start">
+                                  {eventName.a}
+                                </td>
+                                <td class="text-start align-items-start">
+                                  {eventName.p + eventName.a}
+                                </td>
+                                <td class="text-start align-items-start">
+                                  {eventName.time}
+                                </td>
                               </tr>
                             );
                           })}
