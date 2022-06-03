@@ -10,7 +10,6 @@ const OrganizingCommittee = (props) => {
     <>
       <NavBar curPage="/organisingcommittee" />
       <div className="container">
-        <PageTitle title="Organising Committee" />
         <div className="row justify-content-center">
           <div className="col-md-6 col-12">
             <div className={"alert alert-warnin"} role="alert">
@@ -124,6 +123,11 @@ const OrganizingCommittee = (props) => {
                 </div>
               );
             })}
+          </div>
+          <div className="col-md-6 col-12 mt-4">
+            <div className={"alert alert-succes"} role="alert">
+              ORGANISING COMMITTEE
+            </div>
           </div>
           <div className="row justify-content-center mt-3">
             {oc.thirdPatrons.map((person) => {
