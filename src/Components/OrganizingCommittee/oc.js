@@ -3,7 +3,7 @@ const oc = {
     {
       name: "Dr. B. S. Ragini Narayan",
       designation:
-        "Donor Trustee and Member Secretary B.M.S. Educational Trust",
+        "Donor Trustee and Member Secretary, B.M.S. Educational Trust",
       photo: "/assets/photos/patrons/ragini_narayan.jpeg",
     },
     {
@@ -21,12 +21,12 @@ const oc = {
   firstPatrons: [
     {
       name: "Sri Aviram Sharma",
-      designation: "Trustee B.M.S. College of Engineering",
+      designation: "Trustee, B.M.S. College of Engineering",
       photo: "/assets/photos/patrons/aviram_sharma.jpeg",
     },
     {
       name: "Sri Ravi Venkatesam",
-      designation: "Trustee B.M.S. College of Engineering",
+      designation: "Trustee, B.M.S. College of Engineering",
       photo: "/assets/photos/patrons/ravi_venkatesam.jpeg",
     },
   ],
@@ -56,7 +56,7 @@ const oc = {
     {
       name: "Dr. S. Muralidhara",
       designation: "Chairman",
-      role: "Principal B.M.S. College of Engineering",
+      role: "Principal, B.M.S. College of Engineering",
       photo: "/assets/photos/patrons/muralidhara.jpeg",
     },
   ],
