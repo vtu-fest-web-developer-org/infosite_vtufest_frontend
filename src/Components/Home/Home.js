@@ -1,5 +1,6 @@
 import NavBar from "../NavBar/NavBar";
-import Slider from "./Slider";
+import Slider from "./Slider/Slider";
+import About from "./About/About";
 import CountUp from "react-countup";
 
 const Home = (props) => {
@@ -7,10 +8,11 @@ const Home = (props) => {
     <>
       <NavBar curPage="/" />
       <Slider />
+      <About />
       <div className="row mt-5">
         <div className="col-12">
           <h3>
-            <CountUp start={20} end={props.views} />
+            <CountUp start={0} end={props.views} />
             Views
           </h3>
         </div>

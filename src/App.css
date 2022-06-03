@@ -210,3 +210,29 @@ table {
 .pull-right {
   float: right;
 }
+.about-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+.about-txt{
+  font-size: 18px;
+  font-weight: 500;
+}
+.about-title{
+  color: #3469ff;
+  font-weight: 700;
+}
+.slider{
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+}

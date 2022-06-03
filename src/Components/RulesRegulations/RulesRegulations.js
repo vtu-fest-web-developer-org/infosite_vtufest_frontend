@@ -46,8 +46,8 @@ const RulesRegulations = (props) => {
                                         j = j + 1;
                                         return (
                                           <>
-                                            <strong>{j}</strong>
-                                            <span>- {rule}</span>
+                                            <strong>{j}.</strong>
+                                            <span> {rule}</span>
                                             <br />
                                           </>
                                         );
