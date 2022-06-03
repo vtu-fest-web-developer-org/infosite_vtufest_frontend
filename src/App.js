@@ -12,6 +12,7 @@ import OrganizingCommittee from "./Components/OrganizingCommittee/OrganizingComm
 import ContactUs from "./Components/ContactUs/ContactUs";
 import NotFound from "./Components/NotFound/NotFound";
 import CommonFooter from "./Components/Footer/Footer";
+import Launch from "./Components/Launch/Launch";
 
 function App() {
   const [views, setViews] = useState(0);
@@ -46,6 +47,9 @@ function App() {
           />
           {/*Contact Us*/}
           <Route path="/contactus" element={<ContactUs />} />
+          {/* Launch Route */}
+          <Route path="/launch" element={<Launch />} />
+
           {/*Not Found*/}
           <Route path="*" element={<NotFound />} />
         </Routes>
