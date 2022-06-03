@@ -3,8 +3,8 @@ const About = (props) => {
   return (
     <div className="container">
       <div className="row mt-5 justify-content-center">
-        <div className="col-md-5 col-12 mt-2">
-          <div className="card ">
+        <div className="col-md-6 col-12 mt-2">
+          <div className="card card-about">
             <div className="card-body">
               <h3 className="card-title about-title">
                 {aboutdata.bmsce.title}
@@ -27,8 +27,8 @@ const About = (props) => {
             </div>
           </div>
         </div>
-        <div className="col-md-5 col-12 mt-2">
-          <div className="card">
+        <div className="col-md-6 col-12 mt-2">
+          <div className="card card-about">
             <div className="card-body">
               <h3 className="card-title about-title">{aboutdata.vtu.title}</h3>
               <img

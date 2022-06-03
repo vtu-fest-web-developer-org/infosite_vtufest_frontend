@@ -159,7 +159,6 @@ const VTULogo = styled.div`
   }
   @media (max-width: 1280px) {
     padding: 0;
-    width: 250px;
     margin-top: 4px;
     margin-bottom: 4px;
     max-height: 100px;
@@ -168,7 +167,7 @@ const VTULogo = styled.div`
     flex-flow: row nowrap;
     img {
       display: flex;
-      height: 100px;
+      height: 65px;
     }
   }
 `;
@@ -188,7 +187,7 @@ const Pratibhotsav = styled.div`
   }
   @media (max-width: 1280px) {
     padding: 0;
-    width: 250px;
+    width: 200px;
     margin-top: 4px;
     margin-bottom: 4px;
     max-height: 100px;
@@ -197,7 +196,7 @@ const Pratibhotsav = styled.div`
     flex-flow: row nowrap;
     img {
       display: flex;
-      height: 100px;
+      height: 65px;
     }
   }
 `;
@@ -225,7 +224,7 @@ const BMSLogo = styled.div`
     flex-flow: row nowrap;
     img {
       display: flex;
-      height: 100px;
+      height: 65px;
     }
   }
 `;

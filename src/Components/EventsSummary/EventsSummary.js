@@ -54,10 +54,10 @@ const EventsSummary = (props) => {
                           <thead class="text-start align-items-start">
                             <tr class="text-start align-items-start">
                               <th
-                                class="text-start align-items-start"
+                                class="text-center align-items-center"
                                 scope="col"
                               >
-                                Sr. No
+                                Sr. No.
                               </th>
                               <th
                                 class="text-start align-items-start"
@@ -66,25 +66,25 @@ const EventsSummary = (props) => {
                                 Event Name
                               </th>
                               <th
-                                class="text-start align-items-start"
+                                class="text-center align-items-center"
                                 scope="col"
                               >
                                 No. Of Participants - P
                               </th>
                               <th
-                                class="text-start align-items-start"
+                                class="text-center align-items-center"
                                 scope="col"
                               >
                                 No. Of Accompanists - A
                               </th>
                               <th
-                                class="text-start align-items-start"
+                                class="text-center align-items-center"
                                 scope="col"
                               >
                                 P + A
                               </th>
                               <th
-                                class="text-start align-items-start"
+                                class="text-center align-items-center"
                                 scope="col"
                               >
                                 Time (mins)
@@ -97,7 +97,7 @@ const EventsSummary = (props) => {
                               return (
                                 <tr class="text-start align-items-start">
                                   <th
-                                    class="text-start align-items-start"
+                                    class="text-center align-items-center"
                                     scope="row"
                                   >
                                     {srno}
@@ -105,16 +105,16 @@ const EventsSummary = (props) => {
                                   <td class="text-start align-items-start">
                                     {eventName.name}
                                   </td>
-                                  <td class="text-start align-items-start">
+                                  <td class="text-center align-items-center">
                                     {eventName.p}
                                   </td>
-                                  <td class="text-start align-items-start">
+                                  <td class="text-center align-items-center">
                                     {eventName.a}
                                   </td>
-                                  <td class="text-start align-items-start">
+                                  <td class="text-center align-items-center">
                                     {eventName.p + eventName.a}
                                   </td>
-                                  <td class="text-start align-items-start">
+                                  <td class="text-center align-items-center">
                                     {eventName.time}
                                   </td>
                                 </tr>
@@ -151,7 +151,7 @@ const EventsSummary = (props) => {
                         <thead class="text-start align-items-start">
                           <tr class="text-start align-items-start">
                             <th
-                              class="text-start align-items-start"
+                              class="text-center align-items-center"
                               scope="col"
                             >
                               Sr. No
@@ -163,25 +163,25 @@ const EventsSummary = (props) => {
                               Event Name
                             </th>
                             <th
-                              class="text-start align-items-start"
+                              class="text-center align-items-center"
                               scope="col"
                             >
                               No. Of Participants - P
                             </th>
                             <th
-                              class="text-start align-items-start"
+                              class="text-center align-items-center"
                               scope="col"
                             >
                               No. Of Accompanists - A
                             </th>
                             <th
-                              class="text-start align-items-start"
+                              class="text-center align-items-center"
                               scope="col"
                             >
                               P + A
                             </th>
                             <th
-                              class="text-start align-items-start"
+                              class="text-center align-items-center"
                               scope="col"
                             >
                               Time (mins)
@@ -194,7 +194,7 @@ const EventsSummary = (props) => {
                             return (
                               <tr class="text-start align-items-start">
                                 <th
-                                  class="text-start align-items-start"
+                                  class="text-center align-items-center"
                                   scope="row"
                                 >
                                   {srno}
@@ -202,16 +202,16 @@ const EventsSummary = (props) => {
                                 <td class="text-start align-items-start">
                                   {eventName.name}
                                 </td>
-                                <td class="text-start align-items-start">
+                                <td class="text-center align-items-center">
                                   {eventName.p}
                                 </td>
-                                <td class="text-start align-items-start">
+                                <td class="text-center align-items-center">
                                   {eventName.a}
                                 </td>
-                                <td class="text-start align-items-start">
+                                <td class="text-center align-items-center">
                                   {eventName.p + eventName.a}
                                 </td>
-                                <td class="text-start align-items-start">
+                                <td class="text-center align-items-center">
                                   {eventName.time}
                                 </td>
                               </tr>

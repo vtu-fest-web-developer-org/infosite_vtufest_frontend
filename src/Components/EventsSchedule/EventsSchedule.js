@@ -50,7 +50,12 @@ const EventsSchedule = (props) => {
                   <table className="table table-hover table-corner">
                     <thead class="text-start align-items-start">
                       <tr>
-                        <th scope="col">Sr. No</th>
+                        <th
+                          className="text-center align-items-center"
+                          scope="col"
+                        >
+                          Sr. No
+                        </th>
                         <th scope="col">Event Name</th>
                         <th scope="col">Details</th>
                       </tr>
@@ -60,7 +65,12 @@ const EventsSchedule = (props) => {
                         srno = srno + 1;
                         return (
                           <tr>
-                            <th scope="row">{srno}</th>
+                            <th
+                              className="text-center align-items-center"
+                              scope="row"
+                            >
+                              {srno}
+                            </th>
                             <td>{eventName.name}</td>
                             <td>{eventName.details}</td>
                           </tr>
