@@ -22,9 +22,6 @@ const Launch = () => {
             <br />
             <br />
             <br />
-            <br />
-            <br />
-            <br />
             {clicked ? (
               <AutoCounter
                 count={count}
