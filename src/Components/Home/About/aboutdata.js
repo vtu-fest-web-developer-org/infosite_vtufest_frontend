@@ -8,7 +8,7 @@ const aboutdata = {
   },
   vtu: {
     title: "About VTU",
-    image: "/assets/photos/vtu.avif",
+    image: "/assets/photos/vtu.jpeg",
     description:
       "Visvesvaray Technological University (VTU) is one of the largest Technological Universities in India with 24 years of Tradition of excellence in Engineering & Technical Education, Research and Innovations. It came into existence in the year 1998 to cater the needs of Indian industries for trained technical manpower with practical experience and sound theoretical knowledge. University has very successfully achieved the tremendous task of bringing various colleges affiliated earlier to different Universities, with different syllabi, different procedures and different traditions under one umbrella. The university having 218 affiliated colleges, 1 constituent college and 17 Autonomous colleges with undergraduate courses in 35 disciplines, PG program in 94 disciplines and Ph.D & M.Sc (Engg.) with research programs in 592 departments, over 4 lakhs engineering students study in the various institutes affiliated to the University. The University has 13 Quality Improvement Programme (QIP) centers in various affiliated colleges and 16 extension centerns for offering PG programs. It has four regional centers across the State of Karnataka in Belagavi, Bengaluru, Kalaburagi and Mysuru respectively. For more details please visit the official website of VTU.",
     readmorelink: "https://www.vtu.ac.in/",
