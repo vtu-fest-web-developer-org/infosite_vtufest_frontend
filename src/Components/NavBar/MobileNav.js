@@ -56,7 +56,7 @@ const MobileNav = styled.nav`
     position: fixed;
     top: 0;
     right: 0;
-    margin-top: 160px;
+    margin-top: 130px;
     padding-top: 5vh;
     height: 100vh;
     width: 100vw;
