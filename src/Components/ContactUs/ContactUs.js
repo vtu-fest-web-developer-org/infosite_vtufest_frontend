@@ -23,7 +23,7 @@ const ContactUs = (props) => {
       message: message,
     };
     console.log(data);
-    fetch("https://infositeapi.herokuapp.com/contact", {
+    fetch("https://nodebalancer.pratibhotsava.rocks/infosite/contact", {
       method: "POST",
       body: JSON.stringify(data),
       headers: {

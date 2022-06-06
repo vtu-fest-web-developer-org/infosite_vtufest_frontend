@@ -17,7 +17,7 @@ import Launch from "./Components/Launch/Launch";
 function App() {
   const [views, setViews] = useState(0);
   useEffect(() => {
-    fetch("https://infositeapi.herokuapp.com/views")
+    fetch("https://nodebalancer.pratibhotsava.rocks/infosite/views")
       .then((response) => {
         return response.json();
       })
