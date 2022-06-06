@@ -19,7 +19,7 @@ const OrganizingCommittee = (props) => {
           <div className="row justify-content-center">
             {oc.chiefPatrons.map((person) => {
               return (
-                <div className="col-md-4 col-6">
+                <div className="col-md-4 col-12 mt-3">
                   <div class="card text-center mb-3 h-100">
                     <div class="card-body">
                       <img
@@ -58,10 +58,10 @@ const OrganizingCommittee = (props) => {
               PATRONS
             </div>
           </div>
-          <div className="row justify-content-center mt-3">
+          <div className="row justify-content-center ">
             {oc.firstPatrons.map((person) => {
               return (
-                <div className="col-md-3 col-6">
+                <div className="col-md-3 col-12 mt-3">
                   <div class="card text-center mb-3 h-100">
                     <div class="card-body">
                       <img
@@ -91,10 +91,10 @@ const OrganizingCommittee = (props) => {
               );
             })}
           </div>
-          <div className="row justify-content-center mt-3">
+          <div className="row justify-content-center ">
             {oc.secondPatrons.map((person) => {
               return (
-                <div className="col-md-3 col-6">
+                <div className="col-md-3 col-12 mt-3">
                   <div class="card text-center mb-3 h-100">
                     <div class="card-body">
                       <img
@@ -129,10 +129,10 @@ const OrganizingCommittee = (props) => {
               ORGANISING COMMITTEE
             </div>
           </div>
-          <div className="row justify-content-center mt-3">
+          <div className="row justify-content-center">
             {oc.thirdPatrons.map((person) => {
               return (
-                <div className="col-md-3 col-6">
+                <div className="col-md-3 col-12 mt-3">
                   <div class="card text-center mb-3 h-100">
                     <div class="card-body">
                       <img
@@ -162,10 +162,10 @@ const OrganizingCommittee = (props) => {
               );
             })}
           </div>
-          <div className="row justify-content-center mt-3">
+          <div className="row justify-content-center ">
             {oc.fourthPatrons.map((person) => {
               return (
-                <div className="col-md-3 col-6">
+                <div className="col-md-3 col-12 mt-3">
                   <div class="card text-center mb-3 mt-3 h-100">
                     <div class="card-body">
                       <img
@@ -195,10 +195,10 @@ const OrganizingCommittee = (props) => {
               );
             })}
           </div>
-          <div className="row justify-content-center mt-3">
+          <div className="row justify-content-center ">
             {oc.fifthPatrons.map((person) => {
               return (
-                <div className="col-md-3 col-6">
+                <div className="col-md-3 col-12 mt-3">
                   <div class="card text-center mb-3 mt-3 h-100">
                     <div class="card-body">
                       <img
