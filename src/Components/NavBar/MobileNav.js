@@ -5,6 +5,7 @@ const MobileNavigation = (prop) => {
   const props = prop.props;
   return (
     <MobileNav>
+      <br />
       <NavButton href="/" name="Home" curPage={props.curPage} />
       <NavButton
         href="/eventschedule"
@@ -46,17 +47,17 @@ const MobileNav = styled.nav`
     display: none;
   }
   @media (max-width: 1281px) {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.45);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
     align-items: center;
     display: flex;
     flex-flow: column nowrap;
     position: fixed;
     top: 0;
     right: 0;
-    margin-top: 130px;
+    margin-top: 135px;
     padding-top: 5vh;
     height: 100vh;
     width: 100vw;

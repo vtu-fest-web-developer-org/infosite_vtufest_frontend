@@ -8,10 +8,10 @@ import { useState } from "react";
 const NavBar = (props) => {
   const [open, setOpen] = useState(false);
   const closeIcon = (
-    <IoClose size="40px" color="#3469ff" onClick={() => setOpen(!open)} />
+    <IoClose size="30px" color="#3469ff" onClick={() => setOpen(!open)} />
   );
   const openIcon = (
-    <CgMenu size="40px" color="#3469ff" onClick={() => setOpen(!open)} />
+    <CgMenu size="30px" color="#3469ff" onClick={() => setOpen(!open)} />
   );
 
   return (
@@ -103,6 +103,7 @@ const LogoNav = styled.nav`
   @media (max-width: 1280px) {
     padding: 0 5% 0;
     position: relative;
+    margin-bottom: 15px;
     flex-flow: row nowrap;
     top: 0;
     left: 0;
