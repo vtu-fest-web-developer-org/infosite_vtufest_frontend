@@ -49,6 +49,16 @@ const About = (props) => {
             </div>
           </div>
         </div>
+        <div className="col-12 mt-5">
+          <div className="card card-about">
+            <div className="card-body">
+              <h3 className="card-title about-title">{aboutdata.fest.title}</h3>
+              <p className="card-text about-txt txt-justify">
+                {aboutdata.fest.description}
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
