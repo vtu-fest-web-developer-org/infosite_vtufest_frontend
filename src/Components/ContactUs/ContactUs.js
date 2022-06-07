@@ -7,9 +7,131 @@ const ContactUs = (props) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [city, setCity] = useState("");
-  const [state, setState] = useState("");
+  const [college, setCollege] = useState("");
   const [message, setMessage] = useState("");
+
+  const COLLEGES = [
+    "Bangalore Institute of Technology, Bangalore",
+    "Dayananda Sagar Academy of Technology and Management, Bangalore",
+    "Sir M. Viveswaraya Institute of Technology, Bangalore",
+    "J.S.S. Academy of Technical Education, Bangalore",
+    "C.M.R. Institute of Technology, Bangalore",
+    "Acharya Institute of Technology, Bangalore",
+    "New Horizon College of Engineering, Bangalore",
+    "M.V. Jayaram College of Engineering, Bangalore",
+    "SJB Institute of Technology, Bangalore",
+    "R.N.S. Institute of Technology, Bangalore",
+    "Sri Sairam College of Engineering, Bangalore",
+    "Sri Venkateshwara College of Engineering, Bangalore",
+    "The Oxford College of Engineering, Bangalore",
+    "Vivekananda Institute of Technology, Bangalore",
+    "B.T.L. Institute of Technology and Management, Bangalore",
+    "Sri Revana Siddeshwara Institute of Technology, Bangalore",
+    "B.N.M. Institute of Technology, Bangalore",
+    "Sapthagiri College of Engineering, Bangalore",
+    "Sai Vidya Institute of Technology, Bangalore",
+    "Reva Institute of Technology and Management, Bangalore",
+    "City Engineering College, Bangalore",
+    "Kammavari Sangha Institute of Technology, Bangalore",
+    "HKBK College of Engineering, Bangalore",
+    "Bheemanna Khandre Institute of Technology, Bhalki",
+    "Adichunchanagiri Institute of Technology, Chikmagalur",
+    "Shri pillappa college of engineering Bangalore",
+    "Vemana Institute of Technology, Bangalore",
+    "AMC Institutions, Bangalore",
+    "East Point College of Engineering and Technology, Bangalore",
+    "Atria Institute of Technology, Bangalore",
+    "K.N.S. Institute of Technology, Bangalore",
+    "Don Bosco Institute of Technology, Bangalore",
+    "Global Academy of Technology, Bangalore",
+    "East West Institute of Technology, Bangalore",
+    "Yellamma Dasappa Institute of Technology, Bangalore",
+    "Sri Krishna Institute of Technology, Bangalore",
+    "Sambhram Institute of Technology, Bangalore",
+    "Sri Jagadguru Chandrasekaranathaswamiji Institute of Technology, Chickballapur",
+    "Alpha College of Engineering, Bangalore",
+    "A.P.S. College of Engineering, Bangalore",
+    "Cambridge Institute of Technology, Bangalore",
+    "Jnanavikasa Institute of Technology, Bangalore",
+    "Amrutha Institute of Engineering and Management, Bangalore",
+    "East Point College of Engineering for Women, Bangalore",
+    "Brindavan College of Engineering, Bangalore",
+    "R.R. Institute of Technology, Bangalore",
+    "Islamia Institute of Technology, Bangalore",
+    "ADARSHA Institute of Technology, Bangalore",
+    "Bangalore College of Engineering and Technology, Bangalore",
+    "Dr. Sri Sri Sri Shivakumara Mahaswamiji College of Engineering, Bangalore",
+    "P.N.S. Women's Institute of Technology, Bangalore",
+    "A.C.S. College of Engineering, Bangalore",
+    "Vijaya Vittala Institute of Technology, Bangalore",
+    "Gopalan College of Engineering and Management, Bangalore",
+    "S.C.T. Institute of Technology, Bangalore",
+    "Rajiv Gandhi Institute of Technology, Bangalore",
+    "M.S. Engineering College, Bangalore",
+    "Basava Academy of Engineering, Bangalore",
+    "Nadgir Institute of Engineering and Technology, Bangalore",
+    "Impact College of Engineering and Applied Sciences, Bangalore",
+    "GSS Institute of Technology, Bangalore",
+    "RajaRajeswari College of Engineering, Bangalore",
+    "T John Institute of Technology, Bangalore",
+    "Auden Technology and Management Academy, Bangalore",
+    "S.E.A. College of Engineering and Technology, Bangalore",
+    "K.L.E. Institute of Technology, Hubballi",
+    "A.G.M. Rural Engineering College, Hubli",
+    "H.M.S. Institute of Technology, Tumkur",
+    "Shridevi Institute of Engineering and Technology, Tumkur",
+    "Akshaya Institute of Technology, Tumkur",
+    "Ghousia College of Engineering, Ramnagar",
+    "S.J.C. Institute of Technology, Chickballapur",
+    "Sha-shib College of Engineering, Chikballapur",
+    "R.L. Jalappa Institute of Technology, Doddballapur",
+    "Dr. T. Thimmaiah Institute of Technology, Kolar Gold Fields",
+    "C. Byre Gowda Institute of Technology, Kolar",
+    "Kalpatharu Institute of Technology, Tiptur",
+    "Sri Basaveshwara Institute of Technology, Tiptur",
+    "B.G.S. Institute of Technology, Mandya",
+    "Tontadarya College of Engineering, Gadag",
+    "Smt. Kamala and Sri. Venkappa Magadi College of Engineering and Technology, Gadag",
+    "Maratha Mandal Engineering College, Belgaum",
+    "K.L.E. Society College of Engineering and Technology, Belgaum",
+    "S.G. Balekundri Institute of Technology, Belgaum",
+    "Shaikh College of Engineering and Technology, Belgaum",
+    "Angadi Institute of Technology and Management, Belgaum",
+    "Jain College of Engineering, Belgaum",
+    "KLE's College of Engineering and Technology, Chikkodi",
+    "R.T.E. Society Rural Engineering College, Hulkoti",
+    "Sri Taralabalu Jagadguru Institute of Technology, Ranebennur",
+    "Anjuman Institute of Technology and Management, Bhatkal",
+    "B.L.D.E.A's V.P. Dr. P.G. Halakatti College of Engineering and Technology, Bijapur",
+    "SECAB Institute of Engineering & Technology, Bijapur",
+    "Hirasugar Institute of Technology, Nidasoshi",
+    "Khaja Banda Nawaz College of Engineering, Gulbarga",
+    "K.C.T. Engineering College, Gulbarga",
+    "Appa Institute of Engineering and Technology, Gulbarga",
+    "Godutai Engineering College for Women, Gulbarga",
+    "Guru Nanak Dev Engineering College, Bidar",
+    "Rao Bahadur Y. Mahabaleswarappa Engineering College, Bellary",
+    "Basaveshwar College of Engineering, Bagalkot",
+    "B.M.S. College of Engineering, Bangalore",
+    "B.M.S. Institute of Technology, Bangalore",
+    "Dr.Ambedkar Institute of Technology, Bangalore",
+    "Dayananda Sagar College of Engineering, Bangalore",
+    "K.L.S. Gogte Institute of Technology, Belgaum",
+    "M.S. Ramaiah Institute of Technology, Bangalore",
+    "Malnad College of Engineering, Hassan",
+    "N.M.A.M. Institute of Technology, Nitte",
+    "Nagarjuna College of Engineering and Technology, Bengaluru",
+    "National Institute of Engineering, Mysore",
+    "Nitte Meenakshi Institute of Technology, Bangalore",
+    "PDA College of Engineering, Kalaburagi",
+    "PES College of Engineering, Mandya",
+    "R.V. College of Engineering, Bangalore",
+    "RV Institute of Technology and Management, Bangalore",
+    "Siddaganga Institute of Technology, Tumkur",
+    "Sri Siddhartha Institute of Technology, Tumkur",
+    "Global Academy of Technology, Bangalore",
+    "Dr. Ambedkar Institute of Technology, Bangalore"
+  ].sort()
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -18,29 +140,29 @@ const ContactUs = (props) => {
       name: name,
       email: email,
       phone: phone,
-      city: city,
-      state: state,
+      college: college,
       message: message,
     };
     console.log(data);
-    fetch("https://nodebalancer.pratibhotsava.rocks/infosite/contact", {
-      method: "POST",
-      body: JSON.stringify(data),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((res) => {
-        return res.json;
+      fetch("https://nodebalancer.pratibhotsava.rocks/infosite/contact", {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+          "Content-Type": "application/json",
+        },
       })
-      .then((json) => {
-        console.log(json);
-      });
+        .then((res) => {
+          console.log(res);
+          return res.json;
+        })
+        .then((json) => {
+          console.log(json);
+          alert("We Received Your Message.")
+        });
     setName("");
     setEmail("");
     setPhone("");
-    setCity("");
-    setState("");
+    setCollege("");
     setMessage("");
   };
   return (
@@ -58,7 +180,7 @@ const ContactUs = (props) => {
                     <h5 class="card-title fs-2 fw-bold mb-3 lightblue">
                       Feel free to contact us!
                     </h5>
-                    <form class="row g-3 needs-validation">
+                    <form class="row g-3 needs-validation" id="contact-us" onSubmit={handleSubmit}>
                       <div class="col-12">
                         <label for="name" class="form-label">
                           Full name
@@ -68,8 +190,10 @@ const ContactUs = (props) => {
                           class="form-control"
                           id="name"
                           value={name}
+                          pattern="[a-z A-Z]+"
                           onChange={(e) => setName(e.target.value)}
                           placeholder="Full Name"
+                          minLength={3}
                           required
                         />
                       </div>
@@ -82,6 +206,7 @@ const ContactUs = (props) => {
                           class="form-control"
                           id="email"
                           value={email}
+                          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                           onChange={(e) => setEmail(e.target.value)}
                           placeholder="name@example.com"
                           required
@@ -96,85 +221,32 @@ const ContactUs = (props) => {
                           class="form-control"
                           id="tel"
                           value={phone}
+                          pattern="[0-9]{10}"
                           onChange={(e) => setPhone(e.target.value)}
                           placeholder="Phone Number"
                           required
                         />
                       </div>
-                      <div class="col-6">
-                        <label for="validationCustom03" class="form-label">
-                          City
-                        </label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="city"
-                          value={city}
-                          onChange={(e) => setCity(e.target.value)}
-                          placeholder="Bengaluru"
-                          required
-                        />
-                      </div>
-                      <div class="col-6">
+                     
+                      <div class="col-12">
                         <label for="validationCustom04" class="form-label">
-                          State
+                          College
                         </label>
                         <select
                           class="form-select"
-                          id="state"
-                          value={state}
-                          onChange={(e) => setState(e.target.value)}
+                          id="college"
+                          value={college}
+                          onChange={(e) => setCollege(e.target.value)}
                           required
                         >
                           <option selected disabled value="">
                             Choose...
                           </option>
-                          <option value="Andhra Pradesh">Andhra Pradesh</option>
-                          <option value="Andaman and Nicobar Islands">
-                            Andaman and Nicobar Islands
-                          </option>
-                          <option value="Arunachal Pradesh">
-                            Arunachal Pradesh
-                          </option>
-                          <option value="Assam">Assam</option>
-                          <option value="Bihar">Bihar</option>
-                          <option value="Chandigarh">Chandigarh</option>
-                          <option value="Chhattisgarh">Chhattisgarh</option>
-                          <option value="Dadar and Nagar Haveli">
-                            Dadar and Nagar Haveli
-                          </option>
-                          <option value="Daman and Diu">Daman and Diu</option>
-                          <option value="Delhi">Delhi</option>
-                          <option value="Lakshadweep">Lakshadweep</option>
-                          <option value="Puducherry">Puducherry</option>
-                          <option value="Goa">Goa</option>
-                          <option value="Gujarat">Gujarat</option>
-                          <option value="Haryana">Haryana</option>
-                          <option value="Himachal Pradesh">
-                            Himachal Pradesh
-                          </option>
-                          <option value="Jammu and Kashmir">
-                            Jammu and Kashmir
-                          </option>
-                          <option value="Jharkhand">Jharkhand</option>
-                          <option value="Karnataka">Karnataka</option>
-                          <option value="Kerala">Kerala</option>
-                          <option value="Madhya Pradesh">Madhya Pradesh</option>
-                          <option value="Maharashtra">Maharashtra</option>
-                          <option value="Manipur">Manipur</option>
-                          <option value="Meghalaya">Meghalaya</option>
-                          <option value="Mizoram">Mizoram</option>
-                          <option value="Nagaland">Nagaland</option>
-                          <option value="Odisha">Odisha</option>
-                          <option value="Punjab">Punjab</option>
-                          <option value="Rajasthan">Rajasthan</option>
-                          <option value="Sikkim">Sikkim</option>
-                          <option value="Tamil Nadu">Tamil Nadu</option>
-                          <option value="Telangana">Telangana</option>
-                          <option value="Tripura">Tripura</option>
-                          <option value="Uttar Pradesh">Uttar Pradesh</option>
-                          <option value="Uttarakhand">Uttarakhand</option>
-                          <option value="West Bengal">West Bengal</option>
+                          {COLLEGES.map(name =>{
+                            return (<option value={name}>
+                              {name}
+                            </option>);
+                          })}
                         </select>
                         <div class="invalid-feedback">
                           Please select a valid state.
@@ -188,6 +260,7 @@ const ContactUs = (props) => {
                           type="message"
                           class="form-control"
                           id="message"
+                          minLength={3}
                           value={message}
                           onChange={(e) => setMessage(e.target.value)}
                           placeholder="Mention your query!"
@@ -195,7 +268,7 @@ const ContactUs = (props) => {
                         />
                       </div>
                       <div class="col-12 mt-5">
-                        <LoginButton onClick={handleSubmit}>
+                        <LoginButton type="submit">
                           <span>Submit</span>
                         </LoginButton>
                       </div>
