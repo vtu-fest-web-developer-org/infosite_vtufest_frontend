@@ -19,7 +19,7 @@ const NavBar = (props) => {
       <LogoNav>
         <VTULogo className="text-align-text align-items-center justify-content-center">
           <a href="/">
-            <img src="/assets/logos/VTULogo.webp" alt="BMSCE" />
+            <img src="/assets/logos/VTULogo.webp" className="vtulogo" alt="BMSCE" />
           </a>
         </VTULogo>
         <Pratibhotsav className="text-align-text align-items-center justify-content-center">

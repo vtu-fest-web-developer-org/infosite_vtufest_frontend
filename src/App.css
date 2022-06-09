@@ -9,7 +9,9 @@
   
 
 }
-
+.vtulogo{
+  max-height: 125px;
+}
 .App::-webkit-scrollbar {
   display: none !important;
 }
