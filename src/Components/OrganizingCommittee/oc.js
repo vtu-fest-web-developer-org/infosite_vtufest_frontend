@@ -29,6 +29,12 @@ const oc = {
       designation: "Trustee, B.M.S. College of Engineering",
       photo: "/assets/photos/patrons/ravi_venkatesam.webp",
     },
+    {
+      name: "Gautham Kalathur",
+      designation: "CTO, B.M.S. Educational Trust",
+      photo: "/assets/photos/patrons/gautham_k.webp",
+    },
+      
   ],
   secondPatrons: [
     {
