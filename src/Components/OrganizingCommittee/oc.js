@@ -30,7 +30,7 @@ const oc = {
       photo: "/assets/photos/patrons/ravi_venkatesam.webp",
     },
     {
-      name: "Gautham Kalathur",
+      name: "Gautham V Kalathur",
       designation: "CTO, B.M.S. Educational Trust",
       photo: "/assets/photos/patrons/gautham_k.webp",
     },
