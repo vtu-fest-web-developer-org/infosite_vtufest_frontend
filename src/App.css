@@ -162,7 +162,7 @@ table {
   font-size: 16px !important;
 }
 .Loader-logo {
-  margin-top:10vh;
+  margin-top:20vh;
   margin-bottom: 10vh;
   height: 35vh;
   pointer-events: none;
@@ -175,7 +175,7 @@ table {
 }
 .Loader-header {
   background-color: #282c34;
-  min-height: 80vh;
+  height: 100vh;
   align-items: center;
   justify-content: center;
   font-size: calc(20px + 2vmin);

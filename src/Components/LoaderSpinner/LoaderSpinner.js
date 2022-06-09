@@ -1,10 +1,13 @@
 import logo from "../../bg_copy.png";
 const LoaderSpinner = () => {
   return (
-    <header className="App-header">
+    <div className="Logo-header mt-5">
+      <br />
+      <br />
+      <br />
       <img src={logo} className="Loader-logo" alt="logo" />
       <p className="loading">Loading...</p>
-    </header>
+    </div>
   );
 };
 export default LoaderSpinner;
