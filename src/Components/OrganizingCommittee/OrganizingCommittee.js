@@ -44,7 +44,9 @@ const OrganizingCommittee = (props) => {
 
                       <br />
                       {person.role ? <span>{person.role}</span> : null}
-                      <br />
+                      {person.workplace ? (
+                        <span>{person.workplace}</span>
+                      ) : null}
                     </div>
                   </div>
                 </div>
@@ -85,6 +87,10 @@ const OrganizingCommittee = (props) => {
 
                       <br />
                       {person.role ? <span>{person.role}</span> : null}
+                      <br />
+                      {person.workplace ? (
+                        <span>{person.workplace}</span>
+                      ) : null}
                     </div>
                   </div>
                 </div>
@@ -118,6 +124,10 @@ const OrganizingCommittee = (props) => {
 
                       <br />
                       {person.role ? <span>{person.role}</span> : null}
+                      <br />
+                      {person.workplace ? (
+                        <span>{person.workplace}</span>
+                      ) : null}
                     </div>
                   </div>
                 </div>
@@ -156,6 +166,10 @@ const OrganizingCommittee = (props) => {
 
                       <br />
                       {person.role ? <span>{person.role}</span> : null}
+                      <br />
+                      {person.workplace ? (
+                        <span>{person.workplace}</span>
+                      ) : null}
                     </div>
                   </div>
                 </div>
@@ -189,6 +203,10 @@ const OrganizingCommittee = (props) => {
 
                       <br />
                       {person.role ? <span>{person.role}</span> : null}
+                      <br />
+                      {person.workplace ? (
+                        <span>{person.workplace}</span>
+                      ) : null}
                     </div>
                   </div>
                 </div>
@@ -222,6 +240,10 @@ const OrganizingCommittee = (props) => {
 
                       <br />
                       {person.role ? <span>{person.role}</span> : null}
+                      <br />
+                      {person.workplace ? (
+                        <span>{person.workplace}</span>
+                      ) : null}
                     </div>
                   </div>
                 </div>
