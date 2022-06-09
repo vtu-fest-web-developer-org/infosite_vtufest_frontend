@@ -19,17 +19,17 @@ const NavBar = (props) => {
       <LogoNav>
         <VTULogo className="text-align-text align-items-center justify-content-center">
           <a href="/">
-            <img src="/assets/logos/VTULogo.png" alt="BMSCE" />
+            <img src="/assets/logos/VTULogo.webp" alt="BMSCE" />
           </a>
         </VTULogo>
         <Pratibhotsav className="text-align-text align-items-center justify-content-center">
           <a href="/">
-            <img src="/assets/logos/pratibhotsav_logo_no-bg.png" alt="BMSCE" />
+            <img src="/assets/logos/pratibhotsav_logo_no-bg.webp" alt="BMSCE" />
           </a>
         </Pratibhotsav>
         <BMSLogo className="text-align-text align-items-center justify-content-center">
           <a href="/">
-            <img src="/assets/logos/BMSCELogo.png" alt="BMSCE" />
+            <img src="/assets/logos/BMSCELogo.webp" alt="BMSCE" />
           </a>
         </BMSLogo>
       </LogoNav>
