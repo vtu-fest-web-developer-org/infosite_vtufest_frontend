@@ -62,7 +62,6 @@ const HighlightedButton = styled.button`
   padding: 0 6px;
   border: none;
   background: rgba(52, 105, 255, 0.9);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
@@ -85,7 +84,6 @@ const NormalButton = styled.button`
   padding: 0 6px;
   border: none;
   background: rgba(255, 255, 255, 0.35);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
@@ -101,7 +99,6 @@ const NormalButton = styled.button`
   }
   &:hover {
     background: rgba(52, 105, 255, 0.8);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-radius: 10px;

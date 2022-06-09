@@ -1,6 +1,7 @@
 import NavBar from "../NavBar/NavBar";
 import PageTitle from "../PageTitle/PageTitle";
 import styled from "styled-components";
+import colleges from "./colleges";
 
 import { useState } from "react";
 const ContactUs = (props) => {
@@ -9,129 +10,6 @@ const ContactUs = (props) => {
   const [phone, setPhone] = useState("");
   const [college, setCollege] = useState("");
   const [message, setMessage] = useState("");
-
-  const COLLEGES = [
-    "Bangalore Institute of Technology, Bangalore",
-    "Dayananda Sagar Academy of Technology and Management, Bangalore",
-    "Sir M. Viveswaraya Institute of Technology, Bangalore",
-    "J.S.S. Academy of Technical Education, Bangalore",
-    "C.M.R. Institute of Technology, Bangalore",
-    "Acharya Institute of Technology, Bangalore",
-    "New Horizon College of Engineering, Bangalore",
-    "M.V. Jayaram College of Engineering, Bangalore",
-    "SJB Institute of Technology, Bangalore",
-    "R.N.S. Institute of Technology, Bangalore",
-    "Sri Sairam College of Engineering, Bangalore",
-    "Sri Venkateshwara College of Engineering, Bangalore",
-    "The Oxford College of Engineering, Bangalore",
-    "Vivekananda Institute of Technology, Bangalore",
-    "B.T.L. Institute of Technology and Management, Bangalore",
-    "Sri Revana Siddeshwara Institute of Technology, Bangalore",
-    "B.N.M. Institute of Technology, Bangalore",
-    "Sapthagiri College of Engineering, Bangalore",
-    "Sai Vidya Institute of Technology, Bangalore",
-    "Reva Institute of Technology and Management, Bangalore",
-    "City Engineering College, Bangalore",
-    "Kammavari Sangha Institute of Technology, Bangalore",
-    "HKBK College of Engineering, Bangalore",
-    "Bheemanna Khandre Institute of Technology, Bhalki",
-    "Adichunchanagiri Institute of Technology, Chikmagalur",
-    "Shri pillappa college of engineering Bangalore",
-    "Vemana Institute of Technology, Bangalore",
-    "AMC Institutions, Bangalore",
-    "East Point College of Engineering and Technology, Bangalore",
-    "Atria Institute of Technology, Bangalore",
-    "K.N.S. Institute of Technology, Bangalore",
-    "Don Bosco Institute of Technology, Bangalore",
-    "Global Academy of Technology, Bangalore",
-    "East West Institute of Technology, Bangalore",
-    "Yellamma Dasappa Institute of Technology, Bangalore",
-    "Sri Krishna Institute of Technology, Bangalore",
-    "Sambhram Institute of Technology, Bangalore",
-    "Sri Jagadguru Chandrasekaranathaswamiji Institute of Technology, Chickballapur",
-    "Alpha College of Engineering, Bangalore",
-    "A.P.S. College of Engineering, Bangalore",
-    "Cambridge Institute of Technology, Bangalore",
-    "Jnanavikasa Institute of Technology, Bangalore",
-    "Amrutha Institute of Engineering and Management, Bangalore",
-    "East Point College of Engineering for Women, Bangalore",
-    "Brindavan College of Engineering, Bangalore",
-    "R.R. Institute of Technology, Bangalore",
-    "Islamia Institute of Technology, Bangalore",
-    "ADARSHA Institute of Technology, Bangalore",
-    "Bangalore College of Engineering and Technology, Bangalore",
-    "Dr. Sri Sri Sri Shivakumara Mahaswamiji College of Engineering, Bangalore",
-    "P.N.S. Women's Institute of Technology, Bangalore",
-    "A.C.S. College of Engineering, Bangalore",
-    "Vijaya Vittala Institute of Technology, Bangalore",
-    "Gopalan College of Engineering and Management, Bangalore",
-    "S.C.T. Institute of Technology, Bangalore",
-    "Rajiv Gandhi Institute of Technology, Bangalore",
-    "M.S. Engineering College, Bangalore",
-    "Basava Academy of Engineering, Bangalore",
-    "Nadgir Institute of Engineering and Technology, Bangalore",
-    "Impact College of Engineering and Applied Sciences, Bangalore",
-    "GSS Institute of Technology, Bangalore",
-    "RajaRajeswari College of Engineering, Bangalore",
-    "T John Institute of Technology, Bangalore",
-    "Auden Technology and Management Academy, Bangalore",
-    "S.E.A. College of Engineering and Technology, Bangalore",
-    "K.L.E. Institute of Technology, Hubballi",
-    "A.G.M. Rural Engineering College, Hubli",
-    "H.M.S. Institute of Technology, Tumkur",
-    "Shridevi Institute of Engineering and Technology, Tumkur",
-    "Akshaya Institute of Technology, Tumkur",
-    "Ghousia College of Engineering, Ramnagar",
-    "S.J.C. Institute of Technology, Chickballapur",
-    "Sha-shib College of Engineering, Chikballapur",
-    "R.L. Jalappa Institute of Technology, Doddballapur",
-    "Dr. T. Thimmaiah Institute of Technology, Kolar Gold Fields",
-    "C. Byre Gowda Institute of Technology, Kolar",
-    "Kalpatharu Institute of Technology, Tiptur",
-    "Sri Basaveshwara Institute of Technology, Tiptur",
-    "B.G.S. Institute of Technology, Mandya",
-    "Tontadarya College of Engineering, Gadag",
-    "Smt. Kamala and Sri. Venkappa Magadi College of Engineering and Technology, Gadag",
-    "Maratha Mandal Engineering College, Belgaum",
-    "K.L.E. Society College of Engineering and Technology, Belgaum",
-    "S.G. Balekundri Institute of Technology, Belgaum",
-    "Shaikh College of Engineering and Technology, Belgaum",
-    "Angadi Institute of Technology and Management, Belgaum",
-    "Jain College of Engineering, Belgaum",
-    "KLE's College of Engineering and Technology, Chikkodi",
-    "R.T.E. Society Rural Engineering College, Hulkoti",
-    "Sri Taralabalu Jagadguru Institute of Technology, Ranebennur",
-    "Anjuman Institute of Technology and Management, Bhatkal",
-    "B.L.D.E.A's V.P. Dr. P.G. Halakatti College of Engineering and Technology, Bijapur",
-    "SECAB Institute of Engineering & Technology, Bijapur",
-    "Hirasugar Institute of Technology, Nidasoshi",
-    "Khaja Banda Nawaz College of Engineering, Gulbarga",
-    "K.C.T. Engineering College, Gulbarga",
-    "Appa Institute of Engineering and Technology, Gulbarga",
-    "Godutai Engineering College for Women, Gulbarga",
-    "Guru Nanak Dev Engineering College, Bidar",
-    "Rao Bahadur Y. Mahabaleswarappa Engineering College, Bellary",
-    "Basaveshwar College of Engineering, Bagalkot",
-    "B.M.S. College of Engineering, Bangalore",
-    "B.M.S. Institute of Technology, Bangalore",
-    "Dr.Ambedkar Institute of Technology, Bangalore",
-    "Dayananda Sagar College of Engineering, Bangalore",
-    "K.L.S. Gogte Institute of Technology, Belgaum",
-    "M.S. Ramaiah Institute of Technology, Bangalore",
-    "Malnad College of Engineering, Hassan",
-    "N.M.A.M. Institute of Technology, Nitte",
-    "Nagarjuna College of Engineering and Technology, Bengaluru",
-    "National Institute of Engineering, Mysore",
-    "Nitte Meenakshi Institute of Technology, Bangalore",
-    "PDA College of Engineering, Kalaburagi",
-    "PES College of Engineering, Mandya",
-    "R.V. College of Engineering, Bangalore",
-    "RV Institute of Technology and Management, Bangalore",
-    "Siddaganga Institute of Technology, Tumkur",
-    "Sri Siddhartha Institute of Technology, Tumkur",
-    "Global Academy of Technology, Bangalore",
-    "Dr. Ambedkar Institute of Technology, Bangalore"
-  ].sort()
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -144,21 +22,21 @@ const ContactUs = (props) => {
       message: message,
     };
     console.log(data);
-      fetch("https://nodebalancer.pratibhotsava.rocks/infosite/contact", {
-        method: "POST",
-        body: JSON.stringify(data),
-        headers: {
-          "Content-Type": "application/json",
-        },
+    fetch("https://nodebalancer.pratibhotsava.rocks/infosite/contact", {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => {
+        console.log(res);
+        return res.json;
       })
-        .then((res) => {
-          console.log(res);
-          return res.json;
-        })
-        .then((json) => {
-          console.log(json);
-          alert("We Received Your Message.")
-        });
+      .then((json) => {
+        console.log(json);
+        alert("We Received Your Message.");
+      });
     setName("");
     setEmail("");
     setPhone("");
@@ -180,7 +58,11 @@ const ContactUs = (props) => {
                     <h5 class="card-title fs-2 fw-bold mb-3 lightblue">
                       Feel free to contact us!
                     </h5>
-                    <form class="row g-3 needs-validation" id="contact-us" onSubmit={handleSubmit}>
+                    <form
+                      class="row g-3 needs-validation"
+                      id="contact-us"
+                      onSubmit={handleSubmit}
+                    >
                       <div class="col-12">
                         <label for="name" class="form-label">
                           Full name
@@ -227,7 +109,7 @@ const ContactUs = (props) => {
                           required
                         />
                       </div>
-                     
+
                       <div class="col-12">
                         <label for="validationCustom04" class="form-label">
                           College
@@ -242,10 +124,8 @@ const ContactUs = (props) => {
                           <option selected disabled value="">
                             Choose...
                           </option>
-                          {COLLEGES.map(name =>{
-                            return (<option value={name}>
-                              {name}
-                            </option>);
+                          {colleges.map((name) => {
+                            return <option value={name}>{name}</option>;
                           })}
                         </select>
                         <div class="invalid-feedback">
