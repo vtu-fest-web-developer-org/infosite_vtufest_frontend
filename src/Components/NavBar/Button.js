@@ -83,9 +83,9 @@ const NormalButton = styled.button`
   margin: 0 3px;
   padding: 0 6px;
   border: none;
-  background: rgba(255, 255, 255, 0.35);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
   border-radius: 10px;
   span {
     color: #3469ff;
