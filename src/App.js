@@ -7,7 +7,7 @@ import Home from "./Components/Home/Home";
 import EventsSchedule from "./Components/EventsSchedule/EventsSchedule";
 import EventsSummary from "./Components/EventsSummary/EventsSummary";
 import RulesRegulations from "./Components/RulesRegulations/RulesRegulations";
-import ChiefPatrons from "./Components/ChiefPatrons/ChiefPatrons";
+import GeneralInstructions from "./Components/GeneralInstructions/GeneralInstructions";
 import OrganizingCommittee from "./Components/OrganizingCommittee/OrganizingCommittee";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import NotFound from "./Components/NotFound/NotFound";
@@ -39,7 +39,10 @@ function App() {
           <Route path="/rulesregulations" element={<RulesRegulations />} />
           {/*Data not yet available*/}
           {/*Chief Patrons*/}
-          <Route path="/chiefpatrons" element={<ChiefPatrons />} />
+          <Route
+            path="/generalinstructions"
+            element={<GeneralInstructions />}
+          />
           {/*Organizing Committee*/}
           <Route
             path="/organisingcommittee"
@@ -49,7 +52,7 @@ function App() {
           <Route path="/contactus" element={<ContactUs />} />
           {/* Launch Route */}
           <Route path="/launch" element={<Launch />} />
-
+          <Route path="/login" element={<GeneralInstructions />} />
           {/*Not Found*/}
           <Route path="*" element={<NotFound />} />
         </Routes>

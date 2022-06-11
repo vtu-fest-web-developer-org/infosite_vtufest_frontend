@@ -22,22 +22,18 @@ const MobileNavigation = (prop) => {
         name="Rules & Regulations"
         curPage={props.curPage}
       />
-      {/*<NavButton
-        href="/chiefpatrons"
-        name="Chief Patrons"
+      <NavButton
+        href="/generalinstructions"
+        name="General Instructions"
         curPage={props.curPage}
-  />*/}
+      />
       <NavButton
         href="/organisingcommittee"
         name="Organizing Committee"
         curPage={props.curPage}
       />
       <NavButton href="/contactus" name="Contact Us" curPage={props.curPage} />
-      <NavButton
-        href="https://app.vtufestbmsce.in"
-        name="Login"
-        curPage={props.curPage}
-      />
+      <NavButton href="/login" name="Login" curPage={props.curPage} />
     </MobileNav>
   );
 };

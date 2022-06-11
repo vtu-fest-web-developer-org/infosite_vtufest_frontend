@@ -19,7 +19,11 @@ const NavBar = (props) => {
       <LogoNav>
         <VTULogo className="text-align-text align-items-center justify-content-center">
           <a href="/">
-            <img src="/assets/logos/VTULogo.webp" className="vtulogo" alt="BMSCE" />
+            <img
+              src="/assets/logos/VTULogo.webp"
+              className="vtulogo"
+              alt="BMSCE"
+            />
           </a>
         </VTULogo>
         <Pratibhotsav className="text-align-text align-items-center justify-content-center">
@@ -51,11 +55,12 @@ const NavBar = (props) => {
             name="Rules & Regulations"
             curPage={props.curPage}
           />
-          {/*<NavButton
-            href="/chiefpatrons"
-            name="Chief Patrons"
+          *
+          <NavButton
+            href="/generalinstructions"
+            name="General Instructions"
             curPage={props.curPage}
-  />*/}
+          />
           <NavButton
             href="/organisingcommittee"
             name="Organizing Committee"
@@ -66,11 +71,7 @@ const NavBar = (props) => {
             name="Contact Us"
             curPage={props.curPage}
           />
-          <NavButton
-            href="https://app.vtufestbmsce.in"
-            name="Login"
-            curPage={props.curPage}
-          />
+          <NavButton href="/login" name="Login" curPage={props.curPage} />
         </NavMenu>
         <MobiNav>
           {open ? closeIcon : openIcon}
