@@ -1,7 +1,7 @@
 const rules = {
   music: [
     {
-      name: "Classical Vocal Solo (Hindustani/Karnataka)",
+      name: "Classical Vocal Solo (Hindustani/Carnatic)",
       rules: [
         "Participation: Only 1 participant per institute.",
         "Duration: 15 minutes (including set-up and clearance time).",
@@ -11,7 +11,6 @@ const rules = {
         "Film songs are not allowed for this competition.",
         "Reporting time will be provided along with the schedule of the event.",
         "Judgment will be based on the qualities like, taal, selection of raga, composition and general impression.",
-        "The participating team must report to the In-Charge of the competition at least two hours before the presentation of the play.",
         "Decision of the panel of judges will be final and binding upon all.",
       ],
     },
@@ -28,20 +27,7 @@ const rules = {
       ],
     },
     {
-      name: "Light Vocal (India)",
-      rules: [
-        "Participation: Only 1 participant per institute.",
-        "Duration: 7 minutes (including set-up and clearance time).",
-        "A maximum of 2 accompaniments are allowed, excluding Shruthi box.",
-        "Only non-film songs can be presented. [Example: Geet, Ghazal, Bhajan, Bhavageethe, Shabad and Abhangs].",
-        "Karaoke is strictly not allowed.",
-        "Reporting time will be provided along with the schedule of the event.",
-        "The participating team must report to the In-Charge of the competition at least two hours before the presentation of the play.",
-        "Decisions of the organizers and panel of judge(s) will be final and binding.",
-      ],
-    },
-    {
-      name: "Classical Instrumental Solo (Non-Precussion Swara Vadya)",
+      name: "Classical Instrumental Solo (Non-Percussion Swara Vadya)",
       rules: [
         "Participation: Only 1 participant per institute.",
         "Duration: 15 minutes (including set-up and clearance time). ",
@@ -53,7 +39,19 @@ const rules = {
       ],
     },
     {
-      name: "Western Vocal (Solo)",
+      name: "Light Vocal Solo (Indian)",
+      rules: [
+        "Participation: Only 1 participant per institute.",
+        "Duration: 7 minutes (including set-up and clearance time).",
+        "A maximum of 2 accompaniments are allowed, excluding Shruthi box.",
+        "Only non-film songs can be presented. [Example: Geet, Ghazal, Bhajan, Bhavageethe, Shabad and Abhangs].",
+        "Karaoke is strictly not allowed.",
+        "Reporting time will be provided along with the schedule of the event.",
+        "Decisions of the organizers and panel of judge(s) will be final and binding.",
+      ],
+    },
+    {
+      name: "Western Vocal Solo",
       rules: [
         "Participation: Only 1 participant per institute.",
         "Duration: 7 minutes (including set-up and clearance time).",
@@ -71,7 +69,7 @@ const rules = {
         "Duration: 15 minutes (including set-up and clearance time).",
         "A maximum of 3 accompanists are allowed.",
         "A team has to present two songs, one patriotic and one folk song.",
-        "Only Indian languages will be used for group songs. The lyrics of the song(s) transliterated in English must be submitted at the reporting time.",
+        "Only Indian languages will be used for group songs. The lyrics of the songs transliterated in English must be submitted at the reporting time.",
         "Film songs are strictly not allowed.",
         "Reporting time will be provided along with the schedule of the event.",
         "Decisions of the organizers and panel of judge(s) will be final and binding.",
@@ -92,7 +90,7 @@ const rules = {
       ],
     },
     {
-      name: "Flok Orchestra",
+      name: "Folk Orchestra",
       rules: [
         "Participation: Only 1 team (upto 12 participants) per institute.",
         "Duration: 15 minutes (including set-up and clearance time).",
@@ -123,7 +121,7 @@ const rules = {
       ],
     },
     {
-      name: "Classical Dance (Indian)",
+      name: "Classical Dance Solo",
       rules: [
         "Participation: Only 1 participant per institute.",
         "Duration: Maximum 12 minutes (including set-up and clearance time).",
@@ -150,21 +148,6 @@ const rules = {
       ],
     },
     {
-      name: "Elocution",
-      rules: [
-        "Participation: Only 1 participant per institute.",
-        "Duration: 4 minutes.",
-        "The participant shall present either prose or poetry and not a song.",
-        "The sequence of speakers will be decided by a draw of lots.",
-        "Medium of expression shall be English.",
-        "Subject/Topic of elocution will be announced a day in advance.",
-        "Reading off a paper is allowed but not recommended, and will adversely affect points.",
-        "Reporting time will be provided along with the schedule of the event.",
-        "Decision of the organisers and the panel of judge(s) will be final and binding.",
-
-      ],
-    },
-    {
       name: "Debate",
       rules: [
         "Participation: Only 1 Team of 2 participants per institute.",
@@ -175,6 +158,21 @@ const rules = {
         "Teams will alternate between speakers.",
         "Reading off a paper is not allowed.",
         "Reporting time will be provided along with the schedule of the event. ",
+        "Decision of the organisers and the panel of judge(s) will be final and binding.",
+
+      ],
+    },
+    {
+      name: "Elocution",
+      rules: [
+        "Participation: Only 1 participant per institute.",
+        "Duration: 4 minutes.",
+        "The participant shall present either prose or poetry and not a song.",
+        "The sequence of speakers will be decided by a draw of lots.",
+        "Medium of expression shall be English.",
+        "Subject/Topic of elocution will be announced a day in advance.",
+        "Reading off a paper is allowed but not recommended, and will adversely affect points.",
+        "Reporting time will be provided along with the schedule of the event.",
         "Decision of the organisers and the panel of judge(s) will be final and binding.",
 
       ],
@@ -190,22 +188,6 @@ const rules = {
         "Lighting, and basic furniture will be provided on prior request (subject to availability). All other props and paraphernalia such as costumes, make up, stage decorations, backdrops, etc., shall be the responsibility of the team. ",
         "The preferred language for the act would be English, Hindi or Kannada. The synopsis of the play in English, Hindi or Kannada must be submitted at the reporting to the event incharge.",
         "Accompanists shall either speak from the background or play upon musical instruments for background music. They shall be required to appear on the stage only during curtain call.",
-        "Reporting time will be provided along with the schedule of the event.",
-        "Decisions of the organisers and panel of judge(s) will be final and binding.",
-
-      ],
-    },
-    {
-      name: "Skit",
-      rules: [
-        "Participation: Only 1 Team (upto 6 participants) per institute.",
-        "Duration: 10 minutes (including set-up and clearance time).",
-        "A maximum of 3 accompanists are allowed. ",
-        "Use of make-up, backdrops and background music is allowed. ",
-        "Live music is not allowed. However, participants may use recorded background music which is to be submitted in a pendrive in MP3 format at reporting time to the event incharge. ",
-        "Each team should submit three copies of the synopsis of the skit in the language of presentation (English, Hindi or Kannada) at the reporting time to the event incharge.",
-        "Defamation, derogation and belittlement will not be entertained.",
-        "Profanity, suggestive speech, euphemisms and vulgarity in action or speech is strictly prohibited. Satire and humour that is devoid of the above is accepte.",
         "Reporting time will be provided along with the schedule of the event.",
         "Decisions of the organisers and panel of judge(s) will be final and binding.",
 
@@ -228,9 +210,25 @@ const rules = {
       name: "Mimicry",
       rules: [
         "Participation: Only 1 participant from each institute.",
-        "Duration 5 minutes.",
+        "Duration: 5 minutes.",
         "Participants may mimic voices and speech of well known personalities, as well as other common sounds.",
         "Profanity, suggestive speech, euphemisms and vulgarity in action or speech is strictly prohibited. Satire and humour that is devoid of the above is acceptable.",
+        "Reporting time will be provided along with the schedule of the event.",
+        "Decisions of the organisers and panel of judge(s) will be final and binding.",
+
+      ],
+    },
+    {
+      name: "Skit",
+      rules: [
+        "Participation: Only 1 Team (upto 6 participants) per institute.",
+        "Duration: 10 minutes (including set-up and clearance time).",
+        "A maximum of 3 accompanists are allowed. ",
+        "Use of make-up, backdrops and background music is allowed. ",
+        "Live music is not allowed. However, participants may use recorded background music which is to be submitted in a pendrive in MP3 format at reporting time to the event incharge. ",
+        "Each team should submit three copies of the synopsis of the skit in the language of presentation (English, Hindi or Kannada) at the reporting time to the event incharge.",
+        "Defamation, derogation and belittlement will not be entertained.",
+        "Profanity, suggestive speech, euphemisms and vulgarity in action or speech is strictly prohibited. Satire and humour that is devoid of the above is accepte.",
         "Reporting time will be provided along with the schedule of the event.",
         "Decisions of the organisers and panel of judge(s) will be final and binding.",
 
@@ -242,7 +240,7 @@ const rules = {
       name: "Collage",
       rules: [
         "Participation: Only 1 participant per institute.",
-        "Duration of event: 2 hours 30 minutes.",
+        "Duration: 2 hours 30 minutes.",
         "The artwork shall be made on the spot on the given topic.",
         "A3 size paper of dimensions 297 mm x 420 mm will be provided by the host institution.",
         "Participants shall bring their own scissors, glue and other materials required for the contest.",
@@ -253,31 +251,40 @@ const rules = {
       ],
     },
     {
-      name: "Installation",
+      name: "Rangoli",
+      rules: [
+        "Participation: Only 1 participant per Institution.",
+        "Duration: 2 hours 30 minutes.",
+        "Participants shall bring their own materials.",
+        "The participants shall prepare a Rangoli within the space provided by the organizers.",
+        "Reporting time will be provided along with the schedule of the event.",
+        "Decision of the panel of judges will be final and binding upon all.",
+      ],
+    },
+    {
+      name: "Cartooning",
       rules: [
         "Participation: Only 1 participant per institute.",
-        "Duration of event: 2 hours 30 minutes.",
-        "The artwork shall be made on the spot on the given topic.",
-        "The topic will be given on 10th July 2022.",
-        "Materials or Products shall be brought by participants themselves.",
-        "The space for the installation shall be provided by the host institution.",
-        "Participants shall create and install an artwork related to the topic of the installation in the assigned area. The maximum size of the installation shall be 5'x5'x5'.",
-        "There is no restriction on the materials that can be used.",
+        "Duration: 2 hours 30 minutes.",
+        "The artwork will be made on the spot on the given topic.",
+        "A3 size paper of dimensions 297 mm x 420 mm will be provided by the host institution.",
+        "All writing or drawing instruments have to be brought by participants.",
         "Reporting time will be provided along with the schedule of the event.",
         "Decisions of the organizers and panel of judge(s) will be final and binding.",
 
       ],
     },
     {
-      name: "On the Spot Painting",
+      name: "Installation",
       rules: [
         "Participation: Only 1 participant per institute.",
-        "Duration of event: 2 hours 30 minutes.",
+        "Duration: 2 hours 30 minutes.",
         "The artwork shall be made on the spot on the given topic.",
-        "A3 size paper of dimensions 297 mm x 420 mm will be provided by the host institution.",
-        "Painting can be done in watercolors, poster paints, acrylic paints or pastel colors.",
-        "Candidates shall bring their own material like brushes, paints, etc.",
-        "Two topics shall be provided prior to the competition.",
+        "The topic will be given on 10th July 2022.",
+        "Materials or Products shall be brought by participants themselves.",
+        "The space for the installation shall be provided by the host institution.",
+        "Participants shall create and install an artwork related to the topic of the installation in the assigned area. The maximum size of the installation shall be 5'x5'x5'.",
+        "There is no restriction on the materials that can be used.",
         "Reporting time will be provided along with the schedule of the event.",
         "Decisions of the organizers and panel of judge(s) will be final and binding.",
 
@@ -310,27 +317,18 @@ const rules = {
       ],
     },
     {
-      name: "Cartooning",
+      name: "On Spot Painting",
       rules: [
-        "Participation: Only 1 per institute.",
+        "Participation: Only 1 participant per institute.",
         "Duration: 2 hours 30 minutes.",
-        "The artwork will be made on the spot on the given topic.",
+        "The artwork shall be made on the spot on the given topic.",
         "A3 size paper of dimensions 297 mm x 420 mm will be provided by the host institution.",
-        "All writing or drawing instruments have to be brought by participants.",
+        "Types of paints allowed are watercolors, poster paints, acrylic paints and pastel colors.",
+        "Candidates shall bring their own materials such as brushes, paints, etc.",
+        "Two topics shall be provided prior to the competition.",
         "Reporting time will be provided along with the schedule of the event.",
         "Decisions of the organizers and panel of judge(s) will be final and binding.",
 
-      ],
-    },
-    {
-      name: "Rangoli",
-      rules: [
-        "Participation: Only 1 participant per Institution.",
-        "Duration: 2 hours 30 minutes.",
-        "Participants shall bring their own material.",
-        "The participants shall prepare a Rangoli within the space provided by the organizers.",
-        "Reporting time will be provided along with the schedule of the event.",
-        "Decision of the panel of judges will be final and binding upon all.",
       ],
     },
     {
