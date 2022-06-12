@@ -57,7 +57,7 @@ const EventsSummary = (props) => {
                                 class="text-center align-items-center"
                                 scope="col"
                               >
-                                Sr. No.
+                                Sl. No.
                               </th>
                               <th
                                 class="text-start align-items-start"
@@ -154,7 +154,7 @@ const EventsSummary = (props) => {
                               class="text-center align-items-center"
                               scope="col"
                             >
-                              Sr. No
+                              Sl. No
                             </th>
                             <th
                               class="text-start align-items-start"

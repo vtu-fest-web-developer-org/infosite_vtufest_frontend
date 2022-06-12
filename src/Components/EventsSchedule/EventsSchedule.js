@@ -54,7 +54,7 @@ const EventsSchedule = (props) => {
                           className="text-center align-items-center"
                           scope="col"
                         >
-                          Sr. No
+                          Sl. No.
                         </th>
                         <th scope="col">Event Name</th>
                         <th scope="col">Details</th>
