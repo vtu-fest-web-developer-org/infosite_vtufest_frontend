@@ -10,6 +10,7 @@ import RulesRegulations from "./Components/RulesRegulations/RulesRegulations";
 import GeneralInstructions from "./Components/GeneralInstructions/GeneralInstructions";
 import OrganizingCommittee from "./Components/OrganizingCommittee/OrganizingCommittee";
 import ContactUs from "./Components/ContactUs/ContactUs";
+import Login from "./Components/Login/Login";
 import NotFound from "./Components/NotFound/NotFound";
 import CommonFooter from "./Components/Footer/Footer";
 import Launch from "./Components/Launch/Launch";
@@ -52,7 +53,7 @@ function App() {
           <Route path="/contactus" element={<ContactUs />} />
           {/* Launch Route */}
           <Route path="/launch" element={<Launch />} />
-          <Route path="/login" element={<GeneralInstructions />} />
+          <Route path="/login" element={<Login />} />
           {/*Not Found*/}
           <Route path="*" element={<NotFound />} />
         </Routes>
