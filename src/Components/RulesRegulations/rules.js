@@ -180,14 +180,16 @@ const rules = {
   ],
   theatre: [
     {
-      name: "One Act Play",
+      name: "Skit",
       rules: [
-        "Participation: Only 1 Team (upto 9 participants) per institute.",
-        "Duration: 30 minutes (performance time) + 10 minutes (set-up and clearance time).",
-        "A maximum of 3 musical accompanists and 2 technical accompanists are allowed. ",
-        "Lighting, and basic furniture will be provided on prior request (subject to availability). All other props and paraphernalia such as costumes, make up, stage decorations, backdrops, etc., shall be the responsibility of the team. ",
-        "The preferred language for the act would be English, Hindi or Kannada. The synopsis of the play in English, Hindi or Kannada must be submitted at the reporting to the event incharge.",
-        "Accompanists shall either speak from the background or play upon musical instruments for background music. They shall be required to appear on the stage only during curtain call.",
+        "Participation: Only 1 Team (upto 6 participants) per institute.",
+        "Duration: 10 minutes (including set-up and clearance time).",
+        "A maximum of 3 accompanists are allowed. ",
+        "Use of make-up, backdrops and background music is allowed. ",
+        "Live music is not allowed. However, participants may use recorded background music which is to be submitted in a pendrive in MP3 format at reporting time to the event incharge. ",
+        "Each team should submit three copies of the synopsis of the skit in the language of presentation (English, Hindi or Kannada) at the reporting time to the event incharge.",
+        "Defamation, derogation and belittlement will not be entertained.",
+        "Profanity, suggestive speech, euphemisms and vulgarity in action or speech is strictly prohibited. Satire and humour that is devoid of the above is accepte.",
         "Reporting time will be provided along with the schedule of the event.",
         "Decisions of the organisers and panel of judge(s) will be final and binding.",
 
@@ -219,16 +221,14 @@ const rules = {
       ],
     },
     {
-      name: "Skit",
+      name: "One Act Play",
       rules: [
-        "Participation: Only 1 Team (upto 6 participants) per institute.",
-        "Duration: 10 minutes (including set-up and clearance time).",
-        "A maximum of 3 accompanists are allowed. ",
-        "Use of make-up, backdrops and background music is allowed. ",
-        "Live music is not allowed. However, participants may use recorded background music which is to be submitted in a pendrive in MP3 format at reporting time to the event incharge. ",
-        "Each team should submit three copies of the synopsis of the skit in the language of presentation (English, Hindi or Kannada) at the reporting time to the event incharge.",
-        "Defamation, derogation and belittlement will not be entertained.",
-        "Profanity, suggestive speech, euphemisms and vulgarity in action or speech is strictly prohibited. Satire and humour that is devoid of the above is accepte.",
+        "Participation: Only 1 Team (upto 9 participants) per institute.",
+        "Duration: 30 minutes (performance time) + 10 minutes (set-up and clearance time).",
+        "A maximum of 3 musical accompanists and 2 technical accompanists are allowed. ",
+        "Lighting, and basic furniture will be provided on prior request (subject to availability). All other props and paraphernalia such as costumes, make up, stage decorations, backdrops, etc., shall be the responsibility of the team. ",
+        "The preferred language for the act would be English, Hindi or Kannada. The synopsis of the play in English, Hindi or Kannada must be submitted at the reporting to the event incharge.",
+        "Accompanists shall either speak from the background or play upon musical instruments for background music. They shall be required to appear on the stage only during curtain call.",
         "Reporting time will be provided along with the schedule of the event.",
         "Decisions of the organisers and panel of judge(s) will be final and binding.",
 
