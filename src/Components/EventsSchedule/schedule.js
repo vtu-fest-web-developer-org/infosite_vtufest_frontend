@@ -1,23 +1,23 @@
 const schedule = {
   music: [
     {
-      name: "Classical Vocal Solo (Hindustani/Karnataka)",
+      name: "Classical Vocal Solo (Hindustani/Carnatic)",
       details: "Coming Soon",
     },
     {
-      name: "Classical Instrumental Solo (Percussion Tal Vadya)",
+      name: "Classical Instrumental Solo (Percussion Tala Vadya)",
       details: "Coming Soon",
     },
     {
-      name: "Light Vocal (India)",
+      name: "Classical Instrumental Solo (Non-Percussion Swara Vadya)",
       details: "Coming Soon",
     },
     {
-      name: "Classical Instrumental Solo (Non-Precussion Swar Vadya)",
+      name: "Light Vocal Solo (Indian)",
       details: "Coming Soon",
     },
     {
-      name: "Western Vocal (Solo)",
+      name: "Western Vocal Solo",
       details: "Coming Soon",
     },
     {
@@ -29,7 +29,7 @@ const schedule = {
       details: "Coming Soon",
     },
     {
-      name: "Flok Orchestra",
+      name: "Folk Orchestra",
       details: "Coming Soon",
     },
   ],
@@ -39,7 +39,7 @@ const schedule = {
       details: "Coming Soon",
     },
     {
-      name: "Classical Dance (Indian)",
+      name: "Classical Dance Solo",
       details: "Coming Soon",
     },
   ],
@@ -49,19 +49,15 @@ const schedule = {
       details: "Coming Soon",
     },
     {
-      name: "Elocution",
+      name: "Debate",
       details: "Coming Soon",
     },
     {
-      name: "Debate",
+      name: "Elocution",
       details: "Coming Soon",
     },
   ],
   theatre: [
-    {
-      name: "One Act Play",
-      details: "Coming Soon",
-    },
     {
       name: "Skit",
       details: "Coming Soon",
@@ -74,6 +70,10 @@ const schedule = {
       name: "Mimicry",
       details: "Coming Soon",
     },
+    {
+      name: "One Act Play",
+      details: "Coming Soon",
+    },
   ],
   "fine-arts": [
     {
@@ -81,11 +81,15 @@ const schedule = {
       details: "Coming Soon",
     },
     {
-      name: "Installation",
+      name: "Rangoli",
       details: "Coming Soon",
     },
     {
-      name: "On the Spot Painting",
+      name: "Cartooning",
+      details: "Coming Soon",
+    },
+    {
+      name: "Installation",
       details: "Coming Soon",
     },
     {
@@ -97,11 +101,7 @@ const schedule = {
       details: "Coming Soon",
     },
     {
-      name: "Cartooning",
-      details: "Coming Soon",
-    },
-    {
-      name: "Rangoli",
+      name: "On Spot Painting",
       details: "Coming Soon",
     },
     {
