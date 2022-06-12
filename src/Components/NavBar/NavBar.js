@@ -55,7 +55,6 @@ const NavBar = (props) => {
             name="Rules & Regulations"
             curPage={props.curPage}
           />
-          *
           <NavButton
             href="/generalinstructions"
             name="General Instructions"
