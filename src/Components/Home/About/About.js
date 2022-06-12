@@ -53,6 +53,11 @@ const About = (props) => {
           <div className="card card-about">
             <div className="card-body">
               <h3 className="card-title about-title">{aboutdata.fest.title}</h3>
+              <img
+                className="card-img-top about-img fest-img mb-2"
+                src={aboutdata.fest.image}
+                alt=""
+              />
               <p className="card-text about-txt txt-justify">
                 {aboutdata.fest.description}
               </p>
