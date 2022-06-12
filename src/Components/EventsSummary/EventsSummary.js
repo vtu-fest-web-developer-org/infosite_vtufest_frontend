@@ -87,7 +87,7 @@ const EventsSummary = (props) => {
                                 class="text-center align-items-center"
                                 scope="col"
                               >
-                                Time (mins)
+                                Time (min)
                               </th>
                             </tr>
                           </thead>
@@ -184,7 +184,7 @@ const EventsSummary = (props) => {
                               class="text-center align-items-center"
                               scope="col"
                             >
-                              Time (mins)
+                              Time (min)
                             </th>
                           </tr>
                         </thead>
