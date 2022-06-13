@@ -169,12 +169,12 @@ const ContactUs = (props) => {
                       <div className="col-8 col-sm-10">
                         <p className="text-decoration-none">
                           <a
-                            href="mailto:info@bmsce.ac.in"
+                            href="mailto:prathibhotsava@bmsce.ac.in"
                             className="text-decoration-none"
                             target={"_blank"}
                             rel="noreferrer"
                           >
-                            info@bmsce.ac.in
+                            prathibhotsava@bmsce.ac.in
                           </a>
                         </p>
                       </div>
