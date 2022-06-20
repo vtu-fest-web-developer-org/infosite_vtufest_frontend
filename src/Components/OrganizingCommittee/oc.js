@@ -106,7 +106,7 @@ const oc = {
       photo: "/assets/photos/patrons/shivaramreddy.webp",
     },
     {
-      name: "Dr. Prathima Bhat",
+      name: "Dr. Prathima Bhat K.",
       designation: "Treasurer",
       role: "Cultural Coordinator",
       workplace: "B.M.S. College of Engineering",
