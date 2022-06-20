@@ -186,12 +186,12 @@ const ContactUs = (props) => {
                       <div className="col-8 col-sm-10">
                         <p className="text-decoration-none">
                           <a
-                            href=" "
+                            href=""
                             className="text-decoration-none"
                             target={"_blank"}
                             rel="noreferrer"
                           >
-                            +91-80-26622130-135, Extn: 113/4033
+                            +91 92421 87131 / +91 94484 29283
                           </a>
                         </p>
                       </div>
