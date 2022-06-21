@@ -186,21 +186,12 @@ const ContactUs = (props) => {
                       <div className="col-8 col-sm-10">
                         <p className="text-decoration-none">
                           <a
-                            href="tel:+91 92421 87131"
+                            href=""
                             className="text-decoration-none"
                             target={"_blank"}
                             rel="noreferrer"
                           >
-                            +91 92421 87131
-                          </a>
-                          <br />
-                          <a
-                            href="tel:+91 94484 29283"
-                            className="text-decoration-none"
-                            target={"_blank"}
-                            rel="noreferrer"
-                          >
-                            +91 94484 29283
+                            +91 92421 87131 / +91 94484 29283
                           </a>
                         </p>
                       </div>
