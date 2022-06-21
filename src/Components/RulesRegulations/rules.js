@@ -152,7 +152,7 @@ const rules = {
         "Participation: Only 1 Team of 2 participants per institute.",
         "Duration: 5 minutes per speaker (10 minutes per team).",
         "The competition will be held in two rounds, preliminary and finals.",
-        "The final round will follow British parliamentary debate format.",
+        "The final round will follow British Parliamentary debate format.",
         "The topics for both rounds will be given on spot with appropriate preparation time.",
         "Only English shall be the medium of presentation.",
         "Teams will alternate between speakers.",
