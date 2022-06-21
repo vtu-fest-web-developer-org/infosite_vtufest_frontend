@@ -11,7 +11,7 @@ const CommonFooter = () => {
             <div className="col-md-6 justify-content-center">
               <span className="footer-icon">
                 <a
-                  href="https://www.instagram.com/p/Ce3ftVzOuMK/"
+                  href="https://www.instagram.com/prathibhotsava/"
                   target={"_blank"}
                   rel="noreferrer"
                 >
@@ -27,7 +27,7 @@ const CommonFooter = () => {
                 </a>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a
-                  href="https://twitter.com/prathibhotsava/status/1537340460624125952"
+                  href="https://twitter.com/prathibhotsava"
                   target={"_blank"}
                   rel="noreferrer"
                 >

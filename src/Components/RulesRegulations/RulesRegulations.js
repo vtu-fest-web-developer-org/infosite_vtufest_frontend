@@ -32,15 +32,14 @@ const RulesRegulations = (props) => {
                             return (
                               <div className="col-xl-4 col-lg-6 mb-3">
                                 <div className="card h-100">
-                                  <div className="card-header">
+                                  <div className="card-body">
                                     <strong>
                                       <h5 className="fw-bold">{evName[0]}</h5>
                                       <span>
-                                        {evName[1] ? "(" + evName[1] : ""}
+                                        {evName[1] ? "(" + evName[1] : <br />}
                                       </span>
                                     </strong>
-                                  </div>
-                                  <div className="card-body">
+                                    <hr />
                                     <p className="card-text text-start">
                                       {eventName["rules"].map((rule) => {
                                         j = j + 1;
