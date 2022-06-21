@@ -1,4 +1,4 @@
-const colleges = [
+const colleges_ = [
   "Bangalore Institute of Technology, Bangalore",
   "Dayananda Sagar Academy of Technology and Management, Bangalore",
   "Sir M. Viveswaraya Institute of Technology, Bangalore",
@@ -120,5 +120,6 @@ const colleges = [
   "Global Academy of Technology, Bangalore",
   "Dr. Ambedkar Institute of Technology, Bangalore",
 ].sort();
+const colleges = colleges_.push("Other")
 
 export default colleges;
