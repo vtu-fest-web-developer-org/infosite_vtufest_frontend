@@ -111,23 +111,15 @@ const ContactUs = (props) => {
                     <label for="validationCustom04" class="form-label">
                       College
                     </label>
-                    <select
-                      class="form-select"
+                    <input
+                    type={"text"}
+                      class="form-control"
                       id="college"
                       value={college}
                       onChange={(e) => setCollege(e.target.value)}
+                      placeholder="Enter your College Name."
                       required
-                    >
-                      <option selected disabled value="">
-                        Choose...
-                      </option>
-                      {colleges.map((name) => {
-                        return <option value={name}>{name}</option>;
-                      })}
-                    </select>
-                    <div class="invalid-feedback">
-                      Please select a valid state.
-                    </div>
+                    />
                   </div>
                   <div class="col-12">
                     <label for="message" class="form-label">
@@ -186,12 +178,21 @@ const ContactUs = (props) => {
                       <div className="col-8 col-sm-10">
                         <p className="text-decoration-none">
                           <a
-                            href=""
+                            href="tel:+919242187131"
                             className="text-decoration-none"
                             target={"_blank"}
                             rel="noreferrer"
                           >
-                            +91 92421 87131 / +91 94484 29283
+                            +91 92421 87131
+                          </a>
+                          <br/>
+                          <a
+                            href="tel:+919448429283"
+                            className="text-decoration-none"
+                            target={"_blank"}
+                            rel="noreferrer"
+                          >
+                            +91 94484 29283
                           </a>
                         </p>
                       </div>
