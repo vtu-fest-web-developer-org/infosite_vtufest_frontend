@@ -261,3 +261,6 @@ table {
   width: 300px;
   border-radius: 100%;
 }
+.footer-icon a {
+  font-size: 24px !important;
+}

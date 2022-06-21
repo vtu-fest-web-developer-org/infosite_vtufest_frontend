@@ -1,4 +1,5 @@
 import { FaReact } from "react-icons/fa";
+import { BsInstagram, BsFacebook, BsTwitter, BsYoutube } from "react-icons/bs";
 import styled from "styled-components";
 const CommonFooter = () => {
   return (
@@ -6,6 +7,44 @@ const CommonFooter = () => {
       <div className="col-md-12 mt-5 mb-3">
         <Footer>
           <hr />
+          <div className="row justify-content-center">
+            <div className="col-md-6 justify-content-center">
+              <span className="footer-icon">
+                <a
+                  href="https://www.instagram.com/p/Ce3ftVzOuMK/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  <BsInstagram />
+                </a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a
+                  href="https://www.facebook.com/Prathibhotsava-103691692372124"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  <BsFacebook />
+                </a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a
+                  href="https://twitter.com/prathibhotsava/status/1537340460624125952"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  <BsTwitter />
+                </a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a
+                  href="https://www.youtube.com/channel/UCKSGmptCQntGWU6dfr9mw3g"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  <BsYoutube />
+                </a>
+              </span>
+            </div>
+          </div>
+          <br />
           <span>
             Made with ❤️ &nbsp; using{" "}
             <a
