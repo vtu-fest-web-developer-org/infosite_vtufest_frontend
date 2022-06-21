@@ -198,7 +198,7 @@ const rules = {
     {
       name: "Mime",
       rules: [
-        "Participation: 1 Team (upto 6 participants) from each institute.",
+        "Participation: Only 1 Team (upto 6 participants) from each institute.",
         "Duration: 6 minutes.",
         "A maximum of 2 accompanists are allowed. ",
         "Background music is to be pre-recorded and submitted in a pendrive in MP3 format at the reporting time to the event incharge.",
@@ -276,7 +276,7 @@ const rules = {
     {
       name: "Installation",
       rules: [
-        "Participation: Only 1 participant per institute.",
+        "Participation: Only 1 team (upto 4 participants) per institute.",
         "Duration: 2 hours 30 minutes.",
         "The artwork shall be made on the spot on the given topic.",
         "The topic will be given on 10th July 2022.",

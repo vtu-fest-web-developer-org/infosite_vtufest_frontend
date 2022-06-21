@@ -130,7 +130,7 @@ const guidelines = {
     },
     {
       name: "Installation",
-      p: 1,
+      p: 4,
       a: 0,
       time: 150,
     },
