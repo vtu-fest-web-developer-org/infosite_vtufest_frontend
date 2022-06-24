@@ -1,18 +1,6 @@
 import styled from "styled-components";
-import { CgMenu } from "react-icons/cg";
-import { IoClose } from "react-icons/io5";
-
-import { useState } from "react";
 
 const NavBar = (props) => {
-  const [open, setOpen] = useState(false);
-  const closeIcon = (
-    <IoClose size="40px" color="#3469ff" onClick={() => setOpen(!open)} />
-  );
-  const openIcon = (
-    <CgMenu size="40px" color="#3469ff" onClick={() => setOpen(!open)} />
-  );
-
   return (
     <>
       <LogoNav>
@@ -64,35 +52,7 @@ const LogoNav = styled.nav`
     z-index: 3;
   }
 `;
-const Nav = styled.nav`
-  overflow: hidden !important;
 
-  @media (min-width: 1280px) {
-    padding: 0 3% 0;
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 3;
-  }
-  @media (max-width: 1280px) {
-    padding: 0 5% 0;
-    position: relative;
-    flex-flow: row nowrap;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 3;
-  }
-`;
 const VTULogo = styled.div`
   @media (min-width: 1280px) {
     padding: 0;
@@ -176,48 +136,6 @@ const BMSLogo = styled.div`
       display: flex;
       height: 65px;
     }
-  }
-`;
-
-const NavMenu = styled.div`
-  background-color: transparent;
-  @media (min-width: 1280px) {
-    align-items: center;
-    display: flex;
-    flex-flow: row nowrap;
-    height: 100%;
-    justify-content: center;
-    margin: 0px;
-    padding: 0px;
-    position: relative;
-    a {
-      display: flex;
-      text-decoration: none;
-      align-items: center;
-      padding: 0 12px;
-      span {
-        color: #121212;
-        font-size: 18px;
-        font-weight: 700;
-        letter-spacing: 0.5px;
-        line-height: 1.08;
-        padding: 2px 0px;
-        white-space: nowrap;
-        position: relative;
-        transition: 0.3s;
-      }
-      &:hover {
-        span {
-          background-image: linear-gradient(90deg, #ff6e7e, #e542fe, #772cfd);
-          color: transparent;
-          -webkit-background-clip: text;
-          background-clip: text;
-        }
-      }
-    }
-  }
-  @media (max-width: 1280px) {
-    display: none;
   }
 `;
 

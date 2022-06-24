@@ -1,8 +1,4 @@
-import { FiLink2 } from "react-icons/fi";
 import NavBar from "../NavBar/NavBar";
-import PageTitle from "../PageTitle/PageTitle";
-import colorDict from "../ColorDict/ColorDict";
-import LoaderSpinner from "../LoaderSpinner/LoaderSpinner";
 import oc from "./oc";
 
 const OrganizingCommittee = (props) => {

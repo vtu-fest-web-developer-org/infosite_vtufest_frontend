@@ -20,6 +20,7 @@ const About = (props) => {
                   href={aboutdata.bmsce.readmorelink}
                   className="text-decoration-none"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Know More
                 </a>
@@ -42,6 +43,7 @@ const About = (props) => {
                   href={aboutdata.vtu.readmorelink}
                   className="text-decoration-none"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Know More
                 </a>
