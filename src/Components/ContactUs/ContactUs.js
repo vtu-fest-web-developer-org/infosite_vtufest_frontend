@@ -1,7 +1,6 @@
 import NavBar from "../NavBar/NavBar";
 import PageTitle from "../PageTitle/PageTitle";
 import styled from "styled-components";
-import colleges from "./colleges";
 
 import { useState } from "react";
 const ContactUs = (props) => {
@@ -112,7 +111,7 @@ const ContactUs = (props) => {
                       College
                     </label>
                     <input
-                    type={"text"}
+                      type={"text"}
                       class="form-control"
                       id="college"
                       value={college}
@@ -185,7 +184,7 @@ const ContactUs = (props) => {
                           >
                             +91 92421 87131
                           </a>
-                          <br/>
+                          <br />
                           <a
                             href="tel:+919448429283"
                             className="text-decoration-none"
