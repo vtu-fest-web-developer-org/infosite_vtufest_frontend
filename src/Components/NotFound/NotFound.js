@@ -14,7 +14,7 @@ const NotFound = (props) => {
             <div className="carousel-inner">
               <div className="carousel-item active">
                 <img
-                  src="./assets/photos/404_notfound.svg"
+                  src="./assets/404/404.gif"
                   className="d-block w-100"
                   alt="404 Not Found"
                 />
