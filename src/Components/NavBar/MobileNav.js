@@ -33,7 +33,11 @@ const MobileNavigation = (prop) => {
         curPage={props.curPage}
       />
       <NavButton href="/contactus" name="Contact Us" curPage={props.curPage} />
-      <NavButton href="/login" name="Login" curPage={props.curPage} />
+      <NavButton
+        href="https://registration.prathibhotsava.in"
+        name="Login"
+        curPage={props.curPage}
+      />
     </MobileNav>
   );
 };
