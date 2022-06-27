@@ -10,7 +10,7 @@ const RulesRegulations = (props) => {
     <div className="ofxh">
       <NavBar curPage="/rulesregulations" />
       <div className="container">
-        <PageTitle title="Rules & Regulations" />
+        <PageTitle title="Detailed Rules" />
         {rules.music ? (
           <div className="row">
             <div className="col-12">
