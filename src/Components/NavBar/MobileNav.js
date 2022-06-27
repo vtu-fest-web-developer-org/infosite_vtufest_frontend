@@ -17,11 +17,11 @@ const MobileNavigation = (prop) => {
         name="Event Summary"
         curPage={props.curPage}
       />
-      <NavButton
+      {/* <NavButton
         href="/rulesregulations"
         name="Rules & Regulations"
         curPage={props.curPage}
-      />
+      /> */}
       <NavButton
         href="/generalinstructions"
         name="General Instructions"
