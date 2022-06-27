@@ -53,13 +53,13 @@ const guidelines = {
     {
       name: "Folk / Tribal Dance",
       p: 10,
-      a: 3,
+      a: 5,
       time: 15,
     },
     {
       name: "Classical Dance Solo",
       p: 1,
-      a: 1,
+      a: 3,
       time: 12,
     },
   ],
@@ -68,19 +68,18 @@ const guidelines = {
       name: "Quiz",
       p: 3,
       a: 0,
-      time: 120,
     },
     {
       name: "Debate",
       p: 2,
       a: 0,
-      time: 12,
+      time: 10,
     },
     {
       name: "Elocution",
       p: 1,
       a: 0,
-      time: 4,
+      time: 5,
     },
   ],
   theatre: [

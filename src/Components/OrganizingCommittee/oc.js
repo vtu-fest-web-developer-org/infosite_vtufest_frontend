@@ -99,7 +99,7 @@ const oc = {
   ],
   fifthPatrons: [
     {
-      name: "Dr. Shivaram Reddy M.",
+      name: "Dr. Shivarama Reddy M.",
       designation: "Organising Secretary",
       role: "Director of Physical Education",
       workplace: "B.M.S. College of Engineering",
