@@ -12,7 +12,7 @@ const NavButton = (props) => {
 
   return (
     <>
-      {props.href === "https://app.vtufestbmsce.in" ? (
+      {props.href === "https://registration.prathibhotsava.in" ? (
         <LoginButton onClick={(e) => newTab(props.href)}>
           <span>{props.name}</span>
         </LoginButton>
