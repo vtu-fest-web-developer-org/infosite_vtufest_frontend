@@ -52,7 +52,7 @@ const NavBar = (props) => {
           />
           <NavButton
             href="/rulesregulations"
-            name="Rules & Regulations"
+            name="Detailed Rules"
             curPage={props.curPage}
           />
           <NavButton
