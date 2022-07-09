@@ -1,5 +1,5 @@
-const generalrules = ["The 21st VTU Youth Festival will be held from 25th to 28th July 2022.", 
-"Registrations will open from 25th June 2022. Last date for participating teams to register is 9th July 2022.",
+const generalrules = ["The 21st VTU Youth Festival will be held from 29th to 31st July 2022.", 
+"Registrations will open from 25th June 2022. Last date for participating teams to register is 11th July 2022.",
 "Late entries will not be accepted under any circumstances.",
 "Requests for changes in registration details after submission will not be entertained whatsoever.",
 "The maximum contingent size inclusive of officials, participants and accompanists is fixed at 45.",
