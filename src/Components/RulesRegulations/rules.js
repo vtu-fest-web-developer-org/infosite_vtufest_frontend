@@ -84,6 +84,7 @@ const rules = {
         "A maximum of 3 accompanists are allowed.",
         "The song(s) must only be in English.",
         "Karaoke or Programmed Music is strictly not allowed.",
+        "Drums will be provided by the host institute.",
         "Reporting time will be provided along with the schedule of the event.",
         "Decisions of the organizers and panel of judge(s) will be final and binding.",
       ],
