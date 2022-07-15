@@ -83,8 +83,6 @@ const rules = {
         "Duration: 15 minutes (including set-up and clearance time).",
         "A maximum of 3 accompanists are allowed.",
         "The song(s) must only be in English.",
-        "The instrument setting shall be Grand Piano for Keyboard and Clean Tone for Electric Guitars. These settings have to be strictly followed.",
-        "Drums are not permitted as percussion instruments.",
         "Karaoke or Programmed Music is strictly not allowed.",
         "Reporting time will be provided along with the schedule of the event.",
         "Decisions of the organizers and panel of judge(s) will be final and binding.",
