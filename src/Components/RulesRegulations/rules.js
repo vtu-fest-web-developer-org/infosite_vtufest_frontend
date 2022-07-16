@@ -117,7 +117,6 @@ const rules = {
         "The participating team will be entirely responsible for removal of their sets, props, etc., immediately after the completion of their performance.",
         "Reporting time will be provided along with the schedule of the event.",
         "Decision of the organizers and the panel of judge(s) will be final and binding.",
-
       ],
     },
     {
@@ -144,7 +143,6 @@ const rules = {
         "The specific rules regarding evaluation procedure, time to reply to a particular question and the type of round will be given before the start of the round.",
         "Reporting time will be provided along with the schedule of the event.",
         "Decision of the organisers and the panel of judge(s) / quizmaster will be final and binding.",
-
       ],
     },
     {
@@ -160,7 +158,6 @@ const rules = {
         "Reading off a paper is not allowed.",
         "Reporting time will be provided along with the schedule of the event. ",
         "Decision of the organisers and the panel of judge(s) will be final and binding.",
-
       ],
     },
     {
@@ -175,7 +172,6 @@ const rules = {
         "Reading off a paper is allowed but not recommended, and will adversely affect points.",
         "Reporting time will be provided along with the schedule of the event.",
         "Decision of the organisers and the panel of judge(s) will be final and binding.",
-
       ],
     },
   ],
@@ -187,13 +183,11 @@ const rules = {
         "Duration: 10 minutes (including set-up and clearance time).",
         "A maximum of 3 accompanists are allowed. ",
         "Use of make-up, backdrops and background music is allowed. ",
-        "Live music is not allowed. However, participants may use recorded background music which is to be submitted in a pendrive in MP3 format at reporting time to the event incharge. ",
         "Each team should submit three copies of the synopsis of the skit in the language of presentation (English, Hindi or Kannada) at the reporting time to the event incharge.",
         "Defamation, derogation and belittlement will not be entertained.",
         "Profanity, suggestive speech, euphemisms and vulgarity in action or speech is strictly prohibited. Satire and humour that is devoid of the above is accepted.",
         "Reporting time will be provided along with the schedule of the event.",
         "Decisions of the organisers and panel of judge(s) will be final and binding.",
-
       ],
     },
     {
@@ -205,7 +199,6 @@ const rules = {
         "Background music is to be pre-recorded and submitted in a pendrive in MP3 format at the reporting time to the event incharge.",
         "Reporting time will be provided along with the schedule of the event.",
         "Decisions of the organisers and panel of judge(s) will be final and binding.",
-
       ],
     },
 
@@ -231,7 +224,6 @@ const rules = {
         "Accompanists shall either speak from the background or play upon musical instruments for background music. They shall be required to appear on the stage only during curtain call.",
         "Reporting time will be provided along with the schedule of the event.",
         "Decisions of the organisers and panel of judge(s) will be final and binding.",
-
       ],
     },
   ],
@@ -247,7 +239,6 @@ const rules = {
         "Participants shall bring their own scissors, glue, magazines, newspapers and other materials required for the contest.",
         "Reporting time will be provided along with the schedule of the event.",
         "Decisions of the organizers and panel of judge(s) will be final and binding.",
-
       ],
     },
     {
@@ -272,7 +263,6 @@ const rules = {
         "All writing or drawing instruments have to be brought by the participant.",
         "Reporting time will be provided along with the schedule of the event.",
         "Decisions of the organizers and panel of judge(s) will be final and binding.",
-
       ],
     },
     {
@@ -287,7 +277,6 @@ const rules = {
         "The participant shall create and install an atmosphere realted to the subject or title of the installation in the assigned area. The maximum size of the installation shall be 5'x 5'x 5'.",
         "Reporting time will be provided along with the schedule of the event.",
         "Decisions of the organizers and panel of judge(s) will be final and binding.",
-
       ],
     },
     {
@@ -300,7 +289,6 @@ const rules = {
         "The participant shall bring their own scissors, glue and other materials required for the event.",
         "Reporting time will be provided along with the schedule of the event.",
         "Decisions of the organizers and panel of judge(s) will be final and binding.",
-
       ],
     },
     {
@@ -314,7 +302,6 @@ const rules = {
         "Die and moulds are strictly not allowed.",
         "Reporting time will be provided along with the schedule of the event.",
         "Decisions of the organizers and panel of judge(s) will be final and binding.",
-
       ],
     },
     {
@@ -328,7 +315,6 @@ const rules = {
         "Candidates shall bring their own materials such as brushes, paints, palettes, etc.",
         "Reporting time will be provided along with the schedule of the event.",
         "Decisions of the organizers and panel of judge(s) will be final and binding.",
-
       ],
     },
     {
@@ -346,7 +332,6 @@ const rules = {
         "Any additional instructions will be announced on the spot.",
         "Reporting time will be provided along with the schedule of the event.",
         "Decisions of the organizers and panel of judge(s) will be final and binding.",
-
       ],
     },
   ],
