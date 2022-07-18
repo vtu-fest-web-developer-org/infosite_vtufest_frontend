@@ -9,7 +9,7 @@ const generalrules = ["The 21st VTU Youth Festival will be held from 29th to 31s
 "Accommodation will only be provided to the registered contingent members during dates of the fest only.",
 "All necessary musical instruments and other materials required for the performances shall be brought by the participants/contingent members.",
 "The accompanying Team Manager shall be a faculty having minimum of 5 years experience and/or shall be the Physical Education Director.",
-"Every college must pay cash of Rs. 3000/- as a caution deposit for accommodation at arrival.",
+"Every college must pay cash of Rs. 3000/- as a caution deposit at arrival.",
 "Usage of any form of Tobacco, Alcohol or Narcotic substances is entirely prohibited.",
 "All members of the contingent are expected to maintain discipline and decorum inside and outside the college premises. Failure to do so or engagement in any misadventure will result in penal action.",
 ];
