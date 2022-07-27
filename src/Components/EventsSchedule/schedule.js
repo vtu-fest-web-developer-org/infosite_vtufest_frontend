@@ -90,7 +90,7 @@ const schedule = {
     },
     {
       name: "Installation",
-      details: "Intallation",
+      details: "Installation",
     },
     {
       name: "Poster Making",
