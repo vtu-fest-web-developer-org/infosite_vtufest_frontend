@@ -76,7 +76,7 @@ const EventsSchedule = (props) => {
                               <a
                                 href={
                                   "https://docs.prathibhotsava.in/schedule?name=" +
-                                  eventName.name
+                                  eventName.details
                                 }
                                 target="_blank"
                                 class="text-decoration-none"
