@@ -2,111 +2,111 @@ const schedule = {
   music: [
     {
       name: "Classical Vocal Solo (Hindustani/Carnatic)",
-      details: "Coming Soon",
+      details: "Classical Vocal Solo (HindustaniCarnatic)",
     },
     {
       name: "Classical Instrumental Solo (Percussion Tala Vadya)",
-      details: "Coming Soon",
+      details: "Classical Instrumental Solo (Percussion Tala Vadya)",
     },
     {
       name: "Classical Instrumental Solo (Non-Percussion Swara Vadya)",
-      details: "Coming Soon",
+      details: "Classical Instrumental Solo (Non-Percussion Swara Vadya)",
     },
     {
       name: "Light Vocal Solo (Indian)",
-      details: "Coming Soon",
+      details: "Light Vocal Solo (Indian)",
     },
     {
       name: "Western Vocal Solo",
-      details: "Coming Soon",
+      details: "Western Vocal Solo",
     },
     {
       name: "Group Song (Indian)",
-      details: "Coming Soon",
+      details: "Group Song (Indian)",
     },
     {
       name: "Group Song (Western)",
-      details: "Coming Soon",
+      details: "Group Song (Western)",
     },
     {
       name: "Folk Orchestra",
-      details: "Coming Soon",
+      details: "Folk Orchestra",
     },
   ],
   dance: [
     {
       name: "Folk / Tribal Dance",
-      details: "Coming Soon",
+      details: "Folk Tribal Dance",
     },
     {
       name: "Classical Dance Solo",
-      details: "Coming Soon",
+      details: "Classical Dance Solo",
     },
   ],
   literary: [
     {
       name: "Quiz",
-      details: "Coming Soon",
+      details: "Quiz",
     },
     {
       name: "Debate",
-      details: "Coming Soon",
+      details: "Debate",
     },
     {
       name: "Elocution",
-      details: "Coming Soon",
+      details: "Elocution",
     },
   ],
   theatre: [
     {
       name: "Skit",
-      details: "Coming Soon",
+      details: "Skit",
     },
     {
       name: "Mime",
-      details: "Coming Soon",
+      details: "Mime",
     },
     {
       name: "Mimicry",
-      details: "Coming Soon",
+      details: "Mimicry",
     },
     {
       name: "One Act Play",
-      details: "Coming Soon",
+      details: "One Act Play",
     },
   ],
   "fine-arts": [
     {
       name: "Collage",
-      details: "Coming Soon",
+      details: "Collage",
     },
     {
       name: "Rangoli",
-      details: "Coming Soon",
+      details: "Rangoli",
     },
     {
       name: "Cartooning",
-      details: "Coming Soon",
+      details: "Cartooning",
     },
     {
       name: "Installation",
-      details: "Coming Soon",
+      details: "Intallation",
     },
     {
       name: "Poster Making",
-      details: "Coming Soon",
+      details: "Poster Making",
     },
     {
       name: "Clay Modelling",
-      details: "Coming Soon",
+      details: "Clay Modelling",
     },
     {
       name: "On Spot Painting",
-      details: "Coming Soon",
+      details: "On Spot Painting",
     },
     {
       name: "Spot Photography",
-      details: "Coming Soon",
+      details: "Spot Photography",
     },
   ],
 };

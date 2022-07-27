@@ -72,7 +72,18 @@ const EventsSchedule = (props) => {
                               {srno}
                             </th>
                             <td>{eventName.name}</td>
-                            <td>{eventName.details}</td>
+                            <td>
+                              <a
+                                href={
+                                  "https://docs.prathibhotsava.in/schedule?name=" +
+                                  eventName.name
+                                }
+                                target="_blank"
+                                class="text-decoration-none"
+                              >
+                                Open Schedule
+                              </a>
+                            </td>
                           </tr>
                         );
                       })}
