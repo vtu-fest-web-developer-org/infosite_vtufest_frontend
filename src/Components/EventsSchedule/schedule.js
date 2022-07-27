@@ -36,7 +36,7 @@ const schedule = {
   dance: [
     {
       name: "Folk / Tribal Dance",
-      details: "Folk Tribal Dance",
+      details: "Folk  Tribal Dance",
     },
     {
       name: "Classical Dance Solo",
