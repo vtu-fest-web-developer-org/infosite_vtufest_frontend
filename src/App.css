@@ -264,3 +264,7 @@ table {
 .footer-icon a {
   font-size: 24px !important;
 }
+.score{
+  width: 100%;
+  min-height: 100vh;
+}
