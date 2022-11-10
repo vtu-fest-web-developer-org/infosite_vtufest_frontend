@@ -19,7 +19,7 @@ import ScoreBoard from "./Components/Score/ScoreBoard";
 function App() {
   const [views, setViews] = useState(0);
   useEffect(() => {
-    fetch("https://nodebalancer.pratibhotsava.rocks/infosite/views")
+    fetch("https://api.countapi.xyz/hit/registration.prathibhotsava.in/visits")
       .then((response) => {
         return response.json();
       })
