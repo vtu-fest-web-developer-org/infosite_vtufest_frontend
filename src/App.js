@@ -24,7 +24,7 @@ function App() {
         return response.json();
       })
       .then((json) => {
-        setViews(json.viewsCount);
+        setViews(json.value);
       });
   }, []);
   return (
