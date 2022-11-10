@@ -31,7 +31,7 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          {/*Home*/}
+          {/*Home */}
           <Route exact path="/" element={<Home views={views} />} />
           {/*Event Schedule*/}
           <Route path="/eventschedule" element={<EventsSchedule />} />
