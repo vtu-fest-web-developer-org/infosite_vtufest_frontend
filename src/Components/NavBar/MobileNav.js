@@ -6,33 +6,37 @@ const MobileNavigation = (prop) => {
   return (
     <MobileNav>
       <br />
-      <NavButton href="/" name="Home" curPage={props.curPage} />
+      <NavButton href="/frontend/" name="Home" curPage={props.curPage} />
       <NavButton
-        href="/eventschedule"
+        href="/frontend/eventschedule"
         name="Event Schedule"
         curPage={props.curPage}
       />
       <NavButton
-        href="/eventsummary"
+        href="/frontend/eventsummary"
         name="Event Summary"
         curPage={props.curPage}
       />
       <NavButton
-        href="/rulesregulations"
+        href="/frontend/rulesregulations"
         name="Detailed Rules"
         curPage={props.curPage}
       />
       <NavButton
-        href="/generalinstructions"
+        href="/frontend/generalinstructions"
         name="General Instructions"
         curPage={props.curPage}
       />
       <NavButton
-        href="/organisingcommittee"
+        href="/frontend/organisingcommittee"
         name="Organizing Committee"
         curPage={props.curPage}
       />
-      <NavButton href="/contactus" name="Contact Us" curPage={props.curPage} />
+      <NavButton
+        href="/frontend/contactus"
+        name="Contact Us"
+        curPage={props.curPage}
+      />
       <NavButton
         href="https://registration.prathibhotsava.in"
         name="Login"

@@ -21,7 +21,7 @@ const ContactUs = (props) => {
       message: message,
     };
     console.log(data);
-    fetch("https://nodebalancer.pratibhotsava.rocks/infosite/contact", {
+    fetch("https://ccproject.parjanyamodi.com/infosite/contact", {
       method: "POST",
       body: JSON.stringify(data),
       headers: {
