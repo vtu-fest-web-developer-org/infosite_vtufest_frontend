@@ -18,7 +18,7 @@ const NavBar = (props) => {
     <>
       <LogoNav>
         <VTULogo className="text-align-text align-items-center justify-content-center">
-          <a href="/frontend/">
+          <a href="/">
             <img
               src="/assets/logos/VTULogo.webp"
               className="vtulogo"
@@ -27,46 +27,46 @@ const NavBar = (props) => {
           </a>
         </VTULogo>
         <Pratibhotsav className="text-align-text align-items-center justify-content-center">
-          <a href="/frontend/">
+          <a href="/">
             <img src="/assets/logos/pratibhotsav_logo_no-bg.webp" alt="BMSCE" />
           </a>
         </Pratibhotsav>
         <BMSLogo className="text-align-text align-items-center justify-content-center">
-          <a href="/frontend/">
+          <a href="/">
             <img src="/assets/logos/BMSCELogo.webp" alt="BMSCE" />
           </a>
         </BMSLogo>
       </LogoNav>
       <Nav>
         <NavMenu>
-          <NavButton href="/frontend/" name="Home" curPage={props.curPage} />
+          <NavButton href="/" name="Home" curPage={props.curPage} />
           <NavButton
-            href="/frontend/eventschedule"
+            href="/eventschedule"
             name="Event Schedule"
             curPage={props.curPage}
           />
           <NavButton
-            href="/frontend/eventsummary"
+            href="/eventsummary"
             name="Event Summary"
             curPage={props.curPage}
           />
           <NavButton
-            href="/frontend/rulesregulations"
+            href="/rulesregulations"
             name="Detailed Rules"
             curPage={props.curPage}
           />
           <NavButton
-            href="/frontend/generalinstructions"
+            href="/generalinstructions"
             name="General Instructions"
             curPage={props.curPage}
           />
           <NavButton
-            href="/frontend/organisingcommittee"
+            href="/organisingcommittee"
             name="Organizing Committee"
             curPage={props.curPage}
           />
           <NavButton
-            href="/frontend/contactus"
+            href="/contactus"
             name="Contact Us"
             curPage={props.curPage}
           />

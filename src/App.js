@@ -32,34 +32,31 @@ function App() {
       <Router>
         <Routes>
           {/*Home */}
-          <Route exact path="/frontend/" element={<Home views={views} />} />
+          <Route exact path="/" element={<Home views={views} />} />
           {/*Event Schedule*/}
-          <Route path="/frontend/eventschedule" element={<EventsSchedule />} />
+          <Route path="/eventschedule" element={<EventsSchedule />} />
           {/*Event Guidelines*/}
-          <Route path="/frontend/eventsummary" element={<EventsSummary />} />
+          <Route path="/eventsummary" element={<EventsSummary />} />
           {/*Rules and Regulations*/}
-          <Route
-            path="/frontend/rulesregulations"
-            element={<RulesRegulations />}
-          />
+          <Route path="/rulesregulations" element={<RulesRegulations />} />
           {/*Data not yet available*/}
           {/*Chief Patrons*/}
           <Route
-            path="/frontend/generalinstructions"
+            path="/generalinstructions"
             element={<GeneralInstructions />}
           />
           {/*Organizing Committee*/}
           <Route
-            path="/frontend/organisingcommittee"
+            path="/organisingcommittee"
             element={<OrganizingCommittee />}
           />
           {/*Contact Us*/}
-          <Route path="/frontend/contactus" element={<ContactUs />} />
+          <Route path="/contactus" element={<ContactUs />} />
           {/*Score*/}
-          <Route path="/frontend/score" element={<ScoreBoard />} />
+          <Route path="/score" element={<ScoreBoard />} />
           {/* Launch Route */}
-          <Route path="/frontend/launch" element={<Launch />} />
-          <Route path="/frontend/login" element={<Login />} />
+          <Route path="/launch" element={<Launch />} />
+          <Route path="/login" element={<Login />} />
           {/*Not Found*/}
           <Route path="*" element={<NotFound />} />
         </Routes>
