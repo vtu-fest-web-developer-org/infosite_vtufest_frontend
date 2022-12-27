@@ -1,18 +1,20 @@
-# pull official base image
 FROM node:18
 
-# set working directory
-WORKDIR /app
+RUN mkdir -p /data/nodeapp
+WORKDIR /data/nodeapp
 
-# add `/app/node_modules/.bin` to $PATH
-ENV PATH /app/node_modules/.bin:$PATH
-
-# install app dependencies
-COPY package.json ./
-COPY package-lock.json ./
 RUN npm install
-# add app
-COPY . ./
 
-# start app
-CMD ["npm", "start"]
+COPY package.json /data/nodeapp/
+
+
+COPY . /data/nodeapp/
+
+RUN npm install 
+COPY . ./
+RUN npm run build
+
+FROM nginx:stable-alpine
+COPY --from=build /data/nodeapp/build /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
